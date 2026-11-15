@@ -105,20 +105,14 @@ texture_filter = 1
 layout_mode = 2
 theme = ExtResource("2_uftwh")
 theme_override_colors/font_color = Color(0.42884544, 0.2928072, 0, 1)
-text = "Character 1"
+text = "Red"
 
 [node name="CurrentlyDoingLabel" type="Label" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/MarginContainer/Pages/CharactersPage/TextDisplay" unique_id=888944793]
 texture_filter = 1
 layout_mode = 2
 theme = ExtResource("3_1cf3w")
 theme_override_colors/font_color = Color(0.42884544, 0.2928072, 0, 1)
-text = "Currently Doing:"
-
-[node name="CurrentlyDoing" type="Label" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/MarginContainer/Pages/CharactersPage/TextDisplay" unique_id=1058720284]
-texture_filter = 1
-layout_mode = 2
-theme = ExtResource("3_1cf3w")
-theme_override_colors/font_color = Color(0.42884544, 0.2928072, 0, 1)
+text = "Likes Digging their nose"
 
 [node name="seperator2" type="Control" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/MarginContainer/Pages/CharactersPage/TextDisplay" unique_id=1427675059]
 custom_minimum_size = Vector2(10, 48)
@@ -131,20 +125,14 @@ texture_filter = 1
 layout_mode = 2
 theme = ExtResource("2_uftwh")
 theme_override_colors/font_color = Color(0.42884544, 0.2928072, 0, 1)
-text = "Character 2"
+text = "Green"
 
 [node name="CurrentlyDoingLabel2" type="Label" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/MarginContainer/Pages/CharactersPage/TextDisplay" unique_id=63069137]
 texture_filter = 1
 layout_mode = 2
 theme = ExtResource("3_1cf3w")
 theme_override_colors/font_color = Color(0.42884544, 0.2928072, 0, 1)
-text = "Currently Doing:"
-
-[node name="CurrentlyDoing2" type="Label" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/MarginContainer/Pages/CharactersPage/TextDisplay" unique_id=411110877]
-texture_filter = 1
-layout_mode = 2
-theme = ExtResource("3_1cf3w")
-theme_override_colors/font_color = Color(0.42884544, 0.2928072, 0, 1)
+text = "The only smart one"
 
 [node name="seperator3" type="Control" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/MarginContainer/Pages/CharactersPage/TextDisplay" unique_id=822849701]
 custom_minimum_size = Vector2(10, 48)
@@ -157,20 +145,14 @@ texture_filter = 1
 layout_mode = 2
 theme = ExtResource("2_uftwh")
 theme_override_colors/font_color = Color(0.42884544, 0.2928072, 0, 1)
-text = "Character 3"
+text = "Blue"
 
 [node name="CurrentlyDoingLabel3" type="Label" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/MarginContainer/Pages/CharactersPage/TextDisplay" unique_id=790368743]
 texture_filter = 1
 layout_mode = 2
 theme = ExtResource("3_1cf3w")
 theme_override_colors/font_color = Color(0.42884544, 0.2928072, 0, 1)
-text = "Currently Doing:"
-
-[node name="CurrentlyDoing3" type="Label" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/MarginContainer/Pages/CharactersPage/TextDisplay" unique_id=207071607]
-texture_filter = 1
-layout_mode = 2
-theme = ExtResource("3_1cf3w")
-theme_override_colors/font_color = Color(0.42884544, 0.2928072, 0, 1)
+text = "Favorite food is Pizza"
 
 [node name="seperator4" type="Control" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/MarginContainer/Pages/CharactersPage/TextDisplay" unique_id=1586026290]
 custom_minimum_size = Vector2(10, 48)
@@ -183,20 +165,14 @@ texture_filter = 1
 layout_mode = 2
 theme = ExtResource("2_uftwh")
 theme_override_colors/font_color = Color(0.42884544, 0.2928072, 0, 1)
-text = "Character 4"
+text = "Yellow"
 
 [node name="CurrentlyDoingLabel4" type="Label" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/MarginContainer/Pages/CharactersPage/TextDisplay" unique_id=1461608958]
 texture_filter = 1
 layout_mode = 2
 theme = ExtResource("3_1cf3w")
 theme_override_colors/font_color = Color(0.42884544, 0.2928072, 0, 1)
-text = "Currently Doing:"
-
-[node name="CurrentlyDoing4" type="Label" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/MarginContainer/Pages/CharactersPage/TextDisplay" unique_id=1075635416]
-texture_filter = 1
-layout_mode = 2
-theme = ExtResource("3_1cf3w")
-theme_override_colors/font_color = Color(0.42884544, 0.2928072, 0, 1)
+text = "Reads childrens' comics"
 
 [node name="ButtonContainer" type="VBoxContainer" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/MarginContainer/Pages/CharactersPage" unique_id=1428330480]
 layout_mode = 2

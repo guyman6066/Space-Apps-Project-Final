@@ -12,7 +12,7 @@ func _ready() -> void:
 		left_tabs.get_child(i).pressed.connect(show_page.bind(i))
 	for j in right_tabs.get_child_count():
 		right_tabs.get_child(j).pressed.connect(show_page.bind(count - 1 - j))
-	LogbookData.complete_experiment("exp_001", "pH was 6.5")
+	
 	show_page(0)
 
 func show_page(index: int) -> void:

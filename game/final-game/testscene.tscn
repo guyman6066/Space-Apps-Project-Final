@@ -52,8 +52,10 @@ texture_filter = 1
 script = ExtResource("1_612pj")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=211162448]
+layer = 0
 
 [node name="pausemenu" parent="CanvasLayer" unique_id=39044160 instance=ExtResource("2_mawog")]
+z_index = 0
 offset_left = -1.0
 offset_top = -7.0
 offset_right = -1.0

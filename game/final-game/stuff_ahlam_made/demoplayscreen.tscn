@@ -346,21 +346,22 @@ uppercase = true
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=433775187]
 layer = 100
 
-[node name="testscene" parent="CanvasLayer" unique_id=1685150384 instance=ExtResource("7_731gd")]
+[node name="testscene" parent="." unique_id=1685150384 instance=ExtResource("7_731gd")]
 
 [node name="logbook" parent="." unique_id=2085175016 instance=ExtResource("7_l3ul1")]
+z_index = 1
 anchors_preset = 4
 anchor_top = 0.5
 anchor_right = 0.0
 anchor_bottom = 0.5
-offset_left = 6.0
-offset_top = 10.0
-offset_right = 1145.0
-offset_bottom = 634.0
+offset_left = 73.0
+offset_top = 13.0
+offset_right = 1212.0
+offset_bottom = 637.0
 grow_horizontal = 1
 
 [node name="Node2D" parent="." unique_id=1188740390 instance=ExtResource("9_uwtrj")]
-position = Vector2(2, -18)
+position = Vector2(1, 0)
 
 [node name="SandstormControl" parent="." unique_id=40196328 instance=ExtResource("2_e4d24")]
 
