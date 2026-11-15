@@ -1,5 +1,5 @@
 # space-apps-game 
 
-possible game name: The Red Sands
+game name: The Red Sands
 
-Beginning of repo for the space apps game.
+repo for the space apps game.
