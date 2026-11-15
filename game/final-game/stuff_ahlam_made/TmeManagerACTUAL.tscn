@@ -1,0 +1,69 @@
+[gd_scene format=3 uid="uid://bkhm2pdygsy5n"]
+
+[ext_resource type="Script" uid="uid://8llt3evb5k2u" path="res://TimeManager.gd" id="1_amk0k"]
+[ext_resource type="Script" uid="uid://fxn57kxi7sxb" path="res://ClockUI.gd" id="2_uxv58"]
+[ext_resource type="FontFile" uid="uid://ck1xmg1ayhyuy" path="res://VT323-Regular.ttf" id="3_amk0k"]
+
+[sub_resource type="Theme" id="Theme_nbwhn"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4kqua"]
+bg_color = Color(0.67058825, 0.20392157, 0.18039216, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.23137255, 0.003921569, 0.11764706, 1)
+corner_radius_top_left = 35
+corner_radius_top_right = 35
+corner_radius_bottom_right = 35
+corner_radius_bottom_left = 35
+shadow_color = Color(0.23137255, 0.003921569, 0.11764706, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nbwhn"]
+bg_color = Color(0.15686275, 0.16862746, 0.3882353, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 0.9372549, 0.84705883, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[node name="Node" type="Node" unique_id=347904093]
+script = ExtResource("1_amk0k")
+
+[node name="Control" type="Control" parent="." unique_id=631639762]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_uxv58")
+
+[node name="week" type="Label" parent="Control" unique_id=3701386]
+layout_mode = 0
+offset_right = 225.0
+offset_bottom = 60.0
+theme = SubResource("Theme_nbwhn")
+theme_override_fonts/font = ExtResource("3_amk0k")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_4kqua")
+text = "WEEK:    "
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="date" type="Label" parent="Control" unique_id=890851118]
+layout_mode = 0
+offset_left = 232.0
+offset_top = 1.0
+offset_right = 442.0
+offset_bottom = 66.0
+theme = SubResource("Theme_nbwhn")
+theme_override_fonts/font = ExtResource("3_amk0k")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_nbwhn")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true

@@ -1,0 +1,346 @@
+[gd_scene format=3 uid="uid://dvi7wlbl7f00o"]
+
+[ext_resource type="Script" uid="uid://70g5musxq48k" path="res://node.gd" id="1_amdyk"]
+[ext_resource type="Script" uid="uid://82tm0spamvw7" path="res://healthbar_#1.gd" id="1_wayj8"]
+[ext_resource type="FontFile" uid="uid://cgxtntooggg1j" path="res://Font-(VT323)/VT323-Regular.ttf" id="2_3brui"]
+[ext_resource type="Script" uid="uid://c4aq5rkdh8x7a" path="res://character_body_2d.gd" id="3_00la0"]
+[ext_resource type="Texture2D" uid="uid://dwajn4pcoscwh" path="res://Untitled107.png" id="3_b85kd"]
+[ext_resource type="Theme" uid="uid://bu4t40tjyqmlw" path="res://new_theme.tres" id="4_amdyk"]
+[ext_resource type="Texture2D" uid="uid://cyver15x6jgag" path="res://Green.png" id="4_xnj8b"]
+[ext_resource type="Texture2D" uid="uid://bfa21bmwqoabf" path="res://spaceship_icon.JPG" id="6_amdyk"]
+[ext_resource type="Texture2D" uid="uid://cbssdgllouyrn" path="res://Untitled294_20261005130659.PNG" id="7_ii0a5"]
+[ext_resource type="Texture2D" uid="uid://dx4pj110qupd7" path="res://Jump (32x32).png" id="8_tocw4"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_amdyk"]
+texture = ExtResource("3_b85kd")
+region_rect = Rect2(1607, 1460, 833, 151)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_00la0"]
+texture = ExtResource("3_b85kd")
+region_rect = Rect2(1604, 1113, 833, 150)
+
+[sub_resource type="Theme" id="Theme_loy05"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hgaam"]
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+
+[sub_resource type="Theme" id="Theme_nbwhn"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xnj8b"]
+texture = ExtResource("3_b85kd")
+region_rect = Rect2(1602, 765, 833, 150)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ii0a5"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_w7h24"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_mkcmk"]
+
+[sub_resource type="ExternalTexture" id="ExternalTexture_eg8ev"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_jgx6l"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_ans56"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_vj1ra"]
+
+[sub_resource type="Theme" id="Theme_jpuf7"]
+VScrollBar/icons/decrement = SubResource("CanvasTexture_w7h24")
+VScrollBar/icons/decrement_highlight = SubResource("CanvasTexture_mkcmk")
+VScrollBar/icons/decrement_pressed = SubResource("ExternalTexture_eg8ev")
+VScrollBar/icons/increment = SubResource("CanvasTexture_jgx6l")
+VScrollBar/icons/increment_highlight = SubResource("CanvasTexture_ans56")
+VScrollBar/icons/increment_pressed = SubResource("CanvasTexture_vj1ra")
+
+[sub_resource type="Theme" id="Theme_w7h24"]
+
+[node name="Node" type="Node" unique_id=1754025032]
+script = ExtResource("1_amdyk")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1108410742]
+
+[node name="Control" type="Control" parent="CanvasLayer" unique_id=1578186944]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1604223856]
+script = ExtResource("3_00la0")
+
+[node name="Green" type="Sprite2D" parent="CharacterBody2D" unique_id=1420716928]
+position = Vector2(53, 152)
+texture = ExtResource("4_xnj8b")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=131793563]
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="CharacterBody2D" unique_id=1648562495]
+offset_left = 658.0
+offset_top = 253.0
+offset_right = 985.0
+offset_bottom = 301.0
+theme = ExtResource("4_amdyk")
+
+[node name="TextureProgressBar2" type="TextureProgressBar" parent="CharacterBody2D" unique_id=2014399192]
+offset_left = 656.0
+offset_top = 309.0
+offset_right = 983.0
+offset_bottom = 357.0
+
+[node name="TextureProgressBar3" type="TextureProgressBar" parent="CharacterBody2D" unique_id=575461763]
+offset_left = 659.0
+offset_top = 197.0
+offset_right = 986.0
+offset_bottom = 245.0
+theme = ExtResource("4_amdyk")
+
+[node name="Oxygen #1" type="ProgressBar" parent="CharacterBody2D" unique_id=2084597544]
+offset_left = 657.0
+offset_top = 310.0
+offset_right = 983.0
+offset_bottom = 357.0
+theme_override_fonts/font = ExtResource("2_3brui")
+theme_override_font_sizes/font_size = 26
+theme_override_styles/background = SubResource("StyleBoxTexture_amdyk")
+metadata/_edit_use_anchors_ = true
+
+[node name="Healthbar #1" type="ProgressBar" parent="CharacterBody2D" unique_id=735114256 node_paths=PackedStringArray("player")]
+offset_left = 656.0
+offset_top = 384.0
+offset_right = 985.0
+offset_bottom = 429.0
+theme_override_fonts/font = ExtResource("2_3brui")
+theme_override_font_sizes/font_size = 26
+theme_override_styles/background = SubResource("StyleBoxTexture_00la0")
+script = ExtResource("1_wayj8")
+player = NodePath("..")
+metadata/_edit_use_anchors_ = true
+
+[node name="Box" type="Label" parent="." unique_id=2050981222]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -454.0
+offset_top = -225.0
+offset_right = 447.0
+offset_bottom = 237.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_loy05")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hgaam")
+metadata/_edit_use_anchors_ = true
+
+[node name="Box" type="Label" parent="Box" unique_id=536105125]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -449.5
+offset_top = -230.0
+offset_right = 449.5
+offset_bottom = -148.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_loy05")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hgaam")
+metadata/_edit_use_anchors_ = true
+
+[node name="Box2" type="Label" parent="Box" unique_id=1265809721]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -450.5
+offset_top = -153.5
+offset_right = -206.5
+offset_bottom = 230.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_loy05")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hgaam")
+metadata/_edit_use_anchors_ = true
+
+[node name="Box4" type="Label" parent="Box" unique_id=162477676]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -212.5
+offset_top = -154.0
+offset_right = 450.5
+offset_bottom = 44.25
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_loy05")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hgaam")
+metadata/_edit_use_anchors_ = true
+
+[node name="Box3" type="Label" parent="Box" unique_id=897322044]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -450.5
+offset_top = -153.0
+offset_right = -206.5
+offset_bottom = 45.25
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_loy05")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hgaam")
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1132169689]
+offset_left = 669.0
+offset_top = 196.0
+offset_right = 1000.0
+offset_bottom = 245.0
+theme = SubResource("Theme_nbwhn")
+
+[node name="Water #2" type="ProgressBar" parent="." unique_id=485310613]
+offset_left = 657.0
+offset_top = 440.0
+offset_right = 984.0
+offset_bottom = 486.0
+theme_override_fonts/font = ExtResource("2_3brui")
+theme_override_font_sizes/font_size = 26
+theme_override_styles/background = SubResource("StyleBoxTexture_xnj8b")
+metadata/_edit_use_anchors_ = true
+
+[node name="Oxygen #2" type="ProgressBar" parent="." unique_id=1324881516]
+offset_left = 656.0
+offset_top = 497.0
+offset_right = 982.0
+offset_bottom = 544.0
+theme_override_fonts/font = ExtResource("2_3brui")
+theme_override_font_sizes/font_size = 26
+theme_override_styles/background = SubResource("StyleBoxTexture_amdyk")
+metadata/_edit_use_anchors_ = true
+
+[node name="Healthbar#1" type="ProgressBar" parent="." unique_id=1363088646]
+visible = false
+offset_left = 657.0
+offset_top = 197.0
+offset_right = 986.0
+offset_bottom = 242.0
+theme_override_fonts/font = ExtResource("2_3brui")
+theme_override_font_sizes/font_size = 26
+theme_override_styles/background = SubResource("StyleBoxTexture_00la0")
+metadata/_edit_use_anchors_ = true
+
+[node name="PLAYER 1" type="Label" parent="." unique_id=200989966]
+offset_left = 381.0
+offset_top = 195.0
+offset_right = 588.0
+offset_bottom = 233.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.07450981, 0.38039216, 0.8627451, 0.6156863)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/line_spacing = 18
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 0
+theme_override_constants/outline_size = 0
+theme_override_constants/shadow_outline_size = 0
+theme_override_fonts/font = ExtResource("2_3brui")
+theme_override_font_sizes/font_size = 37
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ii0a5")
+text = "CHARACTER NAME"
+metadata/_edit_use_anchors_ = true
+
+[node name="DESCRIPTION 1" type="Label" parent="." unique_id=621339820]
+offset_left = 382.0
+offset_top = 230.0
+offset_right = 605.0
+offset_bottom = 268.0
+theme_override_colors/font_color = Color(0.18359044, 0.18359044, 0.18359044, 1)
+theme_override_colors/font_shadow_color = Color(0.07450981, 0.38039216, 0.8627451, 0.6156863)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/line_spacing = 1
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 0
+theme_override_constants/outline_size = 0
+theme_override_constants/shadow_outline_size = 0
+theme_override_fonts/font = ExtResource("2_3brui")
+theme_override_font_sizes/font_size = 31
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ii0a5")
+text = "Character details "
+metadata/_edit_use_anchors_ = true
+
+[node name="PLAYER 2" type="Label" parent="." unique_id=524883995]
+offset_left = 380.0
+offset_top = 384.0
+offset_right = 587.0
+offset_bottom = 422.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.07450981, 0.38039216, 0.8627451, 0.6156863)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/line_spacing = 18
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 0
+theme_override_constants/outline_size = 0
+theme_override_constants/shadow_outline_size = 0
+theme_override_fonts/font = ExtResource("2_3brui")
+theme_override_font_sizes/font_size = 37
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ii0a5")
+text = "CHARACTER NAME"
+metadata/_edit_use_anchors_ = true
+
+[node name="DESCRIPTION 2" type="Label" parent="." unique_id=1561050519]
+offset_left = 383.0
+offset_top = 420.0
+offset_right = 606.0
+offset_bottom = 458.0
+theme_override_colors/font_color = Color(0.18359044, 0.18359044, 0.18359044, 1)
+theme_override_colors/font_shadow_color = Color(0.07450981, 0.38039216, 0.8627451, 0.6156863)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/line_spacing = 1
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 0
+theme_override_constants/outline_size = 0
+theme_override_constants/shadow_outline_size = 0
+theme_override_fonts/font = ExtResource("2_3brui")
+theme_override_font_sizes/font_size = 31
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ii0a5")
+text = "Character details "
+metadata/_edit_use_anchors_ = true
+
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=1189858585]
+offset_left = 122.0
+offset_top = 190.0
+offset_right = 1009.0
+offset_bottom = 549.0
+theme = SubResource("Theme_jpuf7")
+
+[node name="HScrollBar" type="HScrollBar" parent="ScrollContainer" unique_id=1739288448]
+layout_mode = 2
+size_flags_horizontal = 10
+size_flags_vertical = 3
+theme = SubResource("Theme_w7h24")
+rounded = true
+
+[node name="Untitled29420261005130659" type="Sprite2D" parent="." unique_id=504583046]
+position = Vector2(42.749966, 366.25012)
+scale = Vector2(0.012329116, 0.012573202)
+texture = ExtResource("7_ii0a5")
+
+[node name="SpaceshipIcon" type="Sprite2D" parent="." unique_id=1561365785]
+position = Vector2(48.093742, 286.6875)
+scale = Vector2(0.051554736, 0.037890613)
+texture = ExtResource("6_amdyk")
+
+[node name="Jump(32x32)" type="Sprite2D" parent="." unique_id=1632571276]
+position = Vector2(51, 232)
+texture = ExtResource("8_tocw4")

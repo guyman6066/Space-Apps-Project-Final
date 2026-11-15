@@ -1,0 +1,327 @@
+[gd_scene format=3 uid="uid://b2vvm634doo3g"]
+
+[ext_resource type="FontFile" uid="uid://b7mfn1x35s2bk" path="res://VT323-Regular.ttf" id="1_2bqxw"]
+[ext_resource type="Script" uid="uid://d22422smyt0g5" path="res://plantgrowing.gd" id="1_luovf"]
+[ext_resource type="Texture2D" uid="uid://bnmdmaesgut0q" path="res://Untitled107.png" id="2_luovf"]
+[ext_resource type="Script" uid="uid://judod0t50bt0" path="res://plant.gd" id="4_kyrgq"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nbwhn"]
+bg_color = Color(0.38039216, 0.35686275, 0.6392157, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.13333334, 0.12941177, 0.37254903, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jpuf7"]
+bg_color = Color(0.96862745, 0.92156863, 0.8901961, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.54509807, 0.48235294, 0.34901962, 1)
+
+[node name="Node2D" type="Node2D" unique_id=514065176]
+script = ExtResource("1_luovf")
+
+[node name="selectionmenu" type="Label" parent="." unique_id=1743991623]
+offset_left = 789.0
+offset_top = 29.0
+offset_right = 1116.0
+offset_bottom = 611.0
+theme_override_colors/font_color = Color(0.13333334, 0.12941177, 0.37254903, 1)
+theme_override_fonts/font = ExtResource("1_2bqxw")
+theme_override_font_sizes/font_size = 33
+theme_override_styles/normal = SubResource("StyleBoxFlat_nbwhn")
+text = "TOOLS"
+horizontal_alignment = 1
+
+[node name="detailsmenu" type="Label" parent="." unique_id=190839638]
+offset_left = 29.0
+offset_top = 28.0
+offset_right = 357.0
+offset_bottom = 611.0
+theme_override_colors/font_color = Color(0.54509807, 0.48235294, 0.34901962, 1)
+theme_override_fonts/font = ExtResource("1_2bqxw")
+theme_override_font_sizes/font_size = 33
+theme_override_styles/normal = SubResource("StyleBoxFlat_jpuf7")
+text = "DETAILS"
+horizontal_alignment = 1
+
+[node name="details" type="Label" parent="." unique_id=1900918393]
+offset_left = 54.0
+offset_top = 73.0
+offset_right = 333.0
+offset_bottom = 589.0
+theme_override_colors/font_color = Color(0.63961923, 0.5719087, 0.42841828, 1)
+theme_override_fonts/font = ExtResource("1_2bqxw")
+theme_override_font_sizes/font_size = 25
+text = "SEED TYPES:
+SOIL DETAILS:
+• Macronutrients-
+ Oxygen, Carbon, 
+Hydrogen, Nitrogen, 
+Potassium, Phosphorus, 
+Calcium, Magnesium, 
+Sulfur
+• Micronutrients- Iron, 
+Manganese, Zinc, Copper, 
+Molybdenum, Boron, 
+Chlorine
+HEALTH STATUS
+
+
+HYDRATION STATUS "
+
+[node name="Radish" type="Label" parent="." unique_id=158010324]
+offset_left = 174.0
+offset_top = 73.0
+offset_right = 263.0
+offset_bottom = 98.0
+theme_override_colors/font_color = Color(0.6392157, 0.57254905, 0.42745098, 1)
+theme_override_fonts/font = ExtResource("1_2bqxw")
+theme_override_font_sizes/font_size = 25
+text = "Radish"
+
+[node name="health" type="Sprite2D" parent="Radish" unique_id=1663794385]
+position = Vector2(19, 389.0001)
+scale = Vector2(0.3428871, 0.325)
+texture = ExtResource("2_luovf")
+region_enabled = true
+region_rect = Rect2(1603, 939, 833, 150)
+
+[node name="water" type="Sprite2D" parent="Radish" unique_id=1693299047]
+position = Vector2(21, 483.25)
+scale = Vector2(0.34333736, 0.32781455)
+texture = ExtResource("2_luovf")
+region_enabled = true
+region_rect = Rect2(1601, 591, 833, 151)
+
+[node name="Radish2" type="Label" parent="Radish" unique_id=1073219794]
+layout_mode = 0
+offset_left = 644.0
+offset_top = 153.0
+offset_right = 768.0
+offset_bottom = 280.0
+theme_override_fonts/font = ExtResource("1_2bqxw")
+theme_override_font_sizes/font_size = 25
+text = "RADISH"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="rakegraphics" type="Button" parent="Radish/Radish2" unique_id=1265182563]
+layout_mode = 0
+offset_left = 6.0
+offset_top = -3.0
+offset_right = 118.0
+offset_bottom = 94.0
+
+[node name="Tomato" type="Label" parent="." unique_id=1232801715]
+offset_left = 173.0
+offset_top = 73.0
+offset_right = 262.0
+offset_bottom = 98.0
+theme_override_colors/font_color = Color(0.6392157, 0.57254905, 0.42745098, 1)
+theme_override_fonts/font = ExtResource("1_2bqxw")
+theme_override_font_sizes/font_size = 25
+text = "Tomato"
+
+[node name="health" type="Sprite2D" parent="Tomato" unique_id=216323756]
+position = Vector2(19, 389.0001)
+scale = Vector2(0.3428871, 0.325)
+texture = ExtResource("2_luovf")
+region_enabled = true
+region_rect = Rect2(1603, 939, 833, 150)
+
+[node name="water" type="Sprite2D" parent="Tomato" unique_id=1088822491]
+position = Vector2(21, 483.25)
+scale = Vector2(0.34333736, 0.32781455)
+texture = ExtResource("2_luovf")
+region_enabled = true
+region_rect = Rect2(1601, 591, 833, 151)
+
+[node name="Tomato2" type="Label" parent="Tomato" unique_id=767564571]
+layout_mode = 0
+offset_left = 788.0
+offset_top = 12.0
+offset_right = 912.0
+offset_bottom = 139.0
+theme_override_fonts/font = ExtResource("1_2bqxw")
+theme_override_font_sizes/font_size = 25
+text = "TOMATO"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="seedsgraphics" type="Button" parent="Tomato/Tomato2" unique_id=44318119]
+layout_mode = 0
+offset_left = 7.0
+offset_top = -2.0
+offset_right = 119.0
+offset_bottom = 95.0
+
+[node name="Rye" type="Label" parent="." unique_id=1742027819]
+offset_left = 174.0
+offset_top = 74.0
+offset_right = 263.0
+offset_bottom = 99.0
+theme_override_colors/font_color = Color(0.6392157, 0.57254905, 0.42745098, 1)
+theme_override_fonts/font = ExtResource("1_2bqxw")
+theme_override_font_sizes/font_size = 25
+text = "Rye"
+
+[node name="health" type="Sprite2D" parent="Rye" unique_id=1578941145]
+position = Vector2(19, 389.0001)
+scale = Vector2(0.3428871, 0.325)
+texture = ExtResource("2_luovf")
+region_enabled = true
+region_rect = Rect2(1603, 939, 833, 150)
+
+[node name="water" type="Sprite2D" parent="Rye" unique_id=1338355753]
+position = Vector2(21, 483.25)
+scale = Vector2(0.34333736, 0.32781455)
+texture = ExtResource("2_luovf")
+region_enabled = true
+region_rect = Rect2(1601, 591, 833, 151)
+
+[node name="Rye2" type="Label" parent="Rye" unique_id=2115561354]
+layout_mode = 0
+offset_left = 644.00006
+offset_top = 10.9999695
+offset_right = 768.00006
+offset_bottom = 137.99997
+theme_override_fonts/font = ExtResource("1_2bqxw")
+theme_override_font_sizes/font_size = 25
+text = "RYE"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="showelgraphics" type="Button" parent="Rye/Rye2" unique_id=1813883044]
+layout_mode = 0
+offset_left = 5.0
+offset_top = -3.0
+offset_right = 117.0
+offset_bottom = 94.0
+
+[node name="showel" type="Label" parent="." unique_id=294790594]
+offset_left = 817.0
+offset_top = 84.0
+offset_right = 941.0
+offset_bottom = 211.0
+theme_override_fonts/font = ExtResource("1_2bqxw")
+theme_override_font_sizes/font_size = 25
+text = "SHOWEL"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="showelgraphics" type="Button" parent="showel" unique_id=632631719]
+layout_mode = 0
+offset_left = 5.0
+offset_top = -3.0
+offset_right = 117.0
+offset_bottom = 94.0
+
+[node name="seeds" type="Label" parent="." unique_id=2067171484]
+offset_left = 960.0
+offset_top = 84.0
+offset_right = 1084.0
+offset_bottom = 211.0
+theme_override_fonts/font = ExtResource("1_2bqxw")
+theme_override_font_sizes/font_size = 25
+text = "SEEDS"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="seedsgraphics" type="Button" parent="seeds" unique_id=604318252]
+layout_mode = 0
+offset_left = 7.0
+offset_top = -2.0
+offset_right = 119.0
+offset_bottom = 95.0
+
+[node name="rake" type="Label" parent="." unique_id=1190996693]
+offset_left = 817.0
+offset_top = 225.0
+offset_right = 941.0
+offset_bottom = 352.0
+theme_override_fonts/font = ExtResource("1_2bqxw")
+theme_override_font_sizes/font_size = 25
+text = "RAKE"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="rakegraphics" type="Button" parent="rake" unique_id=947512579]
+layout_mode = 0
+offset_left = 6.0
+offset_top = -3.0
+offset_right = 118.0
+offset_bottom = 94.0
+
+[node name="wateringcan" type="Label" parent="." unique_id=557981014]
+offset_left = 963.0
+offset_top = 225.0
+offset_right = 1087.0
+offset_bottom = 352.0
+theme_override_fonts/font = ExtResource("1_2bqxw")
+theme_override_font_sizes/font_size = 25
+text = "WATERING CAN"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="watergraphics" type="Button" parent="wateringcan" unique_id=993967203]
+layout_mode = 0
+offset_left = 6.0
+offset_top = -3.0
+offset_right = 118.0
+offset_bottom = 94.0
+
+[node name="back" type="Label" parent="." unique_id=1876298016]
+offset_left = 962.0
+offset_top = 225.0
+offset_right = 1086.0
+offset_bottom = 352.0
+theme_override_fonts/font = ExtResource("1_2bqxw")
+theme_override_font_sizes/font_size = 25
+text = "BACK"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="watergraphics" type="Button" parent="back" unique_id=1412410802]
+layout_mode = 0
+offset_left = 6.0
+offset_top = -3.0
+offset_right = 118.0
+offset_bottom = 94.0
+
+[node name="fertilizer" type="Label" parent="." unique_id=124488791]
+offset_left = 817.0
+offset_top = 368.0
+offset_right = 941.0
+offset_bottom = 495.0
+theme_override_fonts/font = ExtResource("1_2bqxw")
+theme_override_font_sizes/font_size = 25
+text = "FERTILIZER"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="fertilizergraphics" type="Button" parent="fertilizer" unique_id=869867018]
+layout_mode = 0
+offset_left = 6.0
+offset_top = -6.0
+offset_right = 118.0
+offset_bottom = 91.0
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1145229560]
+script = ExtResource("4_kyrgq")
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D" unique_id=1245102573]
+
+[node name="Timer" type="Timer" parent="Node2D" unique_id=419004762]
+
+[connection signal="pressed" from="Radish/Radish2/rakegraphics" to="." method="_on_select_radish_pressed"]
+[connection signal="pressed" from="Tomato/Tomato2/seedsgraphics" to="." method="_on_select_tomato_pressed"]
+[connection signal="pressed" from="Rye/Rye2/showelgraphics" to="." method="_on_select_rye_pressed"]
+[connection signal="pressed" from="showel/showelgraphics" to="." method="_on_showel_button_pressed"]
+[connection signal="pressed" from="seeds/seedsgraphics" to="." method="_on_seedsgraphics_pressed"]
+[connection signal="pressed" from="wateringcan/watergraphics" to="." method="_on_water_button_pressed"]
+[connection signal="pressed" from="back/watergraphics" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="fertilizer/fertilizergraphics" to="." method="_on_fertilizer_button_pressed"]

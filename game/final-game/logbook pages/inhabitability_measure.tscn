@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://cejeb6ofiyogd"]
+
+[ext_resource type="PackedScene" uid="uid://dgh1m5c0wyg6m" path="res://ui.tscn" id="1_erhhy"]
+[ext_resource type="Script" uid="uid://cbfth5srl0jn5" path="res://inhabitability_measure.gd" id="1_vlxby"]
+
+[node name="Node2D" type="Node2D" unique_id=1377986909]
+script = ExtResource("1_vlxby")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=859892364]
+
+[node name="ui" parent="CanvasLayer" unique_id=1037148599 instance=ExtResource("1_erhhy")]

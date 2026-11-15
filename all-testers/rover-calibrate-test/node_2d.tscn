@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://56ypg0v6pmsi"]
+
+[ext_resource type="Script" uid="uid://jv3mdc1nqok8" path="res://canvas_layer.gd" id="1_0e48y"]
+[ext_resource type="Texture2D" uid="uid://da80jf7djninw" path="res://Free/Background/Brown.png" id="1_wtcfe"]
+
+[node name="Node2D" type="Node2D" unique_id=1188740390]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1496865376]
+script = ExtResource("1_0e48y")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="CanvasLayer" unique_id=361773669]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_wtcfe")
+
+[node name="CalibrateButton" type="Button" parent="CanvasLayer" unique_id=1217181828]
+offset_left = 96.0
+offset_top = 327.0
+offset_right = 216.0
+offset_bottom = 407.0
+text = "Rover
+"
+
+[node name="QuizPanel" type="VBoxContainer" parent="CanvasLayer" unique_id=1495505793]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -69.0
+offset_top = -107.0
+offset_right = 69.0
+offset_bottom = 107.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="QuizImage" type="TextureRect" parent="CanvasLayer/QuizPanel" unique_id=2067178375]
+custom_minimum_size = Vector2(400, 250)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Option1" type="Button" parent="CanvasLayer/QuizPanel" unique_id=257590562]
+layout_mode = 2
+
+[node name="Option2" type="Button" parent="CanvasLayer/QuizPanel" unique_id=1814392634]
+layout_mode = 2
+
+[node name="Option3" type="Button" parent="CanvasLayer/QuizPanel" unique_id=1968104803]
+layout_mode = 2
+
+[node name="Option4" type="Button" parent="CanvasLayer/QuizPanel" unique_id=1491395496]
+layout_mode = 2
+
+[node name="ResultLabel" type="Label" parent="CanvasLayer" unique_id=480555027]
+offset_left = 565.0
+offset_top = 55.0
+offset_right = 605.0
+offset_bottom = 78.0

@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bj87iubqvveit"]
+
+[ext_resource type="Script" uid="uid://crr7eco8c1esk" path="res://mystery_man.gd" id="1_n4ipg"]
+[ext_resource type="Texture2D" uid="uid://cmnk6gj2trkm8" path="res://untitled@4x (1).png" id="2_sgv2r"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vxmrg"]
+size = Vector2(152, 84)
+
+[node name="mystery man" type="Node2D" unique_id=1095541083]
+script = ExtResource("1_n4ipg")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2133441932]
+position = Vector2(10.500002, -3.2500105)
+scale = Vector2(0.4257813, 0.4042969)
+texture = ExtResource("2_sgv2r")
+
+[node name="DetectArea" type="Area2D" parent="." unique_id=2024317414]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectArea" unique_id=500705267]
+shape = SubResource("RectangleShape2D_vxmrg")
+
+[connection signal="body_entered" from="DetectArea" to="." method="_on_detect_area_body_entered"]
+[connection signal="body_exited" from="DetectArea" to="." method="_on_detect_area_body_exited"]

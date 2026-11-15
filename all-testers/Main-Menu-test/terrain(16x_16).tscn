@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://d4fihsgpp5er5"]
+
+[ext_resource type="Texture2D" uid="uid://dds0msjyxjcmt" path="res://Terrain (16x16).png" id="1_bd7hq"]
+[ext_resource type="PackedScene" uid="uid://bmrhfj3seblrp" path="res://node.tscn" id="2_ppkte"]
+
+[node name="Terrain(16x16)" type="Sprite2D" unique_id=1596781358]
+position = Vector2(429, 389)
+scale = Vector2(1.7329545, 1.7954545)
+texture = ExtResource("1_bd7hq")
+
+[node name="Node" parent="." unique_id=347904093 instance=ExtResource("2_ppkte")]

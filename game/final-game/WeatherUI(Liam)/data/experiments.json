@@ -1,0 +1,14 @@
+[
+	{
+		"id": "exp_001",
+		"title": "Soil Sample Analysis",
+		"summary": "Test the pH of the northern field.",
+		"details": "Collect three samples and test each one."
+	},
+	{
+		"id": "exp_002",
+		"title": "Water Filtration",
+		"summary": "Compare two filter materials.",
+		"details": "Run 1L of water through each filter."
+	}
+]

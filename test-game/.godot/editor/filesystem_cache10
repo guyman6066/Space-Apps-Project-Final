@@ -1,0 +1,12 @@
+78098b89c88a74ebe8c20117b8754620
+::res://::1790189746
+Green.png::CompressedTexture2D::6501000187039721782::1790177693::1790177693::1::::<><><>0<>0<>656db3c64a2802aebbde40917f0b22ae<>res://.godot/imported/Green.png-a73a03d0a1febdb864b00265fc9002a0.ctex::
+icon.svg::CompressedTexture2D::3077169831611539150::1790177483::1790177488::1::::<><><>0<>0<>69d8ccc4c521b95051d9c4739a689c7f<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+Idle (32x32).png::CompressedTexture2D::334472794852267897::1790179876::1790179889::1::::<><><>0<>0<>be0e43a3da9cf05ab0cf90ba322e19a6<>res://.godot/imported/Idle (32x32).png-eab6f8bc6cc3e2ad30a389b322c823ee.ctex::
+Jump (32x32).png::CompressedTexture2D::8834400643588511618::1790178827::1790178828::1::::<><><>0<>0<>55be915a8176bbe14320d3951c9cc42f<>res://.godot/imported/Jump (32x32).png-91bf01789c567d31f5c28cd22911709b.ctex::
+node.tscn::PackedScene::3264215693875306117::1790182150::0::1::::<><><>0<>0<><>::uid://cyver15x6jgag::::res://Green.png<>uid://dds0msjyxjcmt::::res://Terrain (16x16).png<>uid://cyhsmkrgvegae::::res://scenes/main_character.tscn
+Run (32x32).png::CompressedTexture2D::2372776194374021789::1790180277::1790180277::1::::<><><>0<>0<>3a7a1d4492e49acead9ac3bdc7a10979<>res://.godot/imported/Run (32x32).png-448439aeb8095dde0c51c1fbc2bea5a9.ctex::
+Terrain (16x16).png::CompressedTexture2D::7408527696357581355::1790177913::1790177913::1::::<><><>0<>0<>aef5106be8d9d2024cd1c4cec5d48d55<>res://.godot/imported/Terrain (16x16).png-f072e8a5f99e915c05031c83401c87a9.ctex::
+::res://scenes/::1790188912
+main_character.gd::GDScript::9206024679708783223::1790188912::0::1::::<>CharacterBody2D<><>0<>0<><>::
+main_character.tscn::PackedScene::6472939146170069132::1790182061::0::1::::<><><>0<>0<><>::uid://d4fp47720j8nb::::res://scenes/main_character.gd<>uid://dx4pj110qupd7::::res://Jump (32x32).png<>uid://e1ayoc17g6lx::::res://Idle (32x32).png<>uid://82njorhbg4jx::::res://Run (32x32).png

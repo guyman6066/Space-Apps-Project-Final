@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://ew2xgjkhya0w"]
+
+[ext_resource type="Script" uid="uid://c0auyx4755hqt" path="res://node_2d.gd" id="1_612pj"]
+[ext_resource type="Texture2D" uid="uid://xhrgv3xiv4ns" path="res://TilesetVillageAbandoned.png" id="2_asog6"]
+[ext_resource type="PackedScene" uid="uid://d10d5brom5qbi" path="res://pausemenu.tscn" id="2_mawog"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_b56k5"]
+texture = ExtResource("2_asog6")
+12:6/size_in_atlas = Vector2i(4, 5)
+12:6/0 = 0
+11:3/size_in_atlas = Vector2i(3, 3)
+11:3/0 = 0
+17:0/size_in_atlas = Vector2i(3, 3)
+17:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_xq4r6"]
+sources/2 = SubResource("TileSetAtlasSource_b56k5")
+
+[node name="testscene" type="Node2D" unique_id=1685150384]
+texture_filter = 1
+script = ExtResource("1_612pj")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=211162448]
+
+[node name="pausemenu" parent="CanvasLayer" unique_id=39044160 instance=ExtResource("2_mawog")]
+offset_left = -1.0
+offset_top = -7.0
+offset_right = -1.0
+offset_bottom = -7.0
+
+[node name="Ground" type="TileMapLayer" parent="." unique_id=849865209]
+position = Vector2(-27, -26)
+tile_set = SubResource("TileSet_xq4r6")
+
+[node name="Preview" type="TileMapLayer" parent="." unique_id=1069584718]
+modulate = Color(1, 1, 1, 0.41568628)
+position = Vector2(-27, -26)
+tile_set = SubResource("TileSet_xq4r6")

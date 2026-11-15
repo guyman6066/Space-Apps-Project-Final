@@ -1,0 +1,22 @@
+78098b89c88a74ebe8c20117b8754620
+::res://::1794735644
+Add a heading (1).png::CompressedTexture2D::6051261286328788384::1792599316::1794734403::1::::<><><>0<>0<>da9e01c1428559a8c6f6e81bac479e23<>res://.godot/imported/Add a heading (1).png-a3065c72541a921b93376aa3ed054bc7.ctex::
+bedroom.gd::GDScript::8958378364913186963::1792599316::0::1::::<>Node2D<><>0<>0<><>::
+bedroom.tscn::PackedScene::2387610064594371450::1792599316::0::1::::<><><>0<>0<><>::uid://d0vrghmeslx3h::::res://bedroom.gd<>uid://csqt7qbnujvwy::::res://VT323-Regular.ttf<>uid://vuhhkju4hrp3::::res://red.png<>uid://cshjniaqhum0o::::res://Add a heading (1).png<>uid://bpq7uselw6bkb::::res://scenes/Untitled107.png
+control.gd::GDScript::5305130338043393120::1792599316::0::1::::<>RefCounted<><>0<>0<><>::
+demoplayscreen.gd::GDScript::2377979259673755011::1793631422::0::1::::<>Node2D<><>0<>0<><>::
+demoplayscreen.tscn::PackedScene::7943831650571404001::1793631422::0::1::::<><><>0<>0<><>::uid://8458apne1c5p::::res://demoplayscreen.gd<>uid://dd45q5ly16qls::::res://IMG_6230.PNG<>uid://bpq7uselw6bkb::::res://scenes/Untitled107.png<>uid://csqt7qbnujvwy::::res://VT323-Regular.ttf
+depresurizationchamber.gd::GDScript::4372276105254892992::1792599316::0::1::::<>Node2D<><>0<>0<><>::
+depresurizationchamber.tscn::PackedScene::5892909559318984754::1792599316::0::1::::<><><>0<>0<><>::uid://csqt7qbnujvwy::::res://VT323-Regular.ttf<>uid://b3j70ppf8pl6o::::res://depresurizationchamber.gd<>uid://bpq7uselw6bkb::::res://scenes/Untitled107.png
+healthlab.gd::GDScript::6567117935591761793::1792599316::0::1::::<>Node2D<><>0<>0<><>::
+healthlab.tscn::PackedScene::5459274028421024977::1792599316::0::1::::<><><>0<>0<><>::uid://c0tfqcydcidqv::::res://healthlab.gd<>uid://csqt7qbnujvwy::::res://VT323-Regular.ttf<>uid://vuhhkju4hrp3::::res://red.png<>uid://cshjniaqhum0o::::res://Add a heading (1).png<>uid://bpq7uselw6bkb::::res://scenes/Untitled107.png
+IMG_6230.PNG::CompressedTexture2D::7431547213166391200::1792599316::1794734403::1::::<><><>0<>0<>704bd75cbea22244e73bd9136701daae<>res://.godot/imported/IMG_6230.PNG-903d79f6ef4efa99422f2d7bca7513db.ctex::
+livingroom.gd::GDScript::5887956099852895730::1792599316::0::1::::<>Node2D<><>0<>0<><>::
+livingroom.tscn::PackedScene::2943668887266528822::1792599316::0::1::::<><><>0<>0<><>::uid://csqt7qbnujvwy::::res://VT323-Regular.ttf<>uid://cp5f1n5lqfcvy::::res://livingroom.gd<>uid://bpq7uselw6bkb::::res://scenes/Untitled107.png<>uid://vuhhkju4hrp3::::res://red.png
+mobilitywing.gd::GDScript::3791451730763855730::1792599316::0::1::::<>Node2D<><>0<>0<><>::
+mobilitywing.tscn::PackedScene::4416051527301590286::1792599316::0::1::::<><><>0<>0<><>::uid://buauwkoc24m8i::::res://mobilitywing.gd<>uid://csqt7qbnujvwy::::res://VT323-Regular.ttf<>uid://bpq7uselw6bkb::::res://scenes/Untitled107.png
+red.png::CompressedTexture2D::1515691331071073830::1792599316::1794734410::1::::<><><>0<>0<>e43d89cb718a301401cca5172ddeb04a<>res://.godot/imported/red.png-13f6abb0e0c70056504666ed9c349d99.ctex::
+VT323-Regular.ttf::FontFile::6070482207739433664::1792599316::1794734403::1::::<><><>0<>0<>004d6317750820a359a87f764ea1837b<>res://.godot/imported/VT323-Regular.ttf-a909885e332eb2f927eda9bb4af05f00.fontdata::
+::res://scenes/::1794734404
+main_character.gd::GDScript::1477401246995116829::1792599316::0::1::::<>CharacterBody2D<><>0<>0<><>::
+Untitled107.png::CompressedTexture2D::3474262994105097233::1792599316::1794734404::1::::<><><>0<>0<>0c986854e0877c838fd78b1b50932429<>res://.godot/imported/Untitled107.png-2188784909361ba08bf008afe4e9592f.ctex::

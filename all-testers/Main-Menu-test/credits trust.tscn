@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://bikfn7v6pyo4x"]
+
+[ext_resource type="Texture2D" uid="uid://dncfornomma7b" path="res://Add a heading (1).png" id="1_0gn0t"]
+
+[node name="Node2D" type="Node2D" unique_id=2146879830]
+
+[node name="Label" type="Label" parent="." unique_id=1290879808]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="AddAHeading(1)" type="Sprite2D" parent="." unique_id=516898714]
+position = Vector2(625, 364)
+texture = ExtResource("1_0gn0t")

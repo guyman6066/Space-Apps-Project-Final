@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://68f7reig4ksc"
+path="res://.godot/imported/Spaceship Ambience for Sleep or Studying ASMR Space Travel Sounds.mp3-8d7470d204a81c94e27489a941b0175f.mp3str"
+
+[deps]
+
+source_file="res://music(Liam)/Spaceship Ambience for Sleep or Studying ASMR Space Travel Sounds.mp3"
+dest_files=["res://.godot/imported/Spaceship Ambience for Sleep or Studying ASMR Space Travel Sounds.mp3-8d7470d204a81c94e27489a941b0175f.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

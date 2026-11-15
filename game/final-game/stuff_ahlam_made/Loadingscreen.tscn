@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://dxmvo3nqh8fw4"]
+
+[ext_resource type="Script" uid="uid://dujkv4mqf5p48" path="res://stuff_ahlam_made/loadingscreen.gd" id="1_7tsuh"]
+[ext_resource type="FontFile" uid="uid://jvacbkqm6fpu" path="res://VT323-Regular.ttf" id="2_pul13"]
+[ext_resource type="Texture2D" uid="uid://dhv4fw4rmv31g" path="res://Untitled118_20261106151011.png" id="2_wtgst"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7tsuh"]
+bg_color = Color(0.4117647, 0.42745098, 0.627451, 1)
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pul13"]
+bg_color = Color(0.8039216, 0.32156864, 0.1882353, 1)
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+border_color = Color(1, 1, 1, 1)
+
+[node name="Node2D" type="Node2D" unique_id=931364646]
+script = ExtResource("1_7tsuh")
+
+[node name="Untitled11820261106151011" type="Sprite2D" parent="." unique_id=264289870]
+position = Vector2(577, 325.00003)
+scale = Vector2(0.43792838, 0.460114)
+texture = ExtResource("2_wtgst")
+
+[node name="ProgressBar" type="ProgressBar" parent="." unique_id=570933812]
+offset_left = 41.0
+offset_top = 572.0
+offset_right = 1108.0
+offset_bottom = 614.0
+theme_override_fonts/font = ExtResource("2_pul13")
+theme_override_font_sizes/font_size = 29
+theme_override_styles/background = SubResource("StyleBoxFlat_7tsuh")
+theme_override_styles/fill = SubResource("StyleBoxFlat_pul13")
+
+[node name="Label2" type="Label" parent="." unique_id=1710200536]
+offset_left = 43.0
+offset_top = 431.0
+offset_right = 503.0
+offset_bottom = 564.0
+theme_override_fonts/font = ExtResource("2_pul13")
+theme_override_font_sizes/font_size = 80
+text = "The Red Sands"
+vertical_alignment = 2
+
+[node name="Label3" type="Label" parent="." unique_id=1199671267]
+offset_left = 795.0
+offset_top = 431.0
+offset_right = 1255.0
+offset_bottom = 564.0
+theme_override_fonts/font = ExtResource("2_pul13")
+theme_override_font_sizes/font_size = 50
+text = "Loading game..."
+vertical_alignment = 2

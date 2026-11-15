@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://dge176pbcb0sf"]
+
+[ext_resource type="Script" uid="uid://mokido25rbs" path="res://stuff_ahlam_made/gameoverscreen.gd" id="1_s26dw"]
+[ext_resource type="FontFile" uid="uid://jvacbkqm6fpu" path="res://VT323-Regular.ttf" id="2_s26dw"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nbwhn"]
+bg_color = Color(0.6784314, 0.19607843, 0.18039216, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jpuf7"]
+bg_color = Color(0.09803922, 0.11372549, 0.40784314, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w7h24"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mkcmk"]
+bg_color = Color(0.8039216, 0.32156864, 0.1882353, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.9372549, 0.9411765, 0.8, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[node name="Node2D" type="Node2D" unique_id=893438426]
+script = ExtResource("1_s26dw")
+
+[node name="Label" type="Label" parent="." unique_id=217091152]
+offset_right = 1160.0
+offset_bottom = 656.0
+theme_override_fonts/font = ExtResource("2_s26dw")
+theme_override_font_sizes/font_size = 65
+theme_override_styles/normal = SubResource("StyleBoxFlat_nbwhn")
+text = "Game Over"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="retry" type="Button" parent="." unique_id=1571371684]
+offset_left = 471.0
+offset_top = 389.0
+offset_right = 687.0
+offset_bottom = 454.0
+theme_override_fonts/font = ExtResource("2_s26dw")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxFlat_jpuf7")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_w7h24")
+theme_override_styles/hover = SubResource("StyleBoxFlat_mkcmk")
+text = "Retry?"
+icon_alignment = 1
+
+[connection signal="pressed" from="retry" to="." method="_on_retry_pressed"]

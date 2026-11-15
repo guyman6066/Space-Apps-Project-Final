@@ -1,0 +1,104 @@
+[gd_scene format=3 uid="uid://dgh1m5c0wyg6m"]
+
+[ext_resource type="Script" uid="uid://dwmcly0pfm5h6" path="res://ui.gd" id="1_27fn8"]
+[ext_resource type="FontFile" uid="uid://b6bcmogyd2dc7" path="res://VT323-Regular.ttf" id="1_fyqef"]
+[ext_resource type="Texture2D" uid="uid://dj3t4lum7df2h" path="res://ButtonInterfaceNew.png" id="1_m6e0p"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_m6e0p"]
+texture = ExtResource("1_m6e0p")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 4.0
+region_rect = Rect2(546, 581, 1033, 619)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xq4r6"]
+texture = ExtResource("1_m6e0p")
+region_rect = Rect2(54, 1269, 879, 167)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_g6bb1"]
+texture = ExtResource("1_m6e0p")
+region_rect = Rect2(56, 1640, 867, 155)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wygr4"]
+texture = ExtResource("1_m6e0p")
+region_rect = Rect2(55, 1454, 879, 167)
+
+[node name="ui" type="Control" unique_id=1037148599]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_27fn8")
+
+[node name="Run_Over" type="ColorRect" parent="." unique_id=846448374]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.39215687)
+
+[node name="PanelContainer" type="PanelContainer" parent="Run_Over" unique_id=1142458808]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -177.5
+offset_top = -203.38889
+offset_right = 177.5
+offset_bottom = 203.38889
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_m6e0p")
+
+[node name="MarginContainer" type="MarginContainer" parent="Run_Over/PanelContainer" unique_id=53130069]
+layout_mode = 2
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 30
+theme_override_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Run_Over/PanelContainer/MarginContainer" unique_id=194167599]
+layout_mode = 2
+
+[node name="Run Over" type="Label" parent="Run_Over/PanelContainer/MarginContainer/VBoxContainer" unique_id=172619701]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_fyqef")
+theme_override_font_sizes/font_size = 55
+text = "Run Over"
+horizontal_alignment = 1
+
+[node name="Score" type="Label" parent="Run_Over/PanelContainer/MarginContainer/VBoxContainer" unique_id=1964367765]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_fyqef")
+theme_override_font_sizes/font_size = 41
+text = "Your Score:"
+horizontal_alignment = 1
+
+[node name="ScoreCount" type="Label" parent="Run_Over/PanelContainer/MarginContainer/VBoxContainer" unique_id=1576773131]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_fyqef")
+theme_override_font_sizes/font_size = 41
+horizontal_alignment = 1
+
+[node name="seperator" type="Control" parent="Run_Over/PanelContainer/MarginContainer/VBoxContainer" unique_id=874466036]
+custom_minimum_size = Vector2(0, 150)
+layout_mode = 2
+
+[node name="Main Menu" type="Button" parent="Run_Over/PanelContainer/MarginContainer/VBoxContainer" unique_id=206518522]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_fyqef")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxTexture_xq4r6")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_g6bb1")
+theme_override_styles/hover = SubResource("StyleBoxTexture_wygr4")
+text = "Main Menu"

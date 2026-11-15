@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://crffvlcxp5j6b"]
+
+[ext_resource type="Theme" uid="uid://dp1twp63mqe3c" path="res://default.tres" id="1_yv1hk"]
+[ext_resource type="Script" uid="uid://blavm1288xmrk" path="res://building_1.gd" id="2_1wfa1"]
+
+[node name="Control" type="Control" unique_id=472595023]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 1.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="building1" type="Button" parent="." unique_id=256432417]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.37239584
+anchor_top = 0.41203704
+anchor_right = 0.6015625
+anchor_bottom = 0.6111111
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_yv1hk")
+text = "building1"
+script = ExtResource("2_1wfa1")
+metadata/_edit_use_anchors_ = true

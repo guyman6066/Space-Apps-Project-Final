@@ -1,0 +1,461 @@
+[gd_scene format=3 uid="uid://bk70qayaa7eo3"]
+
+[ext_resource type="Texture2D" uid="uid://drsev3j764k8r" path="res://Untitled284_20260925150316.PNG" id="1_eiy7p"]
+[ext_resource type="Script" uid="uid://d2bveuqvi2cax" path="res://main_menu.gd" id="1_h7a2f"]
+[ext_resource type="Script" uid="uid://d0em88hmsdqw0" path="res://canvas_layer.gd" id="2_cqjrg"]
+[ext_resource type="FontFile" uid="uid://tdnebr4gco1e" path="res://VT323/VT323-Regular.ttf" id="2_h7a2f"]
+[ext_resource type="AudioStream" uid="uid://b5vdcb4fchtvh" path="res://It_s Been A Long Long Time - Harry James - Spotimate.app.mp3" id="4_qoqlk"]
+[ext_resource type="Script" uid="uid://b3jpjehqb84au" path="res://resolutuion.gd" id="5_7r1g0"]
+[ext_resource type="Script" uid="uid://dv0p4gw730do6" path="res://music_control.gd" id="5_iwfq2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nbwhn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jpuf7"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7r1g0"]
+bg_color = Color(0.15686275, 0.16862746, 0.3882353, 1)
+border_width_left = 11
+border_width_top = 11
+border_width_right = 11
+border_width_bottom = 11
+border_color = Color(0.6784314, 0.19607843, 0.18039216, 1)
+shadow_color = Color(1, 0, 0, 0.20392157)
+shadow_size = 27
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h7a2f"]
+bg_color = Color(0.6784314, 0.19607843, 0.18039216, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nbwhn"]
+bg_color = Color(0.8039216, 0.32156864, 0.1882353, 1)
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_w7h24"]
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_ans56"]
+color = Color(0.9372549, 0.9411765, 0.8, 1)
+grow_begin = -15.0
+grow_end = 15.0
+thickness = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_01lwa"]
+bg_color = Color(0.4117647, 0.42745098, 0.627451, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j8ted"]
+bg_color = Color(0.9019608, 0.3137255, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xq4r6"]
+bg_color = Color(0.15686275, 0.16862746, 0.3882353, 1)
+border_width_left = 11
+border_width_top = 11
+border_width_right = 11
+border_width_bottom = 11
+border_color = Color(0.6784314, 0.19607843, 0.18039216, 1)
+shadow_color = Color(1, 0, 0, 0.20392157)
+shadow_size = 27
+
+[node name="Control" type="Control" unique_id=263149186]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_h7a2f")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=508339852]
+script = ExtResource("2_cqjrg")
+
+[node name="MAIN MENU" type="Sprite2D" parent="." unique_id=2013491846]
+position = Vector2(576, 325.24997)
+scale = Vector2(0.14999999, 0.14988425)
+texture = ExtResource("1_eiy7p")
+
+[node name="TITLE" type="Label" parent="MAIN MENU" unique_id=1167657209]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.081
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -5706.667
+offset_top = -2159.65
+offset_right = -1966.6669
+offset_bottom = -2111.0002
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_h7a2f")
+theme_override_font_sizes/font_size = 620
+text = " THE 
+RED SANDS"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="Main Buttons" type="VBoxContainer" parent="." unique_id=2135838140]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -120.5
+offset_top = -271.0
+offset_right = 120.5
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="ABC2" type="Button" parent="Main Buttons" unique_id=1434175853]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0.012617188, 0.012617188, 0.012617188, 0)
+theme_override_fonts/font = ExtResource("2_h7a2f")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_nbwhn")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_jpuf7")
+text = "NEW GAME"
+
+[node name="ABC5" type="Button" parent="Main Buttons" unique_id=1354195109]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0.012617188, 0.012617188, 0.012617188, 0)
+theme_override_fonts/font = ExtResource("2_h7a2f")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_nbwhn")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_jpuf7")
+text = "LOAD GAME"
+
+[node name="ABC3" type="Button" parent="Main Buttons" unique_id=2004798856]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0.012617188, 0.012617188, 0.012617188, 0)
+theme_override_fonts/font = ExtResource("2_h7a2f")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_nbwhn")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_jpuf7")
+text = "SETTINGS"
+
+[node name="ABC4" type="Button" parent="Main Buttons" unique_id=1730004]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0.012617188, 0.012617188, 0.012617188, 0)
+theme_override_fonts/font = ExtResource("2_h7a2f")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_nbwhn")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_jpuf7")
+text = "CREDITS"
+
+[node name="ABC6" type="Button" parent="Main Buttons" unique_id=19425245]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0.012617188, 0.012617188, 0.012617188, 0)
+theme_override_fonts/font = ExtResource("2_h7a2f")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_nbwhn")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_jpuf7")
+text = "TUTORIAL"
+
+[node name="ItSBeenALongLongTimeHarryJamesSpotimate_app" type="AudioStreamPlayer" parent="." unique_id=1454721447]
+stream = ExtResource("4_qoqlk")
+autoplay = true
+bus = &"Music"
+
+[node name="Settings" type="Panel" parent="." unique_id=579605207]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.71900004
+anchor_right = 0.5
+anchor_bottom = 0.71900004
+offset_left = -443.0
+offset_top = -151.91202
+offset_right = 447.0
+offset_bottom = 152.08798
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_7r1g0")
+
+[node name="Label" type="Label" parent="Settings" unique_id=2128066096]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 11.0
+offset_top = -141.5
+offset_right = -11.0
+offset_bottom = -89.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 0.98, 0.994, 1)
+theme_override_colors/font_shadow_color = Color(2.8363566, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_fonts/font = ExtResource("2_h7a2f")
+theme_override_font_sizes/font_size = 51
+theme_override_styles/normal = SubResource("StyleBoxFlat_h7a2f")
+text = "SETTINGS"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="Label2" type="Label" parent="Settings" unique_id=785336380]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 122.0
+offset_right = 400.0
+offset_bottom = 185.0
+theme_override_fonts/font = ExtResource("2_h7a2f")
+theme_override_font_sizes/font_size = 50
+text = "Music Volume"
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="Settings" unique_id=2050894517]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 71.0
+offset_right = 400.0
+offset_bottom = 134.0
+theme_override_fonts/font = ExtResource("2_h7a2f")
+theme_override_font_sizes/font_size = 50
+text = "Resolution"
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="Settings" unique_id=293797575]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 172.0
+offset_right = 400.0
+offset_bottom = 235.0
+theme_override_fonts/font = ExtResource("2_h7a2f")
+theme_override_font_sizes/font_size = 50
+text = "Sound Effects"
+vertical_alignment = 1
+
+[node name="Back" type="Button" parent="Settings" unique_id=746301945]
+layout_mode = 0
+offset_left = 364.0
+offset_top = 232.0
+offset_right = 504.0
+offset_bottom = 282.0
+theme_override_colors/font_outline_color = Color(0.012617188, 0.012617188, 0.012617188, 0)
+theme_override_fonts/font = ExtResource("2_h7a2f")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_nbwhn")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_jpuf7")
+text = "BACK"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Settings" unique_id=123105048]
+layout_mode = 0
+offset_left = 358.0
+offset_top = 88.0
+offset_right = 398.0
+offset_bottom = 128.0
+
+[node name="Resolutuion" type="OptionButton" parent="Settings" unique_id=1304437823]
+layout_mode = 0
+offset_left = 358.0
+offset_top = 88.0
+offset_right = 841.0
+offset_bottom = 123.0
+theme_override_colors/font_color = Color(0.94, 1, 0.975, 1)
+theme_override_colors/icon_normal_color = Color(1, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0.01, 0.01, 0.01, 1)
+theme_override_fonts/font = ExtResource("2_h7a2f")
+theme_override_font_sizes/font_size = 34
+theme_override_styles/normal = SubResource("StyleBoxFlat_nbwhn")
+alignment = 1
+icon_alignment = 1
+selected = 0
+item_count = 4
+popup/item_0/text = "100%"
+popup/item_0/id = 0
+popup/item_1/text = "75%"
+popup/item_1/id = 1
+popup/item_2/text = "50%"
+popup/item_2/id = 2
+popup/item_3/text = "25%"
+popup/item_3/id = 3
+script = ExtResource("5_7r1g0")
+
+[node name="Music Control" type="HSlider" parent="Settings" unique_id=1381571698]
+layout_mode = 0
+offset_left = 355.0
+offset_top = 116.0
+offset_right = 822.0
+offset_bottom = 195.0
+theme_override_icons/tick = SubResource("CanvasTexture_w7h24")
+theme_override_styles/slider = SubResource("StyleBoxLine_ans56")
+theme_override_styles/grabber_area = SubResource("StyleBoxFlat_01lwa")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxFlat_j8ted")
+max_value = 1.0
+step = 0.005
+value = 1.0
+script = ExtResource("5_iwfq2")
+bus_name = "Music"
+
+[node name="Sound Effects" type="HSlider" parent="Settings" unique_id=1246301458]
+layout_mode = 0
+offset_left = 356.0
+offset_top = 166.0
+offset_right = 823.0
+offset_bottom = 245.0
+theme_override_icons/tick = SubResource("CanvasTexture_w7h24")
+theme_override_styles/slider = SubResource("StyleBoxLine_ans56")
+theme_override_styles/grabber_area = SubResource("StyleBoxFlat_01lwa")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxFlat_j8ted")
+max_value = 1.0
+step = 0.005
+
+[node name="credits" type="Panel" parent="." unique_id=1520369226]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.71900004
+anchor_right = 0.5
+anchor_bottom = 0.71900004
+offset_left = -500.0
+offset_top = -399.91202
+offset_right = 505.0
+offset_bottom = 141.08798
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_7r1g0")
+
+[node name="Label" type="Label" parent="credits" unique_id=1277916426]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 11.0
+offset_top = -265.5
+offset_right = -11.0
+offset_bottom = -213.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 0.98, 0.994, 1)
+theme_override_colors/font_shadow_color = Color(2.8363566, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_fonts/font = ExtResource("2_h7a2f")
+theme_override_font_sizes/font_size = 51
+theme_override_styles/normal = SubResource("StyleBoxFlat_h7a2f")
+text = "CREDITS"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="Label4" type="Label" parent="credits" unique_id=1024446748]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 71.0
+offset_right = 949.0
+offset_bottom = 227.0
+theme_override_fonts/font = ExtResource("2_h7a2f")
+theme_override_font_sizes/font_size = 45
+text = "Developers: Aaryesh Mukherjee, Ahlam 
+Parambath, Liam Dysilva 
+Graphics Artist: Sanah Leo
+Music Credits:
+hhf
+df
+ef
+aef"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Back#2" type="Button" parent="credits" unique_id=1010035067]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -70.0
+offset_top = -72.0
+offset_right = 70.0
+offset_bottom = -22.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_outline_color = Color(0.012617188, 0.012617188, 0.012617188, 0)
+theme_override_fonts/font = ExtResource("2_h7a2f")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_nbwhn")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_jpuf7")
+text = "BACK"
+
+[node name="Panel" type="Panel" parent="." unique_id=55594046]
+custom_minimum_size = Vector2(500, 600)
+layout_mode = 0
+anchor_left = 0.2829861
+anchor_top = 0.037037037
+anchor_right = 0.7170139
+anchor_bottom = 0.962963
+theme_override_styles/panel = SubResource("StyleBoxFlat_xq4r6")
+metadata/_edit_use_anchors_ = true
+
+[node name="TutorialMenu" type="MarginContainer" parent="Panel" unique_id=666855614]
+custom_minimum_size = Vector2(500, 600)
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+metadata/_edit_use_anchors_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/TutorialMenu" unique_id=68900182]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/TutorialMenu/VBoxContainer" unique_id=651670746]
+texture_filter = 1
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("2_h7a2f")
+theme_override_font_sizes/font_size = 55
+text = "TUTORIAL"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Panel/TutorialMenu/VBoxContainer" unique_id=1290364151]
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="Label" type="Label" parent="Panel/TutorialMenu/VBoxContainer/ScrollContainer" unique_id=460343345]
+texture_filter = 1
+custom_minimum_size = Vector2(425, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("2_h7a2f")
+theme_override_font_sizes/font_size = 22
+text = "Hey there explorer! I know tutorials can get long, boring and monotonous sometimes, so here, I'm just going to include a short text document, that you should read to understand what your mission is, and what the controls for this game are. 
+
+Firstly, the controls, aka the basic stuff you need to know to interface with this game. To move one of the four characters you will be controlling throughout this game, you have to click on the character you want to move to select them, and then click on a spot on the screen to move them there. To interact with an object, click on it when a character is near it, and the menu for interfacing with that object will pop up on your screen, through which you can decide what to do with it. That's about it for the controls, simple, right?
+
+Secondly, the more important part, what your actual goal is in this game: you are a group of four astronauts sent to Mars to conduct experiments and determine the inhabitability of it, due to plans of setting up a habitat on the elusive Red Planet in the near future by world leaders and leading scientists back on Earth. Your job is to collect samples, analyze them, and submit research reports back to Earth, and you will receive a grade for how well you have performed your job at the end of your mission. You have to be efficient in managing characters' food, water, sleep and oxygen, as well as look out for storms that could damage your equipment. 
+
+Well, that is all I can tell you for now; you have to find out the rest yourself through trial and error. Good luck and have fun!"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Back2" type="Button" parent="Panel/TutorialMenu/VBoxContainer" unique_id=1618331704]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0.012617188, 0.012617188, 0.012617188, 0)
+theme_override_fonts/font = ExtResource("2_h7a2f")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_nbwhn")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_jpuf7")
+text = "BACK"
+
+[connection signal="pressed" from="Main Buttons/ABC2" to="." method="_on_newgame_pressed"]
+[connection signal="pressed" from="Main Buttons/ABC5" to="." method="_on_Loadgame_pressed"]
+[connection signal="pressed" from="Main Buttons/ABC3" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="Main Buttons/ABC4" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="Main Buttons/ABC6" to="." method="_on_abc_6_pressed"]
+[connection signal="pressed" from="Settings/Back" to="." method="_on_back_pressed"]
+[connection signal="item_selected" from="Settings/Resolutuion" to="." method="_on_resolutuion_item_selected"]
+[connection signal="value_changed" from="Settings/Music Control" to="Settings/Music Control" method="_on_value_changed"]
+[connection signal="pressed" from="credits/Back#2" to="." method="_on_back_2_pressed"]
+[connection signal="pressed" from="Panel/TutorialMenu/VBoxContainer/Back2" to="." method="_on_back_pressed"]

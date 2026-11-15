@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://b3j10ueffmli0"]
+
+[ext_resource type="Script" uid="uid://dyob2xv7nf4vk" path="res://Indicator/indicator.gd" id="1_sgrw0"]
+[ext_resource type="Texture2D" uid="uid://dw0460kabhsrg" path="res://Indicator/texture_green.png" id="2_v3wkg"]
+[ext_resource type="Texture2D" uid="uid://bhl0ewi2kgfre" path="res://Indicator/texture_blue.png" id="3_jtkj0"]
+[ext_resource type="Texture2D" uid="uid://kq4oup8es3n" path="res://Indicator/texture_red.png" id="4_at1u7"]
+
+[node name="Node2D" type="Node2D" unique_id=40196328]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=217390892]
+script = ExtResource("1_sgrw0")
+texture_green = ExtResource("2_v3wkg")
+texture_blue = ExtResource("3_jtkj0")
+texture_red = ExtResource("4_at1u7")
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=172739507]
+
+[node name="Timer" type="Timer" parent="CanvasLayer" unique_id=71858913]

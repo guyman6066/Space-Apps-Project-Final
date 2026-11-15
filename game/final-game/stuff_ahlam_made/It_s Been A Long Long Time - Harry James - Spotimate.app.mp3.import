@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b5vdcb4fchtvh"
+path="res://.godot/imported/It_s Been A Long Long Time - Harry James - Spotimate.app.mp3-3f3a29ae37b0c1a6551c141e004c36d0.mp3str"
+
+[deps]
+
+source_file="res://stuff_ahlam_made/It_s Been A Long Long Time - Harry James - Spotimate.app.mp3"
+dest_files=["res://.godot/imported/It_s Been A Long Long Time - Harry James - Spotimate.app.mp3-3f3a29ae37b0c1a6551c141e004c36d0.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

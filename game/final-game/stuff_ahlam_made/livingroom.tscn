@@ -1,0 +1,545 @@
+[gd_scene format=3 uid="uid://bh662c0s1tnri"]
+
+[ext_resource type="FontFile" uid="uid://jvacbkqm6fpu" path="res://VT323-Regular.ttf" id="1_eef5v"]
+[ext_resource type="Script" uid="uid://byehtnbnhn521" path="res://stuff_ahlam_made/livingroom.gd" id="1_kqm4t"]
+[ext_resource type="PackedScene" uid="uid://b835f7a51guk7" path="res://main.tscn" id="4_d746y"]
+[ext_resource type="Texture2D" uid="uid://cucjqsrc44wjf" path="res://pathfinding(Liam)/assets/red.png" id="4_r0hta"]
+[ext_resource type="AudioStream" uid="uid://cvpv163w7uyam" path="res://music(Liam)/Spaceship Corridor Ambience 30 MIN Sci-Fi Drone & White Noise.mp3" id="5_7w8vq"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kqm4t"]
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ch8k5"]
+bg_color = Color(0.46229059, 0.46229064, 0.4622904, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r0hta"]
+bg_color = Color(0.15686275, 0.16862746, 0.3882353, 1)
+border_width_left = 9
+border_width_top = 9
+border_width_right = 7
+border_width_bottom = 7
+corner_radius_top_left = 60
+corner_radius_top_right = 60
+corner_radius_bottom_right = 60
+corner_radius_bottom_left = 60
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a2ojy"]
+bg_color = Color(0.6784314, 0.19607843, 0.18039216, 1)
+border_width_left = 9
+border_width_top = 9
+border_width_right = 7
+border_width_bottom = 7
+border_color = Color(0.9372549, 0.9411765, 0.8, 1)
+corner_radius_top_left = 60
+corner_radius_top_right = 60
+corner_radius_bottom_right = 60
+corner_radius_bottom_left = 60
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g6g34"]
+bg_color = Color(0.11372549, 0.11764706, 0.20784314, 1)
+border_width_left = 9
+border_width_top = 9
+border_width_right = 7
+border_width_bottom = 7
+border_color = Color(0.76862746, 0.7529412, 0.7294118, 1)
+corner_radius_top_left = 60
+corner_radius_top_right = 60
+corner_radius_bottom_right = 60
+corner_radius_bottom_left = 60
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ty0o1"]
+bg_color = Color(0.6784314, 0.19607843, 0.18039216, 1)
+border_width_left = 9
+border_width_top = 9
+border_width_right = 7
+border_width_bottom = 7
+border_color = Color(0.9372549, 0.9411765, 0.8, 1)
+corner_radius_top_left = 60
+corner_radius_top_right = 60
+corner_radius_bottom_right = 60
+corner_radius_bottom_left = 60
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fiin6"]
+bg_color = Color(0.11372549, 0.11764706, 0.20784314, 1)
+border_width_left = 9
+border_width_top = 9
+border_width_right = 7
+border_width_bottom = 7
+border_color = Color(0.76862746, 0.7529412, 0.7294118, 1)
+corner_radius_top_left = 60
+corner_radius_top_right = 60
+corner_radius_bottom_right = 60
+corner_radius_bottom_left = 60
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jpuf7"]
+bg_color = Color(0.09516101, 0.11585898, 0.26548764, 0.6509804)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3aesx"]
+bg_color = Color(0.6784314, 0.19607843, 0.18039216, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.11372549, 0.11764706, 0.20784314, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_snob0"]
+bg_color = Color(0.8039216, 0.32156864, 0.1882353, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uiv7a"]
+bg_color = Color(0.4117647, 0.42745098, 0.627451, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nbwhn"]
+bg_color = Color(0.09803922, 0.11372549, 0.40784314, 1)
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+border_color = Color(0.9372549, 0.9411765, 0.8, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w7h24"]
+bg_color = Color(0.11372549, 0.11764706, 0.20784314, 1)
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+border_color = Color(0.9372549, 0.9411765, 0.8, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mkcmk"]
+bg_color = Color(0.15686275, 0.16862746, 0.3882353, 1)
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+border_color = Color(0.9372549, 0.9411765, 0.8, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l4qq8"]
+bg_color = Color(0, 0, 0, 0.7921569)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jgx6l"]
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.32172796, 0.32172796, 0.32172796, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mkcmk"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6wodj"]
+bg_color = Color(0.15686275, 0.16862746, 0.3882353, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.11372549, 0.11764706, 0.20784314, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nbwhn"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s1urj"]
+bg_color = Color(0.09803922, 0.11372549, 0.40784314, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jpuf7"]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_ch8k5"]
+vertices = PackedVector2Array(363.02344, 141.97656, 758.9922, 138.00781, 756, 529.9922, 532.02344, 381.0078, 529.02344, 528, 367.96875, 380)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3), PackedInt32Array(2, 4, 3), PackedInt32Array(0, 3, 5)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(760, 137, 757, 531, 528, 529, 531, 382, 367, 381, 362, 141)])
+agent_radius = 1.0
+
+[node name="Node2D" type="Node2D" unique_id=254718884]
+script = ExtResource("1_kqm4t")
+
+[node name="Label" type="Label" parent="." unique_id=1093362679]
+offset_left = 59.0
+offset_top = 72.0
+offset_right = 1067.0
+offset_bottom = 582.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_kqm4t")
+
+[node name="Label2" type="Label" parent="." unique_id=539392484]
+offset_left = 64.0
+offset_top = 356.0
+offset_right = 1063.0
+offset_bottom = 577.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_ch8k5")
+
+[node name="Left" type="Button" parent="." unique_id=1017685669]
+offset_left = 15.0
+offset_top = 264.0
+offset_right = 124.0
+offset_bottom = 371.0
+theme_override_fonts/font = ExtResource("1_eef5v")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_r0hta")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a2ojy")
+theme_override_styles/hover = SubResource("StyleBoxFlat_g6g34")
+text = "←
+"
+metadata/_edit_use_anchors_ = true
+
+[node name="Right" type="Button" parent="." unique_id=918174124]
+anchors_preset = -1
+anchor_top = -2.4720001
+anchor_bottom = -2.4720001
+offset_left = 1008.0
+offset_top = 280.0
+offset_right = 1117.0
+offset_bottom = 387.0
+theme_override_fonts/font = ExtResource("1_eef5v")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_r0hta")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ty0o1")
+theme_override_styles/hover = SubResource("StyleBoxFlat_fiin6")
+text = "→"
+
+[node name="Label4" type="Label" parent="." unique_id=1766047204]
+offset_left = 857.0
+offset_top = 76.0
+offset_right = 1065.0
+offset_bottom = 126.0
+theme_override_colors/font_shadow_color = Color(0.12812936, 0.16308072, 0.3627885, 0)
+theme_override_constants/shadow_offset_x = 5
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 8
+theme_override_constants/shadow_outline_size = 12
+theme_override_fonts/font = ExtResource("1_eef5v")
+theme_override_font_sizes/font_size = 45
+theme_override_styles/normal = SubResource("StyleBoxFlat_jpuf7")
+text = "Living Room"
+horizontal_alignment = 1
+
+[node name="Main" parent="." unique_id=118940626 instance=ExtResource("4_d746y")]
+offset_left = 221.0
+offset_top = 298.0
+offset_right = 221.0
+offset_bottom = 298.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Close" type="Button" parent="." unique_id=516465452]
+offset_left = 39.0
+offset_top = 53.0
+offset_right = 219.0
+offset_bottom = 111.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_eef5v")
+theme_override_font_sizes/font_size = 47
+theme_override_styles/normal = SubResource("StyleBoxFlat_3aesx")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_snob0")
+theme_override_styles/hover = SubResource("StyleBoxFlat_uiv7a")
+text = "Go back?"
+metadata/_edit_use_anchors_ = true
+
+[node name="OFF" type="Sprite2D" parent="." unique_id=1888777330]
+position = Vector2(994, 30.75)
+scale = Vector2(0.33333334, 0.22121213)
+region_enabled = true
+region_rect = Rect2(47, 216, 624, 165)
+
+[node name="ON" type="Sprite2D" parent="." unique_id=2047128732]
+position = Vector2(992.5, 34.5)
+scale = Vector2(0.34400007, 0.24848485)
+region_enabled = true
+region_rect = Rect2(45, 31, 625, 165)
+
+[node name="washroom" type="Button" parent="." unique_id=426044070]
+offset_left = 818.0
+offset_top = 186.0
+offset_right = 1001.0
+offset_bottom = 502.0
+theme_override_fonts/font = ExtResource("1_eef5v")
+theme_override_font_sizes/font_size = 40
+text = "Washroom"
+
+[node name="Red" type="Sprite2D" parent="." unique_id=1261397868]
+visible = false
+position = Vector2(778, 284)
+scale = Vector2(0.07915448, 0.08270264)
+texture = ExtResource("4_r0hta")
+
+[node name="washroomcountdown" type="Label" parent="." unique_id=623611720]
+offset_left = 823.0
+offset_top = 148.0
+offset_right = 995.0
+offset_bottom = 183.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_eef5v")
+theme_override_font_sizes/font_size = 25
+
+[node name="workingbench" type="Button" parent="." unique_id=397740609]
+offset_left = 111.0
+offset_top = 416.0
+offset_right = 493.0
+offset_bottom = 553.0
+theme_override_fonts/font = ExtResource("1_eef5v")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_nbwhn")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_w7h24")
+theme_override_styles/hover = SubResource("StyleBoxFlat_mkcmk")
+text = "Working Station"
+
+[node name="bg" type="Label" parent="." unique_id=874731490]
+visible = false
+offset_right = 1152.0
+offset_bottom = 648.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_l4qq8")
+
+[node name="testingspace" type="Label" parent="." unique_id=340042671]
+visible = false
+offset_left = 117.0
+offset_top = 98.0
+offset_right = 1019.0
+offset_bottom = 551.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_jgx6l")
+
+[node name="Close2" type="Button" parent="." unique_id=312290432]
+visible = false
+offset_left = 51.0
+offset_top = 63.0
+offset_right = 231.0
+offset_bottom = 121.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_eef5v")
+theme_override_font_sizes/font_size = 47
+theme_override_styles/normal = SubResource("StyleBoxFlat_3aesx")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_snob0")
+theme_override_styles/hover = SubResource("StyleBoxFlat_uiv7a")
+text = "Return?"
+metadata/_edit_use_anchors_ = true
+
+[node name="test" type="Button" parent="." unique_id=1959708569]
+offset_left = 338.0
+offset_top = 448.0
+offset_right = 811.0
+offset_bottom = 520.0
+theme_override_fonts/font = ExtResource("1_eef5v")
+theme_override_font_sizes/font_size = 34
+text = "Test?"
+
+[node name="select" type="Label" parent="." unique_id=1202395548]
+visible = false
+offset_left = 132.0
+offset_top = 114.0
+offset_right = 966.0
+offset_bottom = 199.0
+theme_override_fonts/font = ExtResource("1_eef5v")
+theme_override_font_sizes/font_size = 40
+text = "Select Test tube to analyse"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="Panel2" type="Panel" parent="." unique_id=1221583925]
+visible = false
+offset_left = 135.0
+offset_top = 125.0
+offset_right = 1002.0
+offset_bottom = 528.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_mkcmk")
+
+[node name="ble" type="Button" parent="Panel2" unique_id=353229050]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 104.0
+offset_right = 274.0
+offset_bottom = 388.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_6wodj")
+
+[node name="blu" type="Button" parent="Panel2" unique_id=187945380]
+layout_mode = 0
+offset_left = 313.0
+offset_top = 104.0
+offset_right = 567.0
+offset_bottom = 388.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_6wodj")
+
+[node name="soil" type="Button" parent="Panel2" unique_id=68180921]
+layout_mode = 0
+offset_left = 601.0
+offset_top = 103.0
+offset_right = 854.0
+offset_bottom = 387.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_eef5v")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_6wodj")
+text = "Test Soil samples"
+
+[node name="expirement" type="Label" parent="Panel2" unique_id=1885757094]
+layout_mode = 0
+offset_left = 66.0
+offset_top = -19.0
+offset_right = 770.0
+offset_bottom = 66.0
+theme_override_fonts/font = ExtResource("1_eef5v")
+theme_override_font_sizes/font_size = 40
+text = "Which expirement do you wanna try today?"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="Panel" type="Panel" parent="." unique_id=79864047]
+visible = false
+offset_left = 141.0
+offset_top = 120.0
+offset_right = 996.0
+offset_bottom = 518.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_nbwhn")
+
+[node name="sample1" type="Label" parent="Panel" unique_id=748148551]
+layout_mode = 0
+offset_left = -8.0
+offset_top = 17.0
+offset_right = 846.0
+offset_bottom = 413.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_eef5v")
+theme_override_font_sizes/font_size = 35
+text = "Sample Type: JSC Mars-1 and JSC Mars-1A (Mars Soil Stimulant)
+Particle size: <1mm
+Contains: Palagonitic tephra, glassy volcanic ash
+Mined from:  Pu'u Nene Cinder Cone, Hawaii
+
+FURTHER DATA = 
+Samples PH-1 to PH-4 showcase most similarity to regoliath.
+Tests show that the maximum compressive and flexural 
+strength of the 'martian' geopolymer is comparable to that 
+of common clay bricks."
+vertical_alignment = 1
+
+[node name="sample2" type="Label" parent="Panel" unique_id=2080230967]
+layout_mode = 0
+offset_left = -8.0
+offset_top = 26.0
+offset_right = 858.0
+offset_bottom = 403.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_eef5v")
+theme_override_font_sizes/font_size = 35
+text = "Sample Type: Mojave Mars Simulant (MMS)
+Particle size:  1 µm up to 1,000 µm 
+Contains: Basalt 
+Mined from:  Boron, California, Western Mojave Desert
+
+FURTHER DATA = 
+2 types, MMS Sand and MMS Dust.
+It was revised to make MMS-2, produced by The Martian Garden
+in aims for a closer match. (0.3 µm  to 0.18 µm)
+Performed poorly due to hygroscopic tendencies."
+vertical_alignment = 1
+
+[node name="sample3" type="Label" parent="Panel" unique_id=1857671017]
+layout_mode = 0
+offset_left = -8.0
+offset_top = 26.0
+offset_right = 855.0
+offset_bottom = 403.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_eef5v")
+theme_override_font_sizes/font_size = 35
+text = "Sample Type: Mars Global Simulant (MGS-1)
+Particle size: ~90 µm.
+Contains: Plagioclase-rich components, Pyroxene, etc.
+Mined from: Synthetic Mineral (Man-made)
+
+FURTHER DATA = 
+Based on the Rocknest soil in Gale crater on Mars that 
+has been analyzed extensively by the NASA Curiosity rover.
+Devoloped by EXOLITH LAB at the University of Central 
+Florida."
+vertical_alignment = 1
+
+[node name="note" type="Label" parent="." unique_id=1875502267]
+offset_left = 635.0
+offset_top = 584.0
+offset_right = 1152.0
+offset_bottom = 623.0
+theme_override_fonts/font = ExtResource("1_eef5v")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_s1urj")
+text = "To view once more, check logbook..."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HScrollBar" type="HScrollBar" parent="." unique_id=1422981034]
+visible = false
+offset_left = 136.0
+offset_top = 171.0
+offset_right = 999.0
+offset_bottom = 435.0
+theme_override_styles/scroll = SubResource("StyleBoxEmpty_jpuf7")
+
+[node name="Sample1" type="Button" parent="HScrollBar" unique_id=463610692]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 37.0
+offset_right = 140.0
+offset_bottom = 159.0
+
+[node name="Sample2" type="Button" parent="HScrollBar" unique_id=88732561]
+layout_mode = 0
+offset_left = 163.0
+offset_top = 38.0
+offset_right = 280.0
+offset_bottom = 160.0
+
+[node name="Sample3" type="Button" parent="HScrollBar" unique_id=2090937010]
+layout_mode = 0
+offset_left = 299.0
+offset_top = 38.0
+offset_right = 416.0
+offset_bottom = 160.0
+
+[node name="Sample4" type="Button" parent="HScrollBar" unique_id=847727537]
+layout_mode = 0
+offset_left = 439.0
+offset_top = 39.0
+offset_right = 556.0
+offset_bottom = 161.0
+
+[node name="Sample5" type="Button" parent="HScrollBar" unique_id=1162344701]
+layout_mode = 0
+offset_left = 579.0
+offset_top = 40.0
+offset_right = 696.0
+offset_bottom = 162.0
+
+[node name="Sample6" type="Button" parent="HScrollBar" unique_id=1756190831]
+layout_mode = 0
+offset_left = 719.0
+offset_top = 41.0
+offset_right = 836.0
+offset_bottom = 163.0
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="." unique_id=1344036050]
+position = Vector2(20, -12)
+navigation_polygon = SubResource("NavigationPolygon_ch8k5")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1929947511]
+stream = ExtResource("5_7w8vq")
+volume_db = 5.0
+
+[connection signal="pressed" from="Left" to="." method="_on_left_pressed"]
+[connection signal="pressed" from="Right" to="." method="_on_right_pressed"]
+[connection signal="pressed" from="Close" to="." method="_on_close_pressed"]
+[connection signal="pressed" from="washroom" to="." method="_on_washroom_pressed"]
+[connection signal="pressed" from="workingbench" to="." method="_on_workingbench_pressed"]
+[connection signal="pressed" from="Close2" to="." method="_on_close_2_pressed"]
+[connection signal="pressed" from="test" to="." method="_on_test_pressed"]
+[connection signal="pressed" from="Panel2/soil" to="." method="_on_soil_pressed"]

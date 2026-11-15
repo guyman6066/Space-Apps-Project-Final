@@ -1,0 +1,230 @@
+[gd_scene format=3 uid="uid://dlgb0nfm2c8gr"]
+
+[ext_resource type="Script" uid="uid://8458apne1c5p" path="res://demoplayscreen.gd" id="1_by05u"]
+[ext_resource type="Texture2D" uid="uid://dd45q5ly16qls" path="res://IMG_6230.PNG" id="2_6b3gq"]
+[ext_resource type="Texture2D" uid="uid://bpq7uselw6bkb" path="res://scenes/Untitled107.png" id="3_6b3gq"]
+[ext_resource type="FontFile" uid="uid://csqt7qbnujvwy" path="res://VT323-Regular.ttf" id="4_x268l"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nbwhn"]
+bg_color = Color(0.70980394, 0.38431373, 0.23921569, 0.84313726)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nbwhn"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i3cmp"]
+bg_color = Color(0.24313726, 0.22352941, 0.47843137, 0.58431375)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m6ubl"]
+bg_color = Color(0.23921569, 0.23921569, 0.23921569, 0.68235296)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x268l"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sfkwg"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x268l"]
+bg_color = Color(0.9323834, 0.832961, 0.7659049, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.28724667, 0.20283943, 0.13817617, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sfkwg"]
+bg_color = Color(0.6784314, 0.19607843, 0.18039216, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.11372549, 0.11764706, 0.20784314, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ji8up"]
+bg_color = Color(0.8039216, 0.32156864, 0.1882353, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l3ul1"]
+bg_color = Color(0.4117647, 0.42745098, 0.627451, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jpuf7"]
+bg_color = Color(0.09803922, 0.11372549, 0.40784314, 1)
+
+[node name="Node2D" type="Node2D" unique_id=1695561881]
+script = ExtResource("1_by05u")
+
+[node name="Label" type="Label" parent="." unique_id=303641594]
+offset_right = 1152.0
+offset_bottom = 648.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_nbwhn")
+
+[node name="Button" type="Button" parent="." unique_id=641625102]
+custom_minimum_size = Vector2(-100, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 768.0
+offset_top = 186.0
+offset_right = 966.0
+offset_bottom = 498.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_nbwhn")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_i3cmp")
+theme_override_styles/hover = SubResource("StyleBoxFlat_m6ubl")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_x268l")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_sfkwg")
+icon = ExtResource("2_6b3gq")
+expand_icon = true
+
+[node name="OFF" type="Sprite2D" parent="." unique_id=1015560277]
+position = Vector2(1015.5, 29.25)
+scale = Vector2(0.2644231, 0.20303029)
+texture = ExtResource("3_6b3gq")
+region_enabled = true
+region_rect = Rect2(47, 216, 624, 165)
+
+[node name="ON" type="Sprite2D" parent="." unique_id=694447590]
+position = Vector2(1015, 31)
+scale = Vector2(0.2720001, 0.20606063)
+texture = ExtResource("3_6b3gq")
+region_enabled = true
+region_rect = Rect2(45, 31, 625, 165)
+
+[node name="Dig" type="Button" parent="." unique_id=132304474]
+offset_left = 1012.0
+offset_top = 442.0
+offset_right = 1136.0
+offset_bottom = 546.0
+
+[node name="Label2" type="Label" parent="." unique_id=1886614271]
+offset_left = 71.0
+offset_top = 77.0
+offset_right = 1079.0
+offset_bottom = 587.0
+theme_override_fonts/font = ExtResource("4_x268l")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_x268l")
+
+[node name="Close" type="Button" parent="." unique_id=2126404879]
+offset_left = 51.0
+offset_top = 58.0
+offset_right = 231.0
+offset_bottom = 116.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("4_x268l")
+theme_override_font_sizes/font_size = 47
+theme_override_styles/normal = SubResource("StyleBoxFlat_sfkwg")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ji8up")
+theme_override_styles/hover = SubResource("StyleBoxFlat_l3ul1")
+text = "Go back?"
+
+[node name="test" type="Button" parent="." unique_id=544078822]
+visible = false
+offset_left = 328.0
+offset_top = 333.0
+offset_right = 801.0
+offset_bottom = 405.0
+theme_override_fonts/font = ExtResource("4_x268l")
+theme_override_font_sizes/font_size = 34
+text = "Test?"
+
+[node name="text1" type="Label" parent="." unique_id=1238954752]
+visible = false
+offset_left = 117.0
+offset_top = 243.0
+offset_right = 1029.0
+offset_bottom = 342.0
+theme_override_colors/font_color = Color(0.28627452, 0.20392157, 0.13725491, 1)
+theme_override_fonts/font = ExtResource("4_x268l")
+theme_override_font_sizes/font_size = 40
+text = "You swung your pickaxe... You found an unanalysed sample!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="sample1" type="Label" parent="." unique_id=1820630156]
+visible = false
+offset_left = 86.0
+offset_top = 122.0
+offset_right = 1062.0
+offset_bottom = 334.0
+theme_override_colors/font_color = Color(0.28627452, 0.20392157, 0.13725491, 1)
+theme_override_fonts/font = ExtResource("4_x268l")
+theme_override_font_sizes/font_size = 40
+text = "Sample Type: JSC Mars-1 and JSC Mars-1A (Mars Soil Stimulant)
+Particle size: <1mm
+Contains: Palagonitic tephra, glassy volcanic ash
+Mined from:  Pu'u Nene Cinder Cone, Hawaii
+
+FURTHER DATA = 
+Samples PH-1 to PH-4 showcase most similarity to regoliath.
+Tests show that the maximum compressive and flexural 
+strength of the 'martian' geopolymer is comparable to that 
+of common clay bricks.
+
+
+
+"
+vertical_alignment = 1
+
+[node name="sample2" type="Label" parent="." unique_id=283403343]
+visible = false
+offset_left = 98.0
+offset_top = 123.0
+offset_right = 1010.0
+offset_bottom = 222.0
+theme_override_colors/font_color = Color(0.28627452, 0.20392157, 0.13725491, 1)
+theme_override_fonts/font = ExtResource("4_x268l")
+theme_override_font_sizes/font_size = 40
+text = "Sample Type: Mojave Mars Simulant (MMS)
+Particle size:  1 µm up to 1,000 µm 
+Contains: Basalt 
+Mined from:  Boron, California, Western Mojave Desert
+
+FURTHER DATA = 
+2 types, MMS Sand and MMS Dust.
+It was revised to make MMS-2, produced by The Martian Garden
+in aims for a closer match. (0.3 µm  to 0.18 µm)
+Performed poorly due to hygroscopic tendencies."
+vertical_alignment = 1
+
+[node name="sample3" type="Label" parent="." unique_id=347575879]
+offset_left = 98.0
+offset_top = 122.0
+offset_right = 1010.0
+offset_bottom = 221.0
+theme_override_colors/font_color = Color(0.28627452, 0.20392157, 0.13725491, 1)
+theme_override_fonts/font = ExtResource("4_x268l")
+theme_override_font_sizes/font_size = 40
+text = "Sample Type: Mars Global Simulant (MGS-1)
+Particle size: ~90 µm.
+Contains: Plagioclase-rich components, Pyroxene, etc.
+Mined from: Synthetic Mineral (Man-made)
+
+FURTHER DATA = 
+Based on the Rocknest soil in Gale crater on Mars that 
+has been analyzed extensively by the NASA Curiosity rover.
+Devoloped by EXOLITH LAB at the University of Central 
+Florida."
+vertical_alignment = 1
+
+[node name="note" type="Label" parent="." unique_id=323188488]
+offset_left = 635.0
+offset_top = 600.0
+offset_right = 1152.0
+offset_bottom = 639.0
+theme_override_fonts/font = ExtResource("4_x268l")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_jpuf7")
+text = "To view once more, check logbook..."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Dig" to="." method="_on_dig_pressed"]
+[connection signal="pressed" from="Close" to="." method="_on_close_pressed"]
+[connection signal="pressed" from="test" to="." method="_on_test_pressed"]

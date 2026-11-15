@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://cigd1njs3wgv2"]
+
+[ext_resource type="Script" uid="uid://ce44wfrivwmem" path="res://UI/InteractionMenu/int_menu_ui.gd" id="1_0gewu"]
+[ext_resource type="FontFile" uid="uid://bnquk1hpdqdrd" path="res://VT323-Regular.ttf" id="2_bnht3"]
+
+[node name="IntMenuUi" type="CanvasLayer" unique_id=1781621696]
+script = ExtResource("1_0gewu")
+
+[node name="Panel" type="Panel" parent="." unique_id=819742911]
+offset_left = 113.0
+offset_top = 131.00002
+offset_right = 236.35815
+offset_bottom = 221.9402
+scale = Vector2(1.037629, 0.9896613)
+
+[node name="Label" type="Label" parent="Panel" unique_id=2034899008]
+layout_mode = 0
+offset_left = 22.165916
+offset_top = 2.0208755
+offset_right = 112.544426
+offset_bottom = 17.169817
+rotation = 0.00471598
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_bnht3")
+theme_override_font_sizes/font_size = 14
+text = "Interaction Menu"
+
+[node name="CloseMenu" type="Button" parent="Panel" unique_id=890794183]
+layout_mode = 0
+offset_left = 3.0215714
+offset_top = 2.3565202
+offset_right = 18.370815
+offset_bottom = 18.217085
+rotation = -0.0031893137
+theme_override_fonts/font = ExtResource("2_bnht3")
+theme_override_font_sizes/font_size = 4
+
+[node name="ProvideSample" type="Button" parent="Panel" unique_id=1619080584]
+layout_mode = 0
+offset_left = 1.927472
+offset_top = 20.208916
+offset_right = 121.430695
+offset_bottom = 52.543205
+theme_override_fonts/font = ExtResource("2_bnht3")
+theme_override_font_sizes/font_size = 8
+text = "====Option 1===="
+
+[node name="Option2but" type="Button" parent="Panel/ProvideSample" unique_id=2080416592]
+layout_mode = 0
+offset_top = 34.355186
+offset_right = 119.50322
+offset_bottom = 66.689476
+theme_override_fonts/font = ExtResource("2_bnht3")
+theme_override_font_sizes/font_size = 8
+text = "====Option 2===="
+
+[connection signal="pressed" from="Panel/CloseMenu" to="." method="_on_close_menu_pressed"]
+[connection signal="pressed" from="Panel/ProvideSample" to="." method="_on_provide_sample_pressed"]

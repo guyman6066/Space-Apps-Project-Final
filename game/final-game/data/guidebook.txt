@@ -1,0 +1,6 @@
+[color=black][b] GUIDEBOOK [/b][/color]
+[color=black]Objective: Collect data from Mars through a series of experiments. You may conduct an experiment multiple times to prove accuracy of results. 
+Expirements to conduct:
+Regoliath Analysis: Collect soil samples of martian regoliath. Take them to workbench then test the soil to get a detailed report on it’s contents. They may vary from sample to sample, hence make sure to look out for what soil type you acheive from your soil collection. 
+Plant Growth Trial: You are supplied with 3 kinds of seeds, rye, tomato and radish. Your task is to expirement growing these seeds in martian soil. Note that you will only be able to grow 3 plants at a time. Once a plant has fully grown out and you have collected sufficient information, you may empty the slot to plant the next plant. Ensure that you regulary water and fertilize the plant to ensure healthy growth.
+Radiation Measurement Experiment: In this experiment you will be supplied with a multiple choice question, for which you will have to identify accurately the kind of radiation showcased in the image. This expirement gives you a real life connection to how astronauts actually identify different kinds of radiation when on their missions. [/color]

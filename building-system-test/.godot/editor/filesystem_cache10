@@ -1,0 +1,10 @@
+78098b89c88a74ebe8c20117b8754620
+::res://::1790489614
+Blue.png::CompressedTexture2D::8866468665994638226::1790364161::1790364161::1::::<><><>0<>0<>85833663d28d0346857862b0db8cc310<>res://.godot/imported/Blue.png-99b845350a8b7cb68c6cc5bba6d44eeb.ctex::
+buildingmanager.gd::GDScript::3457082275471434412::1790416626::0::1::::<>Node2D<><>0<>0<><>::
+buildingmanager.tscn::PackedScene::11789915484265326::1790416626::0::1::::<><><>0<>0<><>::uid://bpivv03g8hf5u::::res://buildingmanager.gd
+icon.svg::CompressedTexture2D::6777638866982070100::1790363998::1790364002::1::::<><><>0<>0<>984624c32bb57b015be4314394f941d4<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+node_2d.gd::GDScript::6528820911577651295::1790417367::0::1::::<>Node2D<><>0<>0<><>::
+testscene.tscn::PackedScene::327852446713945112::1790417367::0::1::::<><><>0<>0<><>::uid://c0auyx4755hqt::::res://node_2d.gd<>uid://xhrgv3xiv4ns::::res://TilesetVillageAbandoned.png
+TilesetVillageAbandoned.png::CompressedTexture2D::1629838098895064008::1790364524::1790364524::1::::<><><>0<>0<>f5db3434cd24fd634f10387a7a174969<>res://.godot/imported/TilesetVillageAbandoned.png-555fa6e8f924ea9293476cfd76f704fe.ctex::
+Yellow.png::CompressedTexture2D::4666565851731167190::1790364433::1790364434::1::::<><><>0<>0<>db6280f8470bced29959ac78921f8033<>res://.godot/imported/Yellow.png-8c5e275313f765d02799362409b1b5fe.ctex::

@@ -1,0 +1,182 @@
+[gd_scene format=3 uid="uid://b36fyuk6t6wfe"]
+
+[ext_resource type="Script" uid="uid://u6iuf2mb5yar" path="res://stuff_ahlam_made/mobilitywing.gd" id="1_ea382"]
+[ext_resource type="FontFile" uid="uid://jvacbkqm6fpu" path="res://VT323-Regular.ttf" id="1_wwjnb"]
+[ext_resource type="AudioStream" uid="uid://dfm4tnjb6twrs" path="res://music(Liam)/Industrial Machine Running Sound Effect.mp3" id="3_ow36e"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ea382"]
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uer2o"]
+bg_color = Color(0.46229059, 0.46229064, 0.4622904, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ake7x"]
+bg_color = Color(0.15686275, 0.16862746, 0.3882353, 1)
+border_width_left = 9
+border_width_top = 9
+border_width_right = 7
+border_width_bottom = 7
+corner_radius_top_left = 60
+corner_radius_top_right = 60
+corner_radius_bottom_right = 60
+corner_radius_bottom_left = 60
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3uupi"]
+bg_color = Color(0.6784314, 0.19607843, 0.18039216, 1)
+border_width_left = 9
+border_width_top = 9
+border_width_right = 7
+border_width_bottom = 7
+border_color = Color(0.9372549, 0.9411765, 0.8, 1)
+corner_radius_top_left = 60
+corner_radius_top_right = 60
+corner_radius_bottom_right = 60
+corner_radius_bottom_left = 60
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e5g3w"]
+bg_color = Color(0.11372549, 0.11764706, 0.20784314, 1)
+border_width_left = 9
+border_width_top = 9
+border_width_right = 7
+border_width_bottom = 7
+border_color = Color(0.76862746, 0.7529412, 0.7294118, 1)
+corner_radius_top_left = 60
+corner_radius_top_right = 60
+corner_radius_bottom_right = 60
+corner_radius_bottom_left = 60
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_37dmp"]
+bg_color = Color(0.6784314, 0.19607843, 0.18039216, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.11372549, 0.11764706, 0.20784314, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i3cmp"]
+bg_color = Color(0.8039216, 0.32156864, 0.1882353, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m6ubl"]
+bg_color = Color(0.4117647, 0.42745098, 0.627451, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0x7jo"]
+bg_color = Color(0.09516101, 0.11585898, 0.26548764, 0.6509804)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_ea382"]
+vertices = PackedVector2Array(137.9375, 234.67188, 103.49219, 149.03125, 197.32813, 151.00781, 990.8594, 534.9922, 105.390625, 534, 152.99219, 394.20313, 974, 406.10156, 805.5625, 157.97656, 998.78906, 166.9375, 967.9922, 323.9375, 160.00781, 307.89063, 254.34375, 106.99219, 753.5781, 104)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2), PackedInt32Array(3, 4, 5, 6), PackedInt32Array(7, 8, 9, 5, 10), PackedInt32Array(9, 6, 5), PackedInt32Array(2, 11, 12, 7, 10, 0)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(1000, 166, 969, 324, 975, 406, 992, 536, 104, 535, 152, 394, 159, 308, 137, 235, 102, 148, 197, 150, 254, 106, 754, 103, 806, 157)])
+agent_radius = 1.0
+
+[node name="Node2D" type="Node2D" unique_id=1984035236]
+script = ExtResource("1_ea382")
+
+[node name="Label" type="Label" parent="." unique_id=1168501484]
+offset_left = 59.0
+offset_top = 72.0
+offset_right = 1067.0
+offset_bottom = 582.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_ea382")
+
+[node name="Label2" type="Label" parent="." unique_id=371752478]
+offset_left = 64.0
+offset_top = 357.0
+offset_right = 1062.0
+offset_bottom = 577.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_uer2o")
+
+[node name="Left" type="Button" parent="." unique_id=296709999]
+offset_left = 15.0
+offset_top = 264.0
+offset_right = 124.0
+offset_bottom = 371.0
+theme_override_fonts/font = ExtResource("1_wwjnb")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_ake7x")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_3uupi")
+theme_override_styles/hover = SubResource("StyleBoxFlat_e5g3w")
+text = "←"
+
+[node name="Close" type="Button" parent="." unique_id=1960226080]
+offset_left = 39.0
+offset_top = 53.0
+offset_right = 219.0
+offset_bottom = 111.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_wwjnb")
+theme_override_font_sizes/font_size = 47
+theme_override_styles/normal = SubResource("StyleBoxFlat_37dmp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_i3cmp")
+theme_override_styles/hover = SubResource("StyleBoxFlat_m6ubl")
+text = "Go back?"
+
+[node name="Right" type="Button" parent="." unique_id=921681054]
+anchors_preset = -1
+anchor_top = -2.4720001
+anchor_bottom = -2.4720001
+offset_left = 1008.0
+offset_top = 280.0
+offset_right = 1117.0
+offset_bottom = 387.0
+theme_override_fonts/font = ExtResource("1_wwjnb")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_ake7x")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_3uupi")
+theme_override_styles/hover = SubResource("StyleBoxFlat_e5g3w")
+text = "→"
+
+[node name="Label4" type="Label" parent="." unique_id=871027497]
+offset_left = 815.0
+offset_top = 76.0
+offset_right = 1065.0
+offset_bottom = 126.0
+theme_override_colors/font_shadow_color = Color(0.12812936, 0.16308072, 0.3627885, 0)
+theme_override_constants/shadow_offset_x = 5
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 8
+theme_override_constants/shadow_outline_size = 12
+theme_override_fonts/font = ExtResource("1_wwjnb")
+theme_override_font_sizes/font_size = 45
+theme_override_styles/normal = SubResource("StyleBoxFlat_0x7jo")
+text = "Mobility Wing"
+horizontal_alignment = 1
+
+[node name="OFF" type="Sprite2D" parent="." unique_id=1488008409]
+position = Vector2(994, 30.75)
+scale = Vector2(0.33333334, 0.22121213)
+region_enabled = true
+region_rect = Rect2(47, 216, 624, 165)
+
+[node name="ON" type="Sprite2D" parent="." unique_id=2091191369]
+position = Vector2(992.5, 34.5)
+scale = Vector2(0.34400007, 0.24848485)
+region_enabled = true
+region_rect = Rect2(45, 31, 625, 165)
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="." unique_id=1733835639]
+position = Vector2(1, 0)
+navigation_polygon = SubResource("NavigationPolygon_ea382")
+
+[node name="MobilityWing_Audio" type="AudioStreamPlayer2D" parent="." unique_id=332072279]
+stream = ExtResource("3_ow36e")
+
+[connection signal="pressed" from="Left" to="." method="_on_left_pressed"]
+[connection signal="pressed" from="Close" to="." method="_on_close_pressed"]
+[connection signal="pressed" from="Right" to="." method="_on_right_pressed"]

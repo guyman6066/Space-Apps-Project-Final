@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://cf7si1uf6o2n"]
+
+[ext_resource type="Script" uid="uid://driheiy5mjk3m" path="res://ExperimentEntry.gd" id="1_hchwp"]
+[ext_resource type="Theme" uid="uid://dp1twp63mqe3c" path="res://themes/defaultbutton.tres" id="2_gtp0w"]
+[ext_resource type="FontFile" uid="uid://b2jl0l0d32dlj" path="res://fonts/VT323-Regular.ttf" id="3_puy1y"]
+
+[node name="ExperimentEntry" type="VBoxContainer" unique_id=1295122878]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_hchwp")
+
+[node name="Header" type="Button" parent="." unique_id=1712924025]
+custom_minimum_size = Vector2(200, 40)
+layout_mode = 2
+size_flags_horizontal = 0
+theme = ExtResource("2_gtp0w")
+theme_override_font_sizes/font_size = 25
+toggle_mode = true
+
+[node name="Summary" type="Label" parent="." unique_id=1522871990]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_puy1y")
+theme_override_font_sizes/font_size = 18
+autowrap_mode = 2
+
+[node name="Details" type="RichTextLabel" parent="." unique_id=670927418]
+visible = false
+layout_mode = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("3_puy1y")
+theme_override_fonts/bold_font = ExtResource("3_puy1y")
+theme_override_fonts/bold_italics_font = ExtResource("3_puy1y")
+theme_override_fonts/italics_font = ExtResource("3_puy1y")
+theme_override_fonts/mono_font = ExtResource("3_puy1y")
+bbcode_enabled = true
+fit_content = true

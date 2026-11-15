@@ -1,0 +1,31 @@
+78098b89c88a74ebe8c20117b8754620
+::res://::1791129570
+abc.gd::GDScript::1326773749962554982::1790867538::0::1::::<>RefCounted<><>0<>0<><>::
+canvas_layer.gd::GDScript::8923029932812012989::1790867538::0::1::::<>CanvasLayer<><>0<>0<><>::
+credits trust.tscn::PackedScene::2968903725240154873::1790867538::0::1::::<><><>0<>0<><>::uid://dncfornomma7b::::res://Add a heading (1).png
+default_bus_layout.tres::AudioBusLayout::7302456934529678857::1790867538::0::1::::<><><>0<>0<><>::
+Green.png::CompressedTexture2D::6501000187039721782::1790867538::1790867570::1::::<><><>0<>0<>656db3c64a2802aebbde40917f0b22ae<>res://.godot/imported/Green.png-a73a03d0a1febdb864b00265fc9002a0.ctex::
+icon.svg::CompressedTexture2D::3077169831611539150::1790867538::1790867570::1::::<><><>0<>0<>69d8ccc4c521b95051d9c4739a689c7f<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+Idle (32x32).png::CompressedTexture2D::334472794852267897::1790867538::1790867570::1::::<><><>0<>0<>be0e43a3da9cf05ab0cf90ba322e19a6<>res://.godot/imported/Idle (32x32).png-eab6f8bc6cc3e2ad30a389b322c823ee.ctex::
+It_s Been A Long Long Time - Harry James - Spotimate.app.mp3::AudioStreamMP3::4535623745788262869::1790867538::1790867570::1::::<><><>0<>0<>115dd408e5c071bd68745595fbdd08e4<>res://.godot/imported/It_s Been A Long Long Time - Harry James - Spotimate.app.mp3-6692f9c1ff677b47f41677a44eb831fc.mp3str::
+Jump (32x32).png::CompressedTexture2D::8834400643588511618::1790867538::1790867570::1::::<><><>0<>0<>55be915a8176bbe14320d3951c9cc42f<>res://.godot/imported/Jump (32x32).png-91bf01789c567d31f5c28cd22911709b.ctex::
+MainMenu.tscn::PackedScene::3155915742801546504::1790867538::0::1::::<><><>0<>0<><>::uid://drsev3j764k8r::::res://Untitled284_20260925150316.PNG<>uid://d2bveuqvi2cax::::res://main_menu.gd<>uid://d0em88hmsdqw0::::res://canvas_layer.gd<>uid://tdnebr4gco1e::::res://VT323/VT323-Regular.ttf<>uid://b5vdcb4fchtvh::::res://It_s Been A Long Long Time - Harry James - Spotimate.app.mp3<>uid://b3jpjehqb84au::::res://resolutuion.gd<>uid://dv0p4gw730do6::::res://music_control.gd
+main_menu.gd::GDScript::9057708483233724311::1790867538::0::1::::<>Control<><>0<>0<><>::
+music.gd::GDScript::8320166218213124260::1790867538::0::1::::<>HSlider<><>0<>0<><>::
+music_control.gd::GDScript::8685800104862352143::1790867538::0::1::::<>HSlider<><>0<>0<><>::
+node.tscn::PackedScene::3264215693875306117::1790873055::0::1::::<><><>0<>0<><>::uid://cyver15x6jgag::::res://Green.png<>uid://dds0msjyxjcmt::::res://Terrain (16x16).png<>uid://cyhsmkrgvegae::::res://scenes/main_character.tscn<>uid://bk70qayaa7eo3::::res://MainMenu.tscn
+resolutuion.gd::GDScript::4371214754017852000::1790867538::0::1::::<>OptionButton<><>0<>0<><>::
+Run (32x32).png::CompressedTexture2D::2372776194374021789::1790867538::1790867570::1::::<><><>0<>0<>3a7a1d4492e49acead9ac3bdc7a10979<>res://.godot/imported/Run (32x32).png-448439aeb8095dde0c51c1fbc2bea5a9.ctex::
+socute.tscn::PackedScene::4886095955698268750::1790867538::0::1::::<><><>0<>0<><>::uid://cyver15x6jgag::::res://Green.png<>uid://bj3usjny0j43k::::res://icon.svg
+Terrain (16x16).png::CompressedTexture2D::7408527696357581355::1790867538::1790867570::1::::<><><>0<>0<>aef5106be8d9d2024cd1c4cec5d48d55<>res://.godot/imported/Terrain (16x16).png-f072e8a5f99e915c05031c83401c87a9.ctex::
+terrain(16x_16).tscn::PackedScene::9205559597243897008::1790867538::0::1::::<><><>0<>0<><>::uid://dds0msjyxjcmt::::res://Terrain (16x16).png<>uid://bmrhfj3seblrp::::res://node.tscn
+Untitled284_20260925150316.PNG::CompressedTexture2D::8389913048195554611::1790867538::1790867575::1::::<><><>0<>0<>e5509cdf70aeb8f7999ecdf48d1bdd30<>res://.godot/imported/Untitled284_20260925150316.PNG-8098781defbe036820502b62a2516c4b.ctex::
+::res://scenes/::1790867538
+main_character.gd::GDScript::9206024679708783223::1790867538::0::1::::<>CharacterBody2D<><>0<>0<><>::
+main_character.tscn::PackedScene::6472939146170069132::1790867538::0::1::::<><><>0<>0<><>::uid://d4fp47720j8nb::::res://scenes/main_character.gd<>uid://dx4pj110qupd7::::res://Jump (32x32).png<>uid://e1ayoc17g6lx::::res://Idle (32x32).png<>uid://82njorhbg4jx::::res://Run (32x32).png
+::res://VT323/::1790867570
+Add a heading (1).png::CompressedTexture2D::8729949896635306271::1790867538::1790867570::1::::<><><>0<>0<>d65c794c6e60bb1ddd45c50d3f5613d8<>res://.godot/imported/Add a heading (1).png-ebbfbcf0021d2a3ed3299f1639c6b3d7.ctex::
+IMG_7877.jpg::CompressedTexture2D::7729188933325181297::1790867538::1790867570::1::::<><><>0<>0<>e4dfb7f66a7cc26b595b2ce6094a5a62<>res://.godot/imported/IMG_7877.jpg-55c5215d3c1a6a6c9f731e4b5da8dadf.ctex::
+IMG_7878.jpg::CompressedTexture2D::8211257450130412155::1790867538::1790867570::1::::<><><>0<>0<>bd3b7e7629eb1f40b282194c17bca867<>res://.godot/imported/IMG_7878.jpg-d8b5810a6d4853ed9e7af26e4f04e24a.ctex::
+OFL.txt::TextFile::-1::1790867538::0::1::::<><><>0<>0<><>::
+VT323-Regular.ttf::FontFile::1340577706577144448::1790867538::1790867570::1::::<><><>0<>0<>d942d336b4f5ed120705964d23d469e1<>res://.godot/imported/VT323-Regular.ttf-434bf5bbe5af6fb2839d65ccccb1c910.fontdata::

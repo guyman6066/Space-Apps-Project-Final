@@ -1,0 +1,136 @@
+Experiments carried out by first Mars Rover in the Vikings mission:
+Viking Lander Observations
+
+Both landers monitored and collected weather data at the landing sites, and recorded cyclical, yet extreme conditions.
+At the landing location of Viking 1 in the Chryse Planitia (Golden Plains) region, temperatures only reached 7oF (-13.9oC) during the day and plummeted to -107oF
+(-77.2oC) at night, during Mars summer.
+When compared to suitable living conditions on Earth, these temperatures were deemed unsuitable for life to exist.
+Measurements revealed intense ultraviolet radiation at the surface and extremely dry soil.
+Mars appeared to self-sterilize, with harsh conditions and an oxidizing soil chemistry containing reactive compounds that can destroy organic molecules needed for life.
+These reactive chemicals could also interfere with experiments designed to detect traces of organic material.
+Testing for Life  
+
+While the amazing images and information about the physical properties of Mars were wondrous, the most anticipated findings were from experiments designed to test for signs of life.
+Labeled Release Experiment
+The goal of the experiment was to test Martian soil for signs of microbial metabolism. Metabolism is a set of chemical reactions living organisms use to break down nutrients for energy. In many microbes, this process releases carbon dioxide as a waste gas.
+Viking placed a soil sample in a sealed chamber and added a nutrient solution labeled, or tagged, with radioactive carbon-14.
+If microorganisms were present, they would consume the nutrients and then release radioactive carbon-14 carbon dioxide, which the instrument could detect.
+The experiment detected this radioactive carbon dioxide in untreated soil and both Viking landers, located 4000 miles apart, gave similar, repeatable, and positive results.
+Pyrolytic Release Experiment
+The experiment was designed to test whether Martian microbes might build organic material from carbon in the atmosphere.
+“Pyrolytic” refers to heating a sample to high temperatures to break down materials and release gases for analysis.
+A sample of Martian soil was exposed to light, water vapor, and a simulated Martian atmosphere containing radioactive carbon-14 tagged, carbon monoxide and carbon dioxide.
+If photosynthetic microorganisms were present, they should incorporate the radioactive carbon into organic matter (increasing biomass) through carbon fixation.
+After incubation, the soil was heated to release any newly formed organic material. The instrument detected a small radioactive signal, and the initial assessment showed a “small but significant formation of organic matter occurred."
+Gas Chromatograph – Mass Spectrometer (GC-MS) Experiment
+This instrument can identify the chemicals in a gaseous sample. It first separates the different gases in the sample and then measures the mass of their molecules to determine what compounds are present.
+The Viking GC-MS heated Martian soil samples to 248oF (120oC) to drive off gases loosely trapped in the soil, especially CO2 from the Mars atmosphere, that might have stuck to the sample container or soil itself.
+It then heated the sample to 1166oF (630oC) to vaporize any organic compounds for analysis. The gas chromatograph can only test gases.
+Scientists expected to detect organic molecules, which should exist on Mars from meteorites and cosmic dust that have accumulated over billions of years.
+Instead, the instrument detected a second burst of carbon dioxide along with small amounts of methyl chloride and methylene chloride.
+No clear organic molecules were found in the soil samples.
+Scientists suggested that a strong oxidizing chemical in the Martian soil might have destroyed organic compounds before they could be detected.
+The chlorinated compounds (methyl chloride and methylene chloride) were initially thought to be contamination from cleaning solvents on Earth, because similar chemical had been detected during tests before the spacecraft reached Mars.
+
+
+
+Sojourner rover's main aim was to analyze Mars' effect on the technology, so not relevant in our case.
+
+
+Experiments conducted by spirit rover:
+Search for and characterize a variety of rocks and soils that hold clues to past water activity. In particular, samples sought include those that have minerals deposited by water-related processes such as precipitation, evaporation, sedimentary cementation, or hydrothermal activity.
+Determine the distribution and composition of minerals, rocks, and soils surrounding the landing sites.
+Determine what geologic processes have shaped the local terrain and influenced the chemistry. Such processes could include water or wind erosion, sedimentation, hydrothermal mechanisms, volcanism, and cratering.
+Perform calibration and validation of surface observations made by Mars Reconnaissance Orbiter (MRO) instruments. This will help determine the accuracy and effectiveness of various instruments that survey Martian geology from orbit.
+Search for iron-containing minerals, and to identify and quantify relative amounts of specific mineral types that contain water or were formed in water, such as iron-bearing carbonates.
+Characterize the mineralogy and textures of rocks and soils to determine the processes that created them.
+Search for geological clues to the environmental conditions that existed when liquid water was present.
+Assess whether those environments were conducive to life.
+
+Science payload
+The science instruments included:[39]
+
+Panoramic Camera (Pancam) – examined the texture, color, mineralogy, and structure of the local terrain.
+Navigation Camera (Navcam) – monochrome with a higher field of view but lower resolution, for navigation and driving.
+Miniature Thermal Emission Spectrometer (Mini-TES) – identified promising rocks and soils for closer examination, and determined the processes that formed them.
+Hazcams, two B&W cameras with 120 degree field of view, that provided additional data about the rover's surroundings.
+The rover arm held the following instruments:[40]
+
+Mössbauer spectrometer (MB) MIMOS II – used for close-up investigations of the mineralogy of iron-bearing rocks and soils.
+Alpha particle X-ray spectrometer (APXS) – close-up analysis of the abundances of elements that make up rocks and soils.
+Magnets – for collecting magnetic dust particles.
+Microscopic Imager (MI) – obtained close-up, high-resolution images of rocks and soils.
+Rock Abrasion Tool (RAT) – exposed fresh material for examination by instruments on board.
+
+
+
+Opportunity rover: 
+Search for and characterize a variety of rocks and soils that hold clues to past water activity. In particular, samples sought include those that have minerals deposited by water-related processes such as precipitation, evaporation, sedimentary cementation, or hydrothermal activity.
+Determine the distribution and composition of minerals, rocks, and soils surrounding the landing sites.
+Determine what geologic processes have shaped the local terrain and influenced the chemistry. Such processes could include water or wind erosion, sedimentation, hydrothermal mechanisms, volcanism, and cratering.
+Perform calibration and validation of surface observations made by Mars Reconnaissance Orbiter (MRO) instruments. This will help determine the accuracy and effectiveness of various instruments that survey Martian geology from orbit.
+Search for iron-containing minerals, and to identify and quantify relative amounts of specific mineral types that contain water or were formed in water, such as iron-bearing carbonates.
+Characterize the mineralogy and textures of rocks and soils to determine the processes that created them.
+Search for geological clues to the environmental conditions that existed when liquid water was present.
+Assess whether those environments were conducive to life.
+Science payload
+The science instruments included:[46]
+
+Panoramic Camera (Pancam) – examined the texture, color, mineralogy, and structure of the local terrain.
+Navigation Camera (Navcam) – monochrome with a higher field of view but lower resolution, for navigation and driving.
+Miniature Thermal Emission Spectrometer (Mini-TES) – identified promising rocks and soils for closer examination, and determined the processes that formed them.
+Hazcams, two B&W cameras with 120 degree field of view, that provided additional data about the rover's surroundings.
+The rover arm held the following instruments:[47]
+
+Mössbauer spectrometer (MB) MIMOS II – used for close-up investigations of the mineralogy of iron-bearing rocks and soils.
+Alpha particle X-ray spectrometer (APXS) – close-up analysis of the abundances of elements that make up rocks and soils.
+Magnets – for collecting magnetic dust particles.
+Microscopic Imager (MI) – obtained close-up, high-resolution images of rocks and soils.
+Rock Abrasion Tool (RAT) – exposed fresh material for examination by instruments on board.
+
+
+
+Curiosity rover:
+Biological
+Determine the nature and inventory of organic carbon compounds
+Investigate the chemical building blocks of life (carbon, hydrogen, nitrogen, oxygen, phosphorus, and sulfur)
+Identify features that may represent the effects of biological processes (biosignatures and biomolecules)
+Geological and geochemical
+Investigate the chemical, isotopic, and mineralogical composition of the Martian surface and near-surface geological materials
+Interpret the processes that have formed and modified rocks and soils
+Planetary process
+Assess long-timescale (i.e., 4-billion-year) Martian atmospheric evolution processes
+Determine present state, distribution, and cycling of water and carbon dioxide
+Surface radiation
+Characterize the broad spectrum of surface radiation, including galactic and cosmic radiation, solar proton events and secondary neutrons. As part of its exploration, it also measured the radiation exposure in the interior of the spacecraft as it traveled to Mars, and it is continuing radiation measurements as it explores the surface of Mars. This data would be important for a future crewed mission.[16]
+
+Scientific equipment
+https://science.nasa.gov/mission/msl-curiosity/science-instruments/#h-mars-science-laboratory-entry-descent-and-landing-instrument-medli
+(too large to copy down)
+
+
+
+Perseverance rover:
+The Perseverance rover has four main science objectives[17] that support the Mars Exploration Program's science goals:[6]
+
+Looking for habitability: identify past environments that were capable of supporting microbial life.
+Seeking biosignatures: seek signs of possible past microbial life in those habitable environments, particularly in specific rock types known to preserve signs over time.
+Caching samples: collect core rock and regolith (unconsolidated and loose "soil") samples and store them within the rover and on the Martian surface (as a backup) for delivery to a future sample return rocket.[18]
+Preparing for humans: test oxygen production from the Martian atmosphere.
+In the first science campaign, dubbed "Crater Floor", Perseverance performed an arching drive southward from its landing site to the Séítah unit to perform a "toe dip" into the unit to collect remote-sensing measurements of geologic targets. After that it returned to the Crater Floor Fractured Rough to collect the first core sample there. Passing by the Octavia E. Butler landing site concluded the first science campaign.
+
+The second campaign, "Fan Front", included several months of travel towards the "Three Forks" where Perseverance accessed geologic locations at the base of the ancient delta of Neretva river, as well as ascending the delta by driving up a valley wall to the northwest.[19]
+
+The third and fourth campaigns were called "Upper Fan", and "Margin Unit", and the fifth campaign, "Northern Rim", in progress as of December 2024, is exploring "the northern part of the southwestern section of Jezero's rim" to study "rocks from deep down inside Mars that were thrown upward to form the crater rim" after the impact 3.9 billion years ago that formed Jezero Crater.[20]
+
+equipment:
+NASA considered nearly 60 proposals[40][41] for rover instrumentation. On July 31, 2014, NASA announced the seven instruments that would make up the payload for the rover:[42][43]
+
+Mars Oxygen ISRU Experiment (MOXIE), an exploration technology investigation to produce a small amount of oxygen (O2) from Martian atmospheric carbon dioxide (CO2). On April 20, 2021, 5.37 grams of oxygen were produced in an hour, with nine more extractions planned over the course of two Earth years to further investigate the instrument.[44] This technology could be scaled up in the future for human life support or to make the rocket fuel for return missions.[45][46]
+Planetary Instrument for X-Ray Lithochemistry (PIXL), an X-ray fluorescence spectrometer to determine the fine scale elemental composition of Martian surface materials.[47][48][49]
+Radar Imager for Mars' subsurface experiment (RIMFAX), a ground-penetrating radar to image different ground densities, structural layers, buried rocks, meteorites, and detect underground water ice and salty brine at 10 m (33 ft) depth. The RIMFAX is being provided by the Norwegian Defence Research Establishment (FFI).[50][51][52][53]
+Mars Environmental Dynamics Analyzer (MEDA), a set of sensors that measure temperature, wind speed and direction, pressure, relative humidity, radiation, and dust particle size and shape. It is provided by Spain's Centro de Astrobiología.[54]
+SuperCam, an instrument suite that can provide imaging, chemical composition analysis, and mineralogy in rocks and regolith from a distance. It is an upgraded version of the ChemCam on the Curiosity rover but with two lasers and four spectrometers that will allow it to remotely identify biosignatures and assess the past habitability. SuperCam is used in conjunction with the AEGIS targeting system. Los Alamos National Laboratory, the Research Institute in Astrophysics and Planetology (IRAP) in France, the French Space Agency (CNES), the University of Hawaii, and the University of Valladolid in Spain cooperated in the SuperCam's development and manufacture.[55][56]
+Mastcam-Z, a stereoscopic imaging system with the ability to zoom.[57][58] Many photos were included in the published NASA photogallery. (Including Raw)
+Scanning Habitable Environments with Raman and Luminescence for Organics and Chemicals (SHERLOC), an ultraviolet Raman spectrometer that uses fine-scale imaging and an ultraviolet (UV) laser to determine fine-scale mineralogy and detect organic compounds.[59][60]
+There are additional cameras and two audio microphones (the first working microphones on Mars), that will be used for engineering support during landing,[61] driving, and collecting samples.[62][63]

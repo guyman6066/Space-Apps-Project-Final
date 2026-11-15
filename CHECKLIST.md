@@ -1,0 +1,59 @@
+TO MAKE = 
+- Program Food, Water, Oxygen and Electricity based of correct scale
+- Add a Day + time tracker in a corner and a “Incoming Sandstorm in:” Warning/ corner marker as well
+- Program Oxygen tracker
+- Program out the Logbook
+- Program the Character Status tracker
+- Program building placer interface (as in a catalogue of what all experiments player can place part)
+- Decide how to intergrate food rationing...
+- Program the characters to be able to “eat rations” and reload energy bar according to a reasonable scale. 
+- Add Game Over settings if so ever character’s hunger/thirst/tiredness reaches 100%
+- Arrange Assigning systems, (preferably within log?)
+- Add Research point showcase at the end of experiment and a “Done” sign on expirement when a particular experiment’s duration is over. 
+- Integrate Inhabitabilty measurer which marks off player’s progress and work. (Quota system)
+- Program in Sandstorm settings as well as damage intake if player/ structures are outdoors during a sandstorm.
+- ADD GAME INTRODUCTION SYSTEM, introducing player to the commands of the game and how to use.
+- Program Loading Screen Animations
+- Victory animations/ sign if player gets 100% accuracy and finds out perfect results (mars is inhabitable or not yada yada) with credits showcase right after. 
+- Function out structure building log, formatting the game to a given scaled “1-5 days building time” 
+- Add Mapping Settings, where player can mark points and outline where specific test samples came from 
+- Expirements
+		- Create in space ship areas for astronauts (Add indicator that oxygen is not used up when in this area)
+			- Living Area (Contains Beds, Exercise Equipment, Toiletries)
+			- Medical Ara (Medical equipment and isolation rooms
+			- Mobility wing (pressurised Rover, Drones, Probes)
+		- Create a Data Logger, compiling as an experiment index, showcasing status of each experiment/ completed experiments.
+		- Collecting soil sample animation/ rigging
+		- Ability to name test sample using label animation/ graphic and mark where it was collected from
+		- Integrate Chemical compound analysis and mineral analysis systems (discuss how you’d like to add this in)
+		- Code + design each experiment Element required 
+			- Sterile Sample Bags/ Containers
+			- Scoop or corer
+			- Sieves
+			- Balance
+			- Microscope
+			- Spectrometer/ Chemical Anlayzer 
+			- Labels 
+			- Thermometers 
+			- Humidity Sensor
+			- Anemometer
+			- Gas Analyzer
+			- Dust sensor
+			- Data Logger
+			- Dosimeters
+			- Radiation Spectrometer
+			- Shielding Materials
+			- Data Logger
+- Load game settings to store more than 1 game 
+- Credits Slide
+- Connect New game, Load game, credits to Main Menu
+- Tie all game scenes together, organise backbone coding enabling game to run smoothly
+- (OPTIONAL) starting code up where it showcases an animation from earth to zoom in of astronauts in spaceship to mars landing with textbox inviting the player into the game.
+- Background Music 
+- Sound effects
+		- Sandstorm sound
+		- Footsteps of characters sounds
+		- Machine whirring for experiments working sounds
+		- Credits Music
+- (OPTIONAL) Get game tester specimen to try playing game and rate for feedback
+

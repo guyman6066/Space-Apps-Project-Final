@@ -1,0 +1,367 @@
+[gd_scene format=3 uid="uid://ciha3yer8v3l4"]
+
+[ext_resource type="Texture2D" uid="uid://drrcdwg11hkgh" path="res://logbook pages/logbook-g (2).png" id="1_1arnq"]
+[ext_resource type="Script" uid="uid://be8u1nardfa6g" path="res://scenes/page_1_manage.gd" id="1_5778x"]
+[ext_resource type="Script" uid="uid://b7ihfbim23g1h" path="res://scenes/Book.gd" id="1_hkalh"]
+[ext_resource type="Theme" uid="uid://dp1twp63mqe3c" path="res://themes/defaultbutton.tres" id="2_1arnq"]
+[ext_resource type="Theme" uid="uid://brn8clys0wjsl" path="res://themes/titletheme.tres" id="2_uftwh"]
+[ext_resource type="Script" uid="uid://bssiwmgv0cpye" path="res://scenes/text_display.gd" id="2_xj6r5"]
+[ext_resource type="Theme" uid="uid://bcjd7icl33jk" path="res://themes/bodytheme.tres" id="3_1cf3w"]
+[ext_resource type="Texture2D" uid="uid://bu6i0qf8mhedj" path="res://logbook pages/logbook-r (2).png" id="3_d4sqx"]
+[ext_resource type="Texture2D" uid="uid://cf1j3c6w8i0ke" path="res://logbook pages/logbook-b (2).png" id="4_71bir"]
+[ext_resource type="Texture2D" uid="uid://c0cjpvutlwrur" path="res://logbook pages/logbook-o.png" id="5_q3jrx"]
+[ext_resource type="Script" uid="uid://dqhs55p3kdwtj" path="res://scenes/ExperimentList.gd" id="11_71bir"]
+[ext_resource type="Script" uid="uid://cqhp56wepjmc8" path="res://scenes/guidebook.gd" id="12_q3jrx"]
+[ext_resource type="FontFile" uid="uid://b2jl0l0d32dlj" path="res://fonts/VT323-Regular.ttf" id="13_sy7gw"]
+[ext_resource type="Theme" uid="uid://c6shxt3dg2311" path="res://themes/closemenubutton.tres" id="14_o6nnc"]
+[ext_resource type="Theme" uid="uid://cg1mcfhbgx6yt" path="res://themes/openmenubutton.tres" id="16_sy7gw"]
+
+[node name="logbook" type="Control" unique_id=2085175016 node_paths=PackedStringArray("book_art", "pages_holder", "left_tabs", "right_tabs")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hkalh")
+book_art = NodePath("Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect")
+pages_holder = NodePath("Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/MarginContainer/Pages")
+left_tabs = NodePath("Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/LeftTabs")
+right_tabs = NodePath("Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/RightTabs")
+page_textures = Array[Texture2D]([ExtResource("1_1arnq"), ExtResource("3_d4sqx"), ExtResource("4_71bir"), ExtResource("5_q3jrx")])
+
+[node name="Page1" type="MarginContainer" parent="." unique_id=621068401 node_paths=PackedStringArray("menu_screen", "open_menu_screen")]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5778x")
+menu_screen = NodePath("BaseMenuScreenContainer")
+open_menu_screen = NodePath("baseMenuOpenButton")
+
+[node name="BaseMenuScreenContainer" type="HBoxContainer" parent="Page1" unique_id=1245806038]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="seperator" type="Control" parent="Page1/BaseMenuScreenContainer" unique_id=1502517084]
+custom_minimum_size = Vector2(0, 600)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="basemenuscreen" type="MarginContainer" parent="Page1/BaseMenuScreenContainer" unique_id=1210066784]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Page1/BaseMenuScreenContainer/basemenuscreen" unique_id=125393928]
+layout_mode = 2
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer" unique_id=1936462663]
+texture_filter = 1
+custom_minimum_size = Vector2(400, 600)
+layout_mode = 2
+texture = ExtResource("1_1arnq")
+region_rect = Rect2(27, 281, 662, 1125)
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 4
+patch_margin_bottom = 4
+
+[node name="MarginContainer" type="MarginContainer" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect" unique_id=200073077]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 35
+theme_override_constants/margin_right = 42
+theme_override_constants/margin_bottom = 50
+
+[node name="Pages" type="MarginContainer" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/MarginContainer" unique_id=1445804898]
+layout_mode = 2
+
+[node name="CharactersPage" type="MarginContainer" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/MarginContainer/Pages" unique_id=38105337]
+layout_mode = 2
+
+[node name="TextDisplay" type="VBoxContainer" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/MarginContainer/Pages/CharactersPage" unique_id=183365740]
+layout_mode = 2
+theme_override_constants/separation = -3
+script = ExtResource("2_xj6r5")
+
+[node name="Character1" type="Label" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/MarginContainer/Pages/CharactersPage/TextDisplay" unique_id=975822516]
+texture_filter = 1
+layout_mode = 2
+theme = ExtResource("2_uftwh")
+theme_override_colors/font_color = Color(0.42884544, 0.2928072, 0, 1)
+text = "Character 1"
+
+[node name="CurrentlyDoingLabel" type="Label" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/MarginContainer/Pages/CharactersPage/TextDisplay" unique_id=888944793]
+texture_filter = 1
+layout_mode = 2
+theme = ExtResource("3_1cf3w")
+theme_override_colors/font_color = Color(0.42884544, 0.2928072, 0, 1)
+text = "Currently Doing:"
+
+[node name="CurrentlyDoing" type="Label" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/MarginContainer/Pages/CharactersPage/TextDisplay" unique_id=1058720284]
+texture_filter = 1
+layout_mode = 2
+theme = ExtResource("3_1cf3w")
+theme_override_colors/font_color = Color(0.42884544, 0.2928072, 0, 1)
+
+[node name="seperator2" type="Control" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/MarginContainer/Pages/CharactersPage/TextDisplay" unique_id=1427675059]
+custom_minimum_size = Vector2(10, 48)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="Character2" type="Label" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/MarginContainer/Pages/CharactersPage/TextDisplay" unique_id=1386649377]
+texture_filter = 1
+layout_mode = 2
+theme = ExtResource("2_uftwh")
+theme_override_colors/font_color = Color(0.42884544, 0.2928072, 0, 1)
+text = "Character 2"
+
+[node name="CurrentlyDoingLabel2" type="Label" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/MarginContainer/Pages/CharactersPage/TextDisplay" unique_id=63069137]
+texture_filter = 1
+layout_mode = 2
+theme = ExtResource("3_1cf3w")
+theme_override_colors/font_color = Color(0.42884544, 0.2928072, 0, 1)
+text = "Currently Doing:"
+
+[node name="CurrentlyDoing2" type="Label" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/MarginContainer/Pages/CharactersPage/TextDisplay" unique_id=411110877]
+texture_filter = 1
+layout_mode = 2
+theme = ExtResource("3_1cf3w")
+theme_override_colors/font_color = Color(0.42884544, 0.2928072, 0, 1)
+
+[node name="seperator3" type="Control" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/MarginContainer/Pages/CharactersPage/TextDisplay" unique_id=822849701]
+custom_minimum_size = Vector2(10, 48)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="Character3" type="Label" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/MarginContainer/Pages/CharactersPage/TextDisplay" unique_id=234114390]
+texture_filter = 1
+layout_mode = 2
+theme = ExtResource("2_uftwh")
+theme_override_colors/font_color = Color(0.42884544, 0.2928072, 0, 1)
+text = "Character 3"
+
+[node name="CurrentlyDoingLabel3" type="Label" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/MarginContainer/Pages/CharactersPage/TextDisplay" unique_id=790368743]
+texture_filter = 1
+layout_mode = 2
+theme = ExtResource("3_1cf3w")
+theme_override_colors/font_color = Color(0.42884544, 0.2928072, 0, 1)
+text = "Currently Doing:"
+
+[node name="CurrentlyDoing3" type="Label" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/MarginContainer/Pages/CharactersPage/TextDisplay" unique_id=207071607]
+texture_filter = 1
+layout_mode = 2
+theme = ExtResource("3_1cf3w")
+theme_override_colors/font_color = Color(0.42884544, 0.2928072, 0, 1)
+
+[node name="seperator4" type="Control" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/MarginContainer/Pages/CharactersPage/TextDisplay" unique_id=1586026290]
+custom_minimum_size = Vector2(10, 48)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="Character4" type="Label" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/MarginContainer/Pages/CharactersPage/TextDisplay" unique_id=1889426096]
+texture_filter = 1
+layout_mode = 2
+theme = ExtResource("2_uftwh")
+theme_override_colors/font_color = Color(0.42884544, 0.2928072, 0, 1)
+text = "Character 4"
+
+[node name="CurrentlyDoingLabel4" type="Label" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/MarginContainer/Pages/CharactersPage/TextDisplay" unique_id=1461608958]
+texture_filter = 1
+layout_mode = 2
+theme = ExtResource("3_1cf3w")
+theme_override_colors/font_color = Color(0.42884544, 0.2928072, 0, 1)
+text = "Currently Doing:"
+
+[node name="CurrentlyDoing4" type="Label" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/MarginContainer/Pages/CharactersPage/TextDisplay" unique_id=1075635416]
+texture_filter = 1
+layout_mode = 2
+theme = ExtResource("3_1cf3w")
+theme_override_colors/font_color = Color(0.42884544, 0.2928072, 0, 1)
+
+[node name="ButtonContainer" type="VBoxContainer" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/MarginContainer/Pages/CharactersPage" unique_id=1428330480]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+theme_override_constants/separation = 80
+
+[node name="Line1" type="HBoxContainer" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/MarginContainer/Pages/CharactersPage/ButtonContainer" unique_id=1616268636]
+layout_mode = 2
+
+[node name="Assign1" type="Button" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/MarginContainer/Pages/CharactersPage/ButtonContainer/Line1" unique_id=1167538532]
+custom_minimum_size = Vector2(90, 30)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource("2_1arnq")
+text = "Assign +"
+
+[node name="Line2" type="HBoxContainer" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/MarginContainer/Pages/CharactersPage/ButtonContainer" unique_id=1046531087]
+layout_mode = 2
+
+[node name="Assign2" type="Button" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/MarginContainer/Pages/CharactersPage/ButtonContainer/Line2" unique_id=1107322742]
+custom_minimum_size = Vector2(90, 30)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource("2_1arnq")
+text = "Assign +"
+
+[node name="Line3" type="HBoxContainer" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/MarginContainer/Pages/CharactersPage/ButtonContainer" unique_id=774202571]
+layout_mode = 2
+
+[node name="Assign3" type="Button" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/MarginContainer/Pages/CharactersPage/ButtonContainer/Line3" unique_id=863487761]
+custom_minimum_size = Vector2(90, 30)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource("2_1arnq")
+text = "Assign +"
+
+[node name="Line4" type="HBoxContainer" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/MarginContainer/Pages/CharactersPage/ButtonContainer" unique_id=1664832183]
+layout_mode = 2
+
+[node name="Assign4" type="Button" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/MarginContainer/Pages/CharactersPage/ButtonContainer/Line4" unique_id=1718025948]
+custom_minimum_size = Vector2(90, 30)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource("2_1arnq")
+text = "Assign +"
+
+[node name="DoneExperiments" type="ScrollContainer" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/MarginContainer/Pages" unique_id=858974489]
+layout_mode = 2
+script = ExtResource("11_71bir")
+mode = 0
+
+[node name="List" type="VBoxContainer" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/MarginContainer/Pages/DoneExperiments" unique_id=1938409073]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ToDoExperiments" type="ScrollContainer" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/MarginContainer/Pages" unique_id=1456583775]
+layout_mode = 2
+script = ExtResource("11_71bir")
+
+[node name="List" type="VBoxContainer" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/MarginContainer/Pages/ToDoExperiments" unique_id=414455516]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Guidebook" type="ScrollContainer" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/MarginContainer/Pages" unique_id=1242575858]
+layout_mode = 2
+script = ExtResource("12_q3jrx")
+
+[node name="Text" type="RichTextLabel" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/MarginContainer/Pages/Guidebook" unique_id=1355435089]
+texture_filter = 1
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/line_separation = 2
+theme_override_fonts/normal_font = ExtResource("13_sy7gw")
+theme_override_fonts/bold_font = ExtResource("13_sy7gw")
+theme_override_fonts/bold_italics_font = ExtResource("13_sy7gw")
+theme_override_fonts/italics_font = ExtResource("13_sy7gw")
+theme_override_fonts/mono_font = ExtResource("13_sy7gw")
+theme_override_font_sizes/normal_font_size = 25
+theme_override_font_sizes/bold_font_size = 25
+theme_override_font_sizes/bold_italics_font_size = 25
+theme_override_font_sizes/italics_font_size = 25
+theme_override_font_sizes/mono_font_size = 25
+bbcode_enabled = true
+fit_content = true
+
+[node name="LeftTabs" type="Control" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect" unique_id=1175421692]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureButton" type="TextureButton" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/LeftTabs" unique_id=584455313]
+layout_mode = 0
+offset_left = 28.999998
+offset_top = 564.0
+offset_right = 68.740135
+offset_bottom = 595.92975
+scale = Vector2(0.72974086, 1.1274731)
+
+[node name="TextureButton2" type="TextureButton" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/LeftTabs" unique_id=38667379]
+layout_mode = 0
+offset_left = 66.0
+offset_top = 566.0
+offset_right = 94.0
+offset_bottom = 600.0
+
+[node name="TextureButton3" type="TextureButton" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/LeftTabs" unique_id=77095238]
+layout_mode = 0
+offset_left = 100.0
+offset_top = 566.0
+offset_right = 131.0
+offset_bottom = 601.0
+
+[node name="TextureButton4" type="TextureButton" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/LeftTabs" unique_id=149920148]
+layout_mode = 0
+offset_left = 137.0
+offset_top = 566.0
+offset_right = 166.0
+offset_bottom = 600.0
+
+[node name="RightTabs" type="Control" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect" unique_id=940090193]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureButton" type="TextureButton" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/RightTabs" unique_id=322390135]
+layout_mode = 0
+offset_left = 242.0
+offset_top = 565.0
+offset_right = 271.0
+offset_bottom = 601.0
+
+[node name="TextureButton2" type="TextureButton" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/RightTabs" unique_id=697760825]
+layout_mode = 0
+offset_left = 278.0
+offset_top = 566.0
+offset_right = 307.0
+offset_bottom = 600.0
+
+[node name="TextureButton3" type="TextureButton" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/NinePatchRect/RightTabs" unique_id=1956525776]
+layout_mode = 0
+offset_left = 313.0
+offset_top = 566.0
+offset_right = 343.0
+offset_bottom = 601.0
+
+[node name="toggleMenuButton" type="Button" parent="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer" unique_id=1875168653]
+texture_filter = 1
+custom_minimum_size = Vector2(56.905, 45)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource("14_o6nnc")
+
+[node name="baseMenuOpenButton" type="HBoxContainer" parent="Page1" unique_id=1326933197]
+layout_mode = 2
+theme_override_constants/separation = 7
+
+[node name="seperator" type="Control" parent="Page1/baseMenuOpenButton" unique_id=404364700]
+custom_minimum_size = Vector2(3, 600)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+
+[node name="toggleMenuButton" type="Button" parent="Page1/baseMenuOpenButton" unique_id=939165613]
+texture_filter = 1
+custom_minimum_size = Vector2(56.905, 45)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource("16_sy7gw")
+
+[connection signal="pressed" from="Page1/BaseMenuScreenContainer/basemenuscreen/HBoxContainer/toggleMenuButton" to="Page1" method="_on_toggle_menu_button_pressed"]
+[connection signal="pressed" from="Page1/baseMenuOpenButton/toggleMenuButton" to="Page1" method="_on_toggle_menu_button_pressed"]

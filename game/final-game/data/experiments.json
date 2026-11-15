@@ -1,0 +1,32 @@
+[
+	{
+		"id": "exp_001",
+		"title": "Soil Sample Analysis",
+		"summary": "Test the pH of the northern field.",
+		"details": "Collect three samples and test each one."
+	},
+	{
+		"id": "exp_002",
+		"title": "Water Filtration",
+		"summary": "Compare two filter materials.",
+		"details": "Run 1L of water through each filter."
+	},
+	{
+		"id": "exp_003",
+		"title": "Test Radiation",
+		"summary": "Test radiation outside ship",
+		"details": "Build a radiation measure center"
+	},
+	{
+		"id": "exp_004",
+		"title": "Plant",
+		"summary": "Grow a plant",
+		"details": "Use threee types of seed and grow them in Martian soil"
+	},
+	{
+		"id": "exp_005",
+		"title": "Rover",
+		"summary": "Use rover",
+		"details": "calibrate the rover to send it off to mars and collect and analyse samples automatically for you"
+	}
+]

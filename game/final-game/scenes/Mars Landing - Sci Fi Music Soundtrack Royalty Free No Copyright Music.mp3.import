@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b4a24iljt3qu6"
+path="res://.godot/imported/Mars Landing - Sci Fi Music Soundtrack Royalty Free No Copyright Music.mp3-01ec643b416cf19c5bc2b2a79467cb08.mp3str"
+
+[deps]
+
+source_file="res://scenes/Mars Landing - Sci Fi Music Soundtrack Royalty Free No Copyright Music.mp3"
+dest_files=["res://.godot/imported/Mars Landing - Sci Fi Music Soundtrack Royalty Free No Copyright Music.mp3-01ec643b416cf19c5bc2b2a79467cb08.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

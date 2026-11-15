@@ -1,0 +1,666 @@
+[gd_scene format=3 uid="uid://b2vvm634doo3g"]
+
+[ext_resource type="FontFile" uid="uid://jvacbkqm6fpu" path="res://VT323-Regular.ttf" id="1_2bqxw"]
+[ext_resource type="Script" uid="uid://cupn7gn18rn8x" path="res://stuff_ahlam_made/plantgrowing.gd" id="1_luovf"]
+[ext_resource type="Texture2D" uid="uid://g3vo8rlt8s7c" path="res://scenes/status-bars-split/water.png" id="3_p3cvf"]
+[ext_resource type="Texture2D" uid="uid://dpl8t0ehjbcre" path="res://scenes/status-bars-split/blue.png" id="4_c5h2l"]
+[ext_resource type="Script" uid="uid://bsgg6h6y3n26r" path="res://stuff_ahlam_made/plant.gd" id="4_kyrgq"]
+[ext_resource type="Texture2D" uid="uid://bi18wwaqblmw2" path="res://scenes/Untitled116_20261104230929.png" id="4_sya12"]
+[ext_resource type="Texture2D" uid="uid://bna1b8xrweutd" path="res://scenes/status-bars-split/heatlh.png" id="5_2q1dn"]
+[ext_resource type="Texture2D" uid="uid://dbu6rhnhv2vha" path="res://scenes/status-bars-split/green.png" id="6_2fjdi"]
+[ext_resource type="Texture2D" uid="uid://bb6u4ejhnoy8o" path="res://stuff_ahlam_made/1000078653.png" id="7_mtdon"]
+[ext_resource type="AudioStream" uid="uid://bef1wojn76fin" path="res://music(Liam)/Science Background Music Presentation Future Technology Innovation Background Music Royalty Free.mp3" id="10_p3cvf"]
+[ext_resource type="PackedScene" uid="uid://bftl71s7rp4ev" path="res://pathfinding(Liam)/scenes/NewastronautCb/newastronaut_cb.tscn" id="11_fvby5"]
+[ext_resource type="PackedScene" uid="uid://bevgfw83rsmke" path="res://pathfinding(Liam)/scenes/NewastronautCb/newastronaut2.tscn" id="12_xkduv"]
+[ext_resource type="PackedScene" uid="uid://4ctncwj7ksw8" path="res://pathfinding(Liam)/scenes/NewastronautCb/newastronaut3.tscn" id="13_8a8i0"]
+[ext_resource type="PackedScene" uid="uid://dl03rculk1675" path="res://pathfinding(Liam)/scenes/NewastronautCb/newastronaut_4.tscn" id="14_cixyb"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nbwhn"]
+bg_color = Color(0.38039216, 0.35686275, 0.6392157, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.13333334, 0.12941177, 0.37254903, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jpuf7"]
+bg_color = Color(0.96862745, 0.92156863, 0.8901961, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.54509807, 0.48235294, 0.34901962, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_n0flj"]
+texture = ExtResource("4_sya12")
+region_rect = Rect2(72, 1112, 152, 168)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ary6x"]
+texture = ExtResource("4_sya12")
+region_rect = Rect2(72, 1120, 152, 160)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ggglp"]
+texture = ExtResource("4_sya12")
+region_rect = Rect2(56, 1112, 168, 168)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_83e55"]
+texture = ExtResource("4_sya12")
+region_rect = Rect2(208, 952, 160, 152)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7lqoa"]
+texture = ExtResource("4_sya12")
+region_rect = Rect2(208, 952, 136, 152)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_p3cvf"]
+texture = ExtResource("4_sya12")
+region_rect = Rect2(208, 952, 136, 152)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5twat"]
+texture = ExtResource("4_sya12")
+region_rect = Rect2(72, 952, 136, 152)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8rpf5"]
+texture = ExtResource("4_sya12")
+region_rect = Rect2(72, 952, 136, 152)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_g6w71"]
+texture = ExtResource("4_sya12")
+region_rect = Rect2(72, 952, 144, 160)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nbwhn"]
+region_rect = Rect2(0, 0, 2642, 1416)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jpuf7"]
+texture = ExtResource("4_sya12")
+region_rect = Rect2(840, 496, 120, 104)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mkcmk"]
+texture = ExtResource("4_sya12")
+region_rect = Rect2(856, 688, 104, 88)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jgx6l"]
+texture = ExtResource("4_sya12")
+region_rect = Rect2(840, 592, 112, 96)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vj1ra"]
+texture = ExtResource("4_sya12")
+region_rect = Rect2(976, 776, 112, 96)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ans56"]
+texture = ExtResource("4_sya12")
+region_rect = Rect2(976, 960, 112, 96)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_k8tpd"]
+texture = ExtResource("4_sya12")
+region_rect = Rect2(976, 872, 112, 96)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5eijj"]
+texture = ExtResource("4_sya12")
+region_rect = Rect2(968, 504, 112, 96)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_eg8ev"]
+texture = ExtResource("4_sya12")
+region_rect = Rect2(968, 688, 112, 88)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bh3er"]
+texture = ExtResource("4_sya12")
+region_rect = Rect2(968, 600, 112, 88)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_j8ted"]
+texture = ExtResource("4_sya12")
+region_rect = Rect2(856, 776, 112, 96)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xot28"]
+texture = ExtResource("4_sya12")
+region_rect = Rect2(864, 960, 104, 96)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7htmf"]
+texture = ExtResource("4_sya12")
+region_rect = Rect2(856, 872, 104, 96)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wrjgq"]
+texture = ExtResource("4_sya12")
+region_rect = Rect2(728, 496, 104, 104)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ashw5"]
+texture = ExtResource("4_sya12")
+region_rect = Rect2(736, 688, 96, 88)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_p78o3"]
+texture = ExtResource("4_sya12")
+region_rect = Rect2(728, 600, 104, 88)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kyrgq"]
+bg_color = Color(0.6784314, 0.19607843, 0.18039216, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.9372549, 0.9411765, 0.8, 1)
+corner_radius_top_left = 60
+corner_radius_top_right = 60
+corner_radius_bottom_right = 60
+corner_radius_bottom_left = 60
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pslul"]
+bg_color = Color(0.48616838, 0.12646642, 0.11570712, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.9372549, 0.9411765, 0.8, 1)
+corner_radius_top_left = 60
+corner_radius_top_right = 60
+corner_radius_bottom_right = 60
+corner_radius_bottom_left = 60
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bfomy"]
+bg_color = Color(0.11372549, 0.11764706, 0.20784314, 1)
+border_width_left = 9
+border_width_top = 9
+border_width_right = 7
+border_width_bottom = 7
+border_color = Color(0.76862746, 0.7529412, 0.7294118, 1)
+corner_radius_top_left = 60
+corner_radius_top_right = 60
+corner_radius_bottom_right = 60
+corner_radius_bottom_left = 60
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mtdon"]
+bg_color = Color(0.6784314, 0.19607843, 0.18039216, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.11372549, 0.11764706, 0.20784314, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p3cvf"]
+bg_color = Color(0.8039216, 0.32156864, 0.1882353, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c5h2l"]
+bg_color = Color(0.4117647, 0.42745098, 0.627451, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+
+[node name="Node2D" type="Node2D" unique_id=514065176]
+script = ExtResource("1_luovf")
+
+[node name="selectionmenu" type="Label" parent="." unique_id=1743991623]
+offset_left = 789.0
+offset_top = 29.0
+offset_right = 1116.0
+offset_bottom = 611.0
+theme_override_colors/font_color = Color(0.13333334, 0.12941177, 0.37254903, 1)
+theme_override_fonts/font = ExtResource("1_2bqxw")
+theme_override_font_sizes/font_size = 33
+theme_override_styles/normal = SubResource("StyleBoxFlat_nbwhn")
+text = "TOOLS"
+horizontal_alignment = 1
+
+[node name="detailsmenu" type="Label" parent="." unique_id=190839638]
+offset_left = 29.0
+offset_top = 28.0
+offset_right = 357.0
+offset_bottom = 611.0
+theme_override_colors/font_color = Color(0.54509807, 0.48235294, 0.34901962, 1)
+theme_override_fonts/font = ExtResource("1_2bqxw")
+theme_override_font_sizes/font_size = 33
+theme_override_styles/normal = SubResource("StyleBoxFlat_jpuf7")
+text = "DETAILS"
+horizontal_alignment = 1
+
+[node name="details" type="Label" parent="." unique_id=1900918393]
+offset_left = 54.0
+offset_top = 73.0
+offset_right = 333.0
+offset_bottom = 589.0
+theme_override_colors/font_color = Color(0.63961923, 0.5719087, 0.42841828, 1)
+theme_override_fonts/font = ExtResource("1_2bqxw")
+theme_override_font_sizes/font_size = 25
+text = "SEED TYPES:
+SOIL DETAILS:
+• Macronutrients-
+ Oxygen, Carbon, 
+Hydrogen, Nitrogen, 
+Potassium, Phosphorus, 
+Calcium, Magnesium, 
+Sulfur
+• Micronutrients- Iron, 
+Manganese, Zinc, Copper, 
+Molybdenum, Boron, 
+Chlorine
+HEALTH STATUS
+
+
+HYDRATION STATUS "
+
+[node name="Radish" type="Label" parent="." unique_id=158010324]
+offset_left = 174.0
+offset_top = 73.0
+offset_right = 263.0
+offset_bottom = 98.0
+theme_override_colors/font_color = Color(0.6392157, 0.57254905, 0.42745098, 1)
+theme_override_fonts/font = ExtResource("1_2bqxw")
+theme_override_font_sizes/font_size = 25
+text = "Radish"
+
+[node name="Tomato" type="Label" parent="." unique_id=1232801715]
+offset_left = 173.0
+offset_top = 73.0
+offset_right = 262.0
+offset_bottom = 98.0
+theme_override_colors/font_color = Color(0.6392157, 0.57254905, 0.42745098, 1)
+theme_override_fonts/font = ExtResource("1_2bqxw")
+theme_override_font_sizes/font_size = 25
+text = "Tomato"
+
+[node name="Rye" type="Label" parent="." unique_id=1742027819]
+offset_left = 174.0
+offset_top = 74.0
+offset_right = 263.0
+offset_bottom = 99.0
+theme_override_colors/font_color = Color(0.6392157, 0.57254905, 0.42745098, 1)
+theme_override_fonts/font = ExtResource("1_2bqxw")
+theme_override_font_sizes/font_size = 25
+text = "Rye"
+
+[node name="water" type="TextureProgressBar" parent="." unique_id=1626707702]
+custom_minimum_size = Vector2(40, 30)
+offset_left = 45.0
+offset_top = 530.0
+offset_right = 345.0
+offset_bottom = 583.0
+nine_patch_stretch = true
+texture_under = ExtResource("3_p3cvf")
+texture_progress = ExtResource("4_c5h2l")
+
+[node name="health" type="TextureProgressBar" parent="." unique_id=342944965]
+custom_minimum_size = Vector2(40, 30)
+offset_left = 38.0
+offset_top = 436.0
+offset_right = 351.0
+offset_bottom = 491.0
+nine_patch_stretch = true
+texture_under = ExtResource("5_2q1dn")
+texture_progress = ExtResource("6_2fjdi")
+
+[node name="Radish2" type="Label" parent="." unique_id=1073219794]
+offset_left = 818.0
+offset_top = 226.0
+offset_right = 942.0
+offset_bottom = 353.0
+theme_override_fonts/font = ExtResource("1_2bqxw")
+theme_override_font_sizes/font_size = 25
+text = "RADISH"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="rakegraphics" type="Button" parent="Radish2" unique_id=1265182563]
+layout_mode = 0
+offset_left = 6.0
+offset_top = -3.0
+offset_right = 118.0
+offset_bottom = 94.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_n0flj")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_ary6x")
+theme_override_styles/hover = SubResource("StyleBoxTexture_ggglp")
+
+[node name="water2" type="TextureProgressBar" parent="." unique_id=1450702094]
+custom_minimum_size = Vector2(40, 30)
+offset_left = 43.0
+offset_top = 530.0
+offset_right = 343.0
+offset_bottom = 583.0
+nine_patch_stretch = true
+texture_under = ExtResource("3_p3cvf")
+texture_progress = ExtResource("4_c5h2l")
+
+[node name="health2" type="TextureProgressBar" parent="." unique_id=1141589427]
+custom_minimum_size = Vector2(40, 30)
+offset_left = 36.0
+offset_top = 436.0
+offset_right = 350.0
+offset_bottom = 493.0
+nine_patch_stretch = true
+texture_under = ExtResource("5_2q1dn")
+texture_progress = ExtResource("6_2fjdi")
+
+[node name="Tomato2" type="Label" parent="." unique_id=767564571]
+offset_left = 961.0
+offset_top = 85.0
+offset_right = 1085.0
+offset_bottom = 212.0
+theme_override_fonts/font = ExtResource("1_2bqxw")
+theme_override_font_sizes/font_size = 25
+text = "TOMATO"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="seedsgraphics" type="Button" parent="Tomato2" unique_id=44318119]
+layout_mode = 0
+offset_left = 7.0
+offset_top = -2.0
+offset_right = 119.0
+offset_bottom = 95.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_83e55")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_7lqoa")
+theme_override_styles/hover = SubResource("StyleBoxTexture_p3cvf")
+
+[node name="water3" type="TextureProgressBar" parent="." unique_id=1998276430]
+custom_minimum_size = Vector2(40, 30)
+offset_left = 44.0
+offset_top = 530.0
+offset_right = 344.0
+offset_bottom = 583.0
+nine_patch_stretch = true
+texture_under = ExtResource("3_p3cvf")
+texture_progress = ExtResource("4_c5h2l")
+
+[node name="health3" type="TextureProgressBar" parent="." unique_id=509564243]
+custom_minimum_size = Vector2(40, 30)
+offset_left = 37.0
+offset_top = 436.0
+offset_right = 350.0
+offset_bottom = 492.0
+nine_patch_stretch = true
+texture_under = ExtResource("5_2q1dn")
+texture_progress = ExtResource("6_2fjdi")
+
+[node name="Rye2" type="Label" parent="." unique_id=2115561354]
+offset_left = 818.00006
+offset_top = 84.99997
+offset_right = 942.00006
+offset_bottom = 211.99997
+theme_override_fonts/font = ExtResource("1_2bqxw")
+theme_override_font_sizes/font_size = 25
+text = "RYE"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="showelgraphics" type="Button" parent="Rye2" unique_id=1813883044]
+layout_mode = 0
+offset_left = 5.0
+offset_top = -3.0
+offset_right = 117.0
+offset_bottom = 94.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_5twat")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_8rpf5")
+theme_override_styles/hover = SubResource("StyleBoxTexture_g6w71")
+
+[node name="showel" type="Label" parent="." unique_id=294790594]
+offset_left = 817.0
+offset_top = 84.0
+offset_right = 941.0
+offset_bottom = 211.0
+theme_override_fonts/font = ExtResource("1_2bqxw")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxTexture_nbwhn")
+text = "SHOWEL"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="showelgraphics" type="Button" parent="showel" unique_id=632631719]
+layout_mode = 0
+offset_left = 5.0
+offset_top = -3.0
+offset_right = 117.0
+offset_bottom = 94.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_jpuf7")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_mkcmk")
+theme_override_styles/hover = SubResource("StyleBoxTexture_jgx6l")
+
+[node name="seeds" type="Label" parent="." unique_id=2067171484]
+offset_left = 960.0
+offset_top = 84.0
+offset_right = 1084.0
+offset_bottom = 211.0
+theme_override_fonts/font = ExtResource("1_2bqxw")
+theme_override_font_sizes/font_size = 25
+text = "SEEDS"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="seedsgraphics" type="Button" parent="seeds" unique_id=604318252]
+layout_mode = 0
+offset_left = 7.0
+offset_top = -2.0
+offset_right = 119.0
+offset_bottom = 95.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_vj1ra")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_ans56")
+theme_override_styles/hover = SubResource("StyleBoxTexture_k8tpd")
+
+[node name="rake" type="Label" parent="." unique_id=1190996693]
+offset_left = 817.0
+offset_top = 225.0
+offset_right = 941.0
+offset_bottom = 352.0
+theme_override_fonts/font = ExtResource("1_2bqxw")
+theme_override_font_sizes/font_size = 25
+text = "RAKE"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="rakegraphics" type="Button" parent="rake" unique_id=947512579]
+layout_mode = 0
+offset_left = 6.0
+offset_top = -3.0
+offset_right = 118.0
+offset_bottom = 94.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_5eijj")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_eg8ev")
+theme_override_styles/hover = SubResource("StyleBoxTexture_bh3er")
+
+[node name="wateringcan" type="Label" parent="." unique_id=557981014]
+offset_left = 963.0
+offset_top = 225.0
+offset_right = 1087.0
+offset_bottom = 352.0
+theme_override_fonts/font = ExtResource("1_2bqxw")
+theme_override_font_sizes/font_size = 25
+text = "WATERING CAN"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="watergraphics" type="Button" parent="wateringcan" unique_id=993967203]
+layout_mode = 0
+offset_left = 6.0
+offset_top = -3.0
+offset_right = 118.0
+offset_bottom = 94.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_j8ted")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_xot28")
+theme_override_styles/hover = SubResource("StyleBoxTexture_7htmf")
+
+[node name="fertilizer" type="Label" parent="." unique_id=124488791]
+offset_left = 817.0
+offset_top = 368.0
+offset_right = 941.0
+offset_bottom = 495.0
+theme_override_fonts/font = ExtResource("1_2bqxw")
+theme_override_font_sizes/font_size = 25
+text = "FERTILIZER"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="fertilizergraphics" type="Button" parent="fertilizer" unique_id=869867018]
+layout_mode = 0
+offset_left = 6.0
+offset_top = -6.0
+offset_right = 118.0
+offset_bottom = 91.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_wrjgq")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_ashw5")
+theme_override_styles/hover = SubResource("StyleBoxTexture_p78o3")
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1145229560]
+script = ExtResource("4_kyrgq")
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D" unique_id=1245102573]
+
+[node name="Timer" type="Timer" parent="Node2D" unique_id=419004762]
+
+[node name="left" type="Button" parent="." unique_id=44258875]
+offset_left = 359.0
+offset_top = 293.0
+offset_right = 432.0
+offset_bottom = 365.0
+theme_override_fonts/font = ExtResource("1_2bqxw")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_kyrgq")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_pslul")
+theme_override_styles/hover = SubResource("StyleBoxFlat_bfomy")
+text = "←"
+
+[node name="right" type="Button" parent="." unique_id=1685752856]
+offset_left = 719.0
+offset_top = 292.0
+offset_right = 792.0
+offset_bottom = 364.0
+theme_override_fonts/font = ExtResource("1_2bqxw")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_kyrgq")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_pslul")
+theme_override_styles/hover = SubResource("StyleBoxFlat_bfomy")
+text = "→"
+
+[node name="showeling" type="Sprite2D" parent="." unique_id=1184124967]
+position = Vector2(506, 348.99994)
+rotation = 2.8025239
+scale = Vector2(0.8845282, 0.58915526)
+skew = 0.007836819
+texture = ExtResource("4_sya12")
+region_enabled = true
+region_rect = Rect2(544, 480, 112, 560)
+
+[node name="soil stage" type="Sprite2D" parent="." unique_id=214299180]
+position = Vector2(573, 502.99997)
+scale = Vector2(0.7692308, 0.76363635)
+texture = ExtResource("7_mtdon")
+region_enabled = true
+region_rect = Rect2(12, 338, 312, 110)
+
+[node name="tomatostage1" type="Sprite2D" parent="." unique_id=122310710]
+visible = false
+position = Vector2(575, 460.24997)
+scale = Vector2(0.7419355, 0.8492063)
+texture = ExtResource("7_mtdon")
+region_enabled = true
+region_rect = Rect2(337, 257, 310, 189)
+
+[node name="tomatostage2" type="Sprite2D" parent="." unique_id=1759861591]
+visible = false
+position = Vector2(578, 346.79932)
+scale = Vector2(0.75910515, 0.91110784)
+texture = ExtResource("7_mtdon")
+region_enabled = true
+region_rect = Rect2(649, 14, 324, 432)
+
+[node name="radishstage1" type="Sprite2D" parent="." unique_id=1223039820]
+visible = false
+position = Vector2(578.2692, 476.99997)
+scale = Vector2(0.7724567, 0.6484848)
+texture = ExtResource("7_mtdon")
+region_enabled = true
+region_rect = Rect2(391, 1327, 311, 203)
+
+[node name="radishstage2" type="Sprite2D" parent="." unique_id=1275857786]
+visible = false
+position = Vector2(580.1075, 445.3091)
+scale = Vector2(0.7388587, 0.71340096)
+texture = ExtResource("7_mtdon")
+region_enabled = true
+region_rect = Rect2(716, 1260, 311, 270)
+
+[node name="raking" type="Sprite2D" parent="." unique_id=2111042106]
+position = Vector2(651, 361)
+rotation = -2.858263
+scale = Vector2(0.591716, 0.5831405)
+texture = ExtResource("4_sya12")
+region_enabled = true
+region_rect = Rect2(336, 496, 200, 536)
+
+[node name="slot" type="Label" parent="." unique_id=638759982]
+offset_left = 409.0
+offset_top = 33.0
+offset_right = 752.0
+offset_bottom = 86.0
+theme_override_fonts/font = ExtResource("1_2bqxw")
+theme_override_font_sizes/font_size = 40
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="warning" type="Label" parent="." unique_id=1561378323]
+offset_left = 410.0
+offset_top = 95.0
+offset_right = 753.0
+offset_bottom = 148.0
+theme_override_fonts/font = ExtResource("1_2bqxw")
+theme_override_font_sizes/font_size = 25
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="countdown" type="Label" parent="." unique_id=488708534]
+offset_left = 403.0
+offset_top = 561.0
+offset_right = 746.0
+offset_bottom = 614.0
+theme_override_fonts/font = ExtResource("1_2bqxw")
+theme_override_font_sizes/font_size = 25
+
+[node name="Close" type="Button" parent="." unique_id=682036947]
+offset_left = 957.0
+offset_top = 571.0
+offset_right = 1137.0
+offset_bottom = 629.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_2bqxw")
+theme_override_font_sizes/font_size = 47
+theme_override_styles/normal = SubResource("StyleBoxFlat_mtdon")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_p3cvf")
+theme_override_styles/hover = SubResource("StyleBoxFlat_c5h2l")
+text = "Go back?"
+
+[node name="delete" type="Button" parent="." unique_id=1845987060]
+offset_left = 461.0
+offset_top = 572.0
+offset_right = 705.0
+offset_bottom = 623.0
+theme_override_fonts/font = ExtResource("1_2bqxw")
+theme_override_font_sizes/font_size = 30
+text = "Clear Slot"
+
+[node name="PlantGrowing_Audio" type="AudioStreamPlayer2D" parent="." unique_id=1464587191]
+stream = ExtResource("10_p3cvf")
+
+[node name="newastronaut" parent="." unique_id=1902715054 instance=ExtResource("11_fvby5")]
+visible = false
+
+[node name="newastronaut2" parent="." unique_id=158250931 instance=ExtResource("12_xkduv")]
+visible = false
+
+[node name="newastronaut3" parent="." unique_id=1634663439 instance=ExtResource("13_8a8i0")]
+visible = false
+
+[node name="newastronaut4" parent="." unique_id=1506104811 instance=ExtResource("14_cixyb")]
+visible = false
+
+[connection signal="pressed" from="Radish2/rakegraphics" to="." method="_on_select_radish_pressed"]
+[connection signal="pressed" from="Tomato2/seedsgraphics" to="." method="_on_select_tomato_pressed"]
+[connection signal="pressed" from="Rye2/showelgraphics" to="." method="_on_select_rye_pressed"]
+[connection signal="pressed" from="showel/showelgraphics" to="." method="_on_showel_button_pressed"]
+[connection signal="pressed" from="seeds/seedsgraphics" to="." method="_on_seedsgraphics_pressed"]
+[connection signal="pressed" from="rake/rakegraphics" to="." method="_on_rake_button_pressed"]
+[connection signal="pressed" from="wateringcan/watergraphics" to="." method="_on_water_button_pressed"]
+[connection signal="pressed" from="fertilizer/fertilizergraphics" to="." method="_on_fertilizer_button_pressed"]
+[connection signal="pressed" from="left" to="." method="_on_left_pressed"]
+[connection signal="pressed" from="right" to="." method="_on_right_pressed"]
+[connection signal="pressed" from="Close" to="." method="_on_close_pressed"]
+[connection signal="pressed" from="delete" to="." method="_on_delete_button_pressed"]

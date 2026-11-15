@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://b3j10ueffmli0"]
+
+[ext_resource type="Script" uid="uid://dyob2xv7nf4vk" path="res://Indicator(Liam)/indicator.gd" id="1_yxwns"]
+[ext_resource type="Texture2D" uid="uid://dw0460kabhsrg" path="res://Indicator(Liam)/Textures/texture_green.png" id="2_yxwns"]
+[ext_resource type="Texture2D" uid="uid://bhl0ewi2kgfre" path="res://Indicator(Liam)/Textures/texture_blue.png" id="3_7r3h0"]
+[ext_resource type="Texture2D" uid="uid://kq4oup8es3n" path="res://Indicator(Liam)/Textures/texture_red.png" id="4_4dkx5"]
+[ext_resource type="AudioStream" uid="uid://l6fkjkqu67d4" path="res://Indicator(Liam)/Desert Wind Storm Sound Free No Copyright Sandstorm Ambience & Wind Sound Effect.mp3" id="5_jgk4e"]
+
+[node name="SandstormControl" type="Node2D" unique_id=40196328]
+
+[node name="SandstormControlCanvasLayer" type="CanvasLayer" parent="." unique_id=217390892]
+script = ExtResource("1_yxwns")
+texture_green = ExtResource("2_yxwns")
+texture_blue = ExtResource("3_7r3h0")
+texture_red = ExtResource("4_4dkx5")
+
+[node name="DeviceTextureRect" type="TextureRect" parent="SandstormControlCanvasLayer" unique_id=172739507]
+offset_left = 1040.0
+offset_top = -1.0
+offset_right = 1040.0
+offset_bottom = -1.0
+scale = Vector2(0.105, 0.105)
+
+[node name="SandstormTimer" type="Timer" parent="SandstormControlCanvasLayer" unique_id=71858913]
+
+[node name="SandStorm_Audio" type="AudioStreamPlayer2D" parent="." unique_id=656022589]
+stream = ExtResource("5_jgk4e")
+bus = &"Music"

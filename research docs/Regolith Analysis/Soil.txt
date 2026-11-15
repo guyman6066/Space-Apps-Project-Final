@@ -1,0 +1,30 @@
+- Mars Soil has been confirmed to have most of the nutrients needed for plants to grow, such as:
+	-> Macronutrients- Oxygen, Carbon, Hydrogen, Nitrogen, Potassium, Phosphorus, Calcium, Magnesium, Sulfur
+	-> Micronutrients- Iron, Manganese, Zinc, Copper, Molybdenum, Boron, Chlorine
+
+-Soil on Mars does not have Worms, insects or plants (organic matter) mixed in, making it more like regolith.
+
+-In 2016, researchers grew Rye, Radish, Tomato, Pea, Leek, Spinach, Garden rocket, cress, quinoa, and chives in simulated Martian soil on Earth, and results produced only slightly less produce than they would've in earth soil. Only spinach struggled to grow properly.
+	-> It has to be noted that there was organic matter added to this soil, in this case, it was cut up grass used to fertilize the soil, as well as to allow water to flow through it to reach the roots. 
+
+-One major barrier could be the abundance of heavy metals in the Martian soil, most importantly Calcium Perchlorate (a salt, toxic if consumed in large quantities).'
+	-> These heavy metals and perchlorate would be absorbed into the plants. This would be bad for plants, and make them inedible to humans.
+	-> Perchlorate can however be useful, as it sucks water out of the air, providing a possible source of liquid water. It could also give off oxygen. 
+
+-Additionally, there is an absence of fertilizer in Martian soil.
+	-> Feces could be used as a fertilizer (as shown in the movie and book "The Martian", but feces naturally contains pathogens, so it would have to be decontaminated before it could be used.).
+
+-The problem of perchlorates in soil can be easily sorted by running water through the soil, and the water and perchlorates could be separated later so nothing gets wasted.
+	-> Alternatively, perchlorate eating bacteria could be used, which give off oxygen as a byproduct.
+
+-Plants have been successfully grown on international space station.
+
+-There is potential danger to human health from the fine Martian dust. Most common silicates found on mars: Olivine, Pyroxene, Feldspar. Dust reacts with small amounts of water to produce highly reactive molecules(similar to the ones produced during mining of quartz on earth, and is known to produce lung disease, including cancer).
+
+
+-Large quantities of water and carbon dioxide ice are believed to be frozen within the regolith in the equatorial parts of Mars and on its surface at higher latitudes.
+
+
+--BASE RESEARCH RELATED TO FOOD AND WATER, AS WELL AS IMMEDIATE DANGERS IN SOIL. NOT ACCOUNTING FOR DUST DEVILS OR STORMS IN THIS DOCUMENT--
+
+ 

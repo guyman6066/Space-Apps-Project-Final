@@ -1,0 +1,129 @@
+[gd_scene format=3 uid="uid://d10d5brom5qbi"]
+
+[ext_resource type="Script" uid="uid://b76eg3nissrpg" path="res://stuff_ahlam_made/tomainmenu.gd" id="1_ucuyg"]
+[ext_resource type="Theme" uid="uid://dp1twp63mqe3c" path="res://themes/defaultbutton.tres" id="2_bs354"]
+[ext_resource type="Texture2D" uid="uid://dbghelkpktmdb" path="res://newmenubackground.png" id="2_ucuyg"]
+[ext_resource type="Theme" uid="uid://dibvq2k1meej4" path="res://buildmenu.tres" id="3_iknc3"]
+
+[node name="pausemenu" type="Control" unique_id=39044160]
+process_mode = 3
+z_index = 100
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ucuyg")
+
+[node name="buildmenu" type="MarginContainer" parent="." unique_id=1088193049]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="buildmenu" unique_id=2114841998]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="basemenuscreen" type="MarginContainer" parent="buildmenu/VBoxContainer" unique_id=388039192]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+size_flags_stretch_ratio = 0.0
+
+[node name="NinePatchRect" type="NinePatchRect" parent="buildmenu/VBoxContainer/basemenuscreen" unique_id=1374680027]
+custom_minimum_size = Vector2(1000, 500)
+layout_mode = 2
+texture = ExtResource("2_ucuyg")
+region_rect = Rect2(209, 229, 1323, 787)
+patch_margin_left = 2
+patch_margin_top = 2
+patch_margin_right = 2
+patch_margin_bottom = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="buildmenu/VBoxContainer/basemenuscreen/NinePatchRect" unique_id=12767257]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 30
+theme_override_constants/margin_bottom = 15
+
+[node name="buttoncontainer" type="VBoxContainer" parent="buildmenu/VBoxContainer/basemenuscreen/NinePatchRect/MarginContainer" unique_id=701614437]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 10
+
+[node name="HBoxContainer" type="HBoxContainer" parent="buildmenu/VBoxContainer/basemenuscreen/NinePatchRect/MarginContainer/buttoncontainer" unique_id=430945898]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Building 1" type="Button" parent="buildmenu/VBoxContainer/basemenuscreen/NinePatchRect/MarginContainer/buttoncontainer/HBoxContainer" unique_id=43065647]
+custom_minimum_size = Vector2(250, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource("2_bs354")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0)
+theme_override_font_sizes/font_size = 21
+text = "ROVER"
+
+[node name="Building 2" type="Button" parent="buildmenu/VBoxContainer/basemenuscreen/NinePatchRect/MarginContainer/buttoncontainer/HBoxContainer" unique_id=2102489435]
+custom_minimum_size = Vector2(250, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource("2_bs354")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0)
+theme_override_font_sizes/font_size = 20
+text = "RADIATION MEASURE CENTER"
+
+[node name="Building 3" type="Button" parent="buildmenu/VBoxContainer/basemenuscreen/NinePatchRect/MarginContainer/buttoncontainer/HBoxContainer" unique_id=1400193524]
+custom_minimum_size = Vector2(250, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource("2_bs354")
+text = "Building 3"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="buildmenu/VBoxContainer/basemenuscreen/NinePatchRect/MarginContainer/buttoncontainer" unique_id=585580680]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 10
+
+[node name="delete" type="Button" parent="buildmenu/VBoxContainer/basemenuscreen/NinePatchRect/MarginContainer/buttoncontainer/HBoxContainer2" unique_id=1121146611]
+custom_minimum_size = Vector2(250, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource("2_bs354")
+text = "Delete"
+
+[node name="buildmenu2" type="Button" parent="." unique_id=659339140]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.0234375
+anchor_top = 0.060185187
+anchor_right = -0.0234375
+anchor_bottom = 0.060185187
+offset_left = 42.0
+offset_top = 45.0
+offset_right = 117.0
+offset_bottom = 120.0
+theme = ExtResource("3_iknc3")
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="buildmenu/VBoxContainer/basemenuscreen/NinePatchRect/MarginContainer/buttoncontainer/HBoxContainer/Building 1" to="." method="_on_building_1_pressed"]
+[connection signal="pressed" from="buildmenu/VBoxContainer/basemenuscreen/NinePatchRect/MarginContainer/buttoncontainer/HBoxContainer/Building 2" to="." method="_on_building_2_pressed"]
+[connection signal="pressed" from="buildmenu/VBoxContainer/basemenuscreen/NinePatchRect/MarginContainer/buttoncontainer/HBoxContainer/Building 3" to="." method="_on_building_3_pressed"]
+[connection signal="pressed" from="buildmenu/VBoxContainer/basemenuscreen/NinePatchRect/MarginContainer/buttoncontainer/HBoxContainer2/delete" to="." method="_on_delete_pressed"]
+[connection signal="pressed" from="buildmenu2" to="." method="_on_buildmenu_2_pressed"]

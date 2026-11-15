@@ -1,0 +1,155 @@
+[gd_scene format=3 uid="uid://4ctncwj7ksw8"]
+
+[ext_resource type="Script" uid="uid://ccfqs57vhj4xd" path="res://scenes/NewastronautCb/newastronaut_3.gd" id="1_nsnat"]
+[ext_resource type="Texture2D" uid="uid://d1wvnvcsijywh" path="res://assets/Walking_Frames_(RED).png" id="2_1lbik"]
+[ext_resource type="Texture2D" uid="uid://bj0lhrue6nsf6" path="res://assets/health_bar.png" id="3_iyei0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aex8v"]
+size = Vector2(54.054054, 79.945946)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iyei0"]
+atlas = ExtResource("2_1lbik")
+region = Rect2(0, 0, 944, 531)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5dsou"]
+atlas = ExtResource("2_1lbik")
+region = Rect2(944, 0, 944, 531)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tl8d6"]
+atlas = ExtResource("2_1lbik")
+region = Rect2(1888, 0, 944, 531)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1g2j6"]
+atlas = ExtResource("2_1lbik")
+region = Rect2(2832, 0, 944, 531)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e87na"]
+atlas = ExtResource("2_1lbik")
+region = Rect2(3776, 0, 944, 531)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7n7dh"]
+atlas = ExtResource("2_1lbik")
+region = Rect2(0, 531, 944, 531)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1esv3"]
+atlas = ExtResource("2_1lbik")
+region = Rect2(944, 531, 944, 531)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k6duh"]
+atlas = ExtResource("2_1lbik")
+region = Rect2(1888, 531, 944, 531)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hb8rx"]
+atlas = ExtResource("2_1lbik")
+region = Rect2(2832, 531, 944, 531)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3u324"]
+atlas = ExtResource("2_1lbik")
+region = Rect2(3776, 531, 944, 531)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q44ql"]
+atlas = ExtResource("2_1lbik")
+region = Rect2(0, 1062, 944, 531)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m6ov7"]
+atlas = ExtResource("2_1lbik")
+region = Rect2(944, 1062, 944, 531)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dl2dj"]
+atlas = ExtResource("2_1lbik")
+region = Rect2(1888, 1062, 944, 531)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_aex8v"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iyei0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5dsou")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tl8d6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1g2j6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e87na")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7n7dh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1esv3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k6duh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hb8rx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3u324")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q44ql")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m6ov7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dl2dj")
+}],
+"loop": 1,
+"name": &"walking(red)",
+"speed": 5.0
+}]
+
+[node name="newship3" type="CharacterBody2D" unique_id=1902715054]
+script = ExtResource("1_nsnat")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1836745439]
+position = Vector2(0, 2.21)
+scale = Vector2(0.37, 0.37)
+shape = SubResource("RectangleShape2D_aex8v")
+
+[node name="sprite_holder" type="Node2D" parent="." unique_id=886643738]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="sprite_holder" unique_id=1784577936]
+position = Vector2(0, -9.536743e-07)
+scale = Vector2(0.20617056, 0.17675965)
+sprite_frames = SubResource("SpriteFrames_aex8v")
+animation = &"walking(red)"
+speed_scale = 3.0
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=1636686849]
+path_desired_distance = 30.0
+target_desired_distance = 30.0
+radius = 50.0
+debug_enabled = true
+debug_use_custom = true
+debug_path_custom_color = Color(1, 0, 0, 1)
+
+[node name="Debug" type="Label" parent="." unique_id=432927938]
+offset_left = -47.0
+offset_top = -135.0
+offset_right = -7.0
+offset_bottom = -112.0
+scale = Vector2(0.79809695, 0.8230992)
+offset_transform_enabled = true
+offset_transform_position = Vector2(39, 98)
+offset_transform_scale = Vector2(0.66, 0.66)
+text = "True"
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="." unique_id=579935527]
+offset_left = -239.0
+offset_top = -114.0
+offset_right = 619.0
+offset_bottom = 60.0
+scale = Vector2(0.5600003, 0.6134597)
+offset_transform_enabled = true
+offset_transform_scale = Vector2(0.275, 0.275)
+texture_over = ExtResource("3_iyei0")
+
+[connection signal="velocity_computed" from="NavigationAgent2D" to="." method="_on_navigation_agent_2d_velocity_computed"]

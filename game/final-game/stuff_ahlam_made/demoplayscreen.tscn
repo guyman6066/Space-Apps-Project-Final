@@ -1,0 +1,386 @@
+[gd_scene format=3 uid="uid://dlgb0nfm2c8gr"]
+
+[ext_resource type="Script" uid="uid://bvmydi3tehgp2" path="res://stuff_ahlam_made/demoplayscreen.gd" id="1_by05u"]
+[ext_resource type="Texture2D" uid="uid://cyxo7y2x50hpx" path="res://stuff_ahlam_made/IMG_6230.PNG" id="2_6b3gq"]
+[ext_resource type="Texture2D" uid="uid://c67k226ao4d1l" path="res://mars_background.jpeg" id="2_06tc0"]
+[ext_resource type="PackedScene" uid="uid://b3j10ueffmli0" path="res://Indicator(Liam)/sandstorm_warning_device.tscn" id="2_e4d24"]
+[ext_resource type="Script" uid="uid://8llt3evb5k2u" path="res://stuff_ahlam_made/TimeManager.gd" id="4_ji8up"]
+[ext_resource type="Script" uid="uid://fxn57kxi7sxb" path="res://stuff_ahlam_made/ClockUI.gd" id="4_sfkwg"]
+[ext_resource type="FontFile" uid="uid://jvacbkqm6fpu" path="res://VT323-Regular.ttf" id="4_x268l"]
+[ext_resource type="PackedScene" uid="uid://ew2xgjkhya0w" path="res://testscene.tscn" id="7_731gd"]
+[ext_resource type="PackedScene" uid="uid://ciha3yer8v3l4" path="res://scenes/logbook.tscn" id="7_l3ul1"]
+[ext_resource type="PackedScene" uid="uid://56ypg0v6pmsi" path="res://node_2d.tscn" id="9_uwtrj"]
+[ext_resource type="PackedScene" uid="uid://bftl71s7rp4ev" path="res://pathfinding(Liam)/scenes/NewastronautCb/newastronaut_cb.tscn" id="10_e4d24"]
+[ext_resource type="PackedScene" uid="uid://bevgfw83rsmke" path="res://pathfinding(Liam)/scenes/NewastronautCb/newastronaut2.tscn" id="11_06tc0"]
+[ext_resource type="PackedScene" uid="uid://4ctncwj7ksw8" path="res://pathfinding(Liam)/scenes/NewastronautCb/newastronaut3.tscn" id="12_udhad"]
+[ext_resource type="PackedScene" uid="uid://dl03rculk1675" path="res://pathfinding(Liam)/scenes/NewastronautCb/newastronaut_4.tscn" id="13_5oucv"]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_l3ul1"]
+vertices = PackedVector2Array(1143.9922, 6.9921875, 1141, 636, 4, 643.9922, 4.9921875, 2)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(1145, 6, 1142, 637, 3, 645, 4, 1)])
+agent_radius = 1.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nbwhn"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i3cmp"]
+bg_color = Color(0.24313726, 0.22352941, 0.47843137, 0.58431375)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m6ubl"]
+bg_color = Color(0.23921569, 0.23921569, 0.23921569, 0.68235296)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x268l"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sfkwg"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x268l"]
+bg_color = Color(0.9323834, 0.832961, 0.7659049, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.28724667, 0.20283943, 0.13817617, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sfkwg"]
+bg_color = Color(0.6784314, 0.19607843, 0.18039216, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.11372549, 0.11764706, 0.20784314, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ji8up"]
+bg_color = Color(0.8039216, 0.32156864, 0.1882353, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l3ul1"]
+bg_color = Color(0.4117647, 0.42745098, 0.627451, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jpuf7"]
+bg_color = Color(0.09803922, 0.11372549, 0.40784314, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ji8up"]
+
+[sub_resource type="Theme" id="Theme_ji8up"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_731gd"]
+bg_color = Color(0.67058825, 0.20392157, 0.18039216, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.23137255, 0.003921569, 0.11764706, 1)
+corner_radius_top_left = 35
+corner_radius_top_right = 35
+corner_radius_bottom_right = 35
+corner_radius_bottom_left = 35
+shadow_color = Color(0.23137255, 0.003921569, 0.11764706, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jgp0u"]
+bg_color = Color(0.15686275, 0.16862746, 0.3882353, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 0.9372549, 0.84705883, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[node name="Node2D" type="Node2D" unique_id=1695561881]
+script = ExtResource("1_by05u")
+
+[node name="MarsBackground" type="Sprite2D" parent="." unique_id=1544328209]
+position = Vector2(578.5, 330.25)
+scale = Vector2(0.724375, 0.7842789)
+texture = ExtResource("2_06tc0")
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="." unique_id=196546840]
+position = Vector2(1, 0)
+navigation_polygon = SubResource("NavigationPolygon_l3ul1")
+
+[node name="Button" type="Button" parent="." unique_id=641625102]
+custom_minimum_size = Vector2(-100, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 768.0
+offset_top = 186.0
+offset_right = 966.0
+offset_bottom = 498.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_nbwhn")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_i3cmp")
+theme_override_styles/hover = SubResource("StyleBoxFlat_m6ubl")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_x268l")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_sfkwg")
+icon = ExtResource("2_6b3gq")
+expand_icon = true
+
+[node name="OFF" type="Sprite2D" parent="." unique_id=1015560277]
+position = Vector2(1015.5, 29.25)
+scale = Vector2(0.2644231, 0.20303029)
+region_enabled = true
+region_rect = Rect2(47, 216, 624, 165)
+
+[node name="ON" type="Sprite2D" parent="." unique_id=694447590]
+position = Vector2(1015, 31)
+scale = Vector2(0.2720001, 0.20606063)
+region_enabled = true
+region_rect = Rect2(45, 31, 625, 165)
+
+[node name="dig" type="Button" parent="." unique_id=132304474]
+offset_left = 1012.0
+offset_top = 442.0
+offset_right = 1136.0
+offset_bottom = 546.0
+
+[node name="plant" type="Button" parent="." unique_id=1699716132]
+offset_left = 1011.0
+offset_top = 323.0
+offset_right = 1133.0
+offset_bottom = 423.0
+
+[node name="Healthtrackers" type="Button" parent="." unique_id=2036729878]
+offset_left = 1010.0
+offset_top = 209.0
+offset_right = 1132.0
+offset_bottom = 309.0
+
+[node name="Label2" type="Label" parent="." unique_id=1886614271]
+offset_left = 71.0
+offset_top = 77.0
+offset_right = 1079.0
+offset_bottom = 587.0
+theme_override_fonts/font = ExtResource("4_x268l")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_x268l")
+
+[node name="Label3" type="Label" parent="." unique_id=1038947437]
+offset_left = 111.0
+offset_top = 127.0
+offset_right = 1036.0
+offset_bottom = 217.0
+theme_override_fonts/font = ExtResource("4_x268l")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_x268l")
+
+[node name="Close" type="Button" parent="." unique_id=2126404879]
+offset_left = 51.0
+offset_top = 58.0
+offset_right = 231.0
+offset_bottom = 116.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("4_x268l")
+theme_override_font_sizes/font_size = 47
+theme_override_styles/normal = SubResource("StyleBoxFlat_sfkwg")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ji8up")
+theme_override_styles/hover = SubResource("StyleBoxFlat_l3ul1")
+text = "Go back?"
+
+[node name="okay" type="Button" parent="." unique_id=1252377849]
+offset_left = 931.0
+offset_top = 194.0
+offset_right = 1066.0
+offset_bottom = 242.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("4_x268l")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxFlat_sfkwg")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ji8up")
+theme_override_styles/hover = SubResource("StyleBoxFlat_l3ul1")
+text = "Okay!"
+
+[node name="Save" type="Button" parent="." unique_id=544078822]
+offset_left = 328.0
+offset_top = 333.0
+offset_right = 801.0
+offset_bottom = 405.0
+theme_override_fonts/font = ExtResource("4_x268l")
+theme_override_font_sizes/font_size = 34
+text = "Save?"
+
+[node name="text1" type="Label" parent="." unique_id=1238954752]
+offset_left = 117.0
+offset_top = 243.0
+offset_right = 1029.0
+offset_bottom = 342.0
+theme_override_colors/font_color = Color(0.28627452, 0.20392157, 0.13725491, 1)
+theme_override_fonts/font = ExtResource("4_x268l")
+theme_override_font_sizes/font_size = 40
+text = "You swung your pickaxe... You found an unanalysed sample!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Edit" type="Button" parent="." unique_id=1394518574]
+offset_left = 328.0
+offset_top = 450.0
+offset_right = 801.0
+offset_bottom = 522.0
+theme_override_fonts/font = ExtResource("4_x268l")
+theme_override_font_sizes/font_size = 34
+text = "EDIT"
+
+[node name="note" type="Label" parent="." unique_id=323188488]
+offset_left = 635.0
+offset_top = 600.0
+offset_right = 1152.0
+offset_bottom = 639.0
+theme_override_fonts/font = ExtResource("4_x268l")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_jpuf7")
+text = "To test the sample, go to the workspace"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HScrollBar" type="HScrollBar" parent="." unique_id=1560914004]
+visible = false
+offset_left = 137.0
+offset_top = 215.0
+offset_right = 1000.0
+offset_bottom = 410.0
+theme_override_styles/scroll = SubResource("StyleBoxEmpty_ji8up")
+
+[node name="Sample1" type="Button" parent="HScrollBar" unique_id=2141878268]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 37.0
+offset_right = 140.0
+offset_bottom = 159.0
+
+[node name="Sample2" type="Button" parent="HScrollBar" unique_id=1230057421]
+layout_mode = 0
+offset_left = 163.0
+offset_top = 38.0
+offset_right = 280.0
+offset_bottom = 160.0
+
+[node name="Sample3" type="Button" parent="HScrollBar" unique_id=1183931892]
+layout_mode = 0
+offset_left = 299.0
+offset_top = 38.0
+offset_right = 416.0
+offset_bottom = 160.0
+
+[node name="Sample4" type="Button" parent="HScrollBar" unique_id=1397025000]
+layout_mode = 0
+offset_left = 439.0
+offset_top = 39.0
+offset_right = 556.0
+offset_bottom = 161.0
+
+[node name="Sample5" type="Button" parent="HScrollBar" unique_id=1986818146]
+layout_mode = 0
+offset_left = 579.0
+offset_top = 40.0
+offset_right = 696.0
+offset_bottom = 162.0
+
+[node name="Sample6" type="Button" parent="HScrollBar" unique_id=540257128]
+layout_mode = 0
+offset_left = 719.0
+offset_top = 41.0
+offset_right = 836.0
+offset_bottom = 163.0
+
+[node name="info" type="Label" parent="." unique_id=1938202011]
+offset_left = 130.0
+offset_top = 141.0
+offset_right = 1015.0
+offset_bottom = 202.0
+theme_override_colors/font_color = Color(0.28627452, 0.20392157, 0.13725491, 1)
+theme_override_fonts/font = ExtResource("4_x268l")
+theme_override_font_sizes/font_size = 40
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Node" type="Node" parent="." unique_id=1606160428]
+script = ExtResource("4_ji8up")
+
+[node name="Control" type="Control" parent="Node" unique_id=1315816013]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 402.0
+offset_bottom = 66.0
+script = ExtResource("4_sfkwg")
+
+[node name="week" type="Label" parent="Node/Control" unique_id=1624294677]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 5.0
+offset_right = 202.0
+offset_bottom = 55.0
+theme = SubResource("Theme_ji8up")
+theme_override_fonts/font = ExtResource("4_x268l")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_731gd")
+text = "WEEK:    "
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="date" type="Label" parent="Node/Control" unique_id=1691107349]
+layout_mode = 0
+offset_left = 206.0
+offset_top = 4.0
+offset_right = 386.0
+offset_bottom = 54.0
+theme = SubResource("Theme_ji8up")
+theme_override_fonts/font = ExtResource("4_x268l")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_jgp0u")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=433775187]
+layer = 100
+
+[node name="testscene" parent="CanvasLayer" unique_id=1685150384 instance=ExtResource("7_731gd")]
+
+[node name="logbook" parent="." unique_id=2085175016 instance=ExtResource("7_l3ul1")]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_right = 0.0
+anchor_bottom = 0.5
+offset_left = 6.0
+offset_top = 10.0
+offset_right = 1145.0
+offset_bottom = 634.0
+grow_horizontal = 1
+
+[node name="Node2D" parent="." unique_id=1188740390 instance=ExtResource("9_uwtrj")]
+position = Vector2(2, -18)
+
+[node name="SandstormControl" parent="." unique_id=40196328 instance=ExtResource("2_e4d24")]
+
+[node name="newastronaut" parent="." unique_id=1902715054 instance=ExtResource("10_e4d24")]
+visible = false
+
+[node name="newastronaut2" parent="." unique_id=1003691132 instance=ExtResource("11_06tc0")]
+visible = false
+
+[node name="newastronaut3" parent="." unique_id=299344840 instance=ExtResource("12_udhad")]
+visible = false
+
+[node name="newastronaut4" parent="." unique_id=1588538448 instance=ExtResource("13_5oucv")]
+visible = false
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="dig" to="." method="_on_dig_pressed"]
+[connection signal="pressed" from="plant" to="." method="_on_plant_pressed"]
+[connection signal="pressed" from="Healthtrackers" to="." method="_on_healthtrackers_pressed"]
+[connection signal="pressed" from="Close" to="." method="_on_close_pressed"]
+[connection signal="pressed" from="okay" to="." method="_on_okay_pressed"]
+[connection signal="pressed" from="Save" to="." method="_on_test_pressed"]
+[connection signal="pressed" from="Edit" to="." method="_on_edit_pressed"]

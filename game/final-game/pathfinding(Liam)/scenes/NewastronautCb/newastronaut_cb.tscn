@@ -1,0 +1,151 @@
+[gd_scene format=3 uid="uid://bftl71s7rp4ev"]
+
+[ext_resource type="Script" uid="uid://b8r8jndpl0tgq" path="res://pathfinding(Liam)/scenes/NewastronautCb/newastronaut_cb.gd" id="1_eiy3h"]
+[ext_resource type="Texture2D" uid="uid://b0rt4hagfjqv6" path="res://pathfinding(Liam)/assets/Walking_frames_(GREEN).png" id="2_f5uka"]
+[ext_resource type="Texture2D" uid="uid://dg3muogyp4y21" path="res://pathfinding(Liam)/assets/green.png" id="3_f5uka"]
+[ext_resource type="Texture2D" uid="uid://bna1b8xrweutd" path="res://scenes/status-bars-split/heatlh.png" id="4_rhqcu"]
+[ext_resource type="Texture2D" uid="uid://dbu6rhnhv2vha" path="res://scenes/status-bars-split/green.png" id="5_lu3gp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aex8v"]
+size = Vector2(54.054054, 79.945946)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f8386"]
+atlas = ExtResource("2_f5uka")
+region = Rect2(0, 0, 944, 531)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g3uc6"]
+atlas = ExtResource("2_f5uka")
+region = Rect2(944, 0, 944, 531)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1u7qg"]
+atlas = ExtResource("2_f5uka")
+region = Rect2(1888, 0, 944, 531)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oan3w"]
+atlas = ExtResource("2_f5uka")
+region = Rect2(2832, 0, 944, 531)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_syrrc"]
+atlas = ExtResource("2_f5uka")
+region = Rect2(3776, 0, 944, 531)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cqpwg"]
+atlas = ExtResource("2_f5uka")
+region = Rect2(0, 531, 944, 531)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3wyb0"]
+atlas = ExtResource("2_f5uka")
+region = Rect2(944, 531, 944, 531)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xwnbw"]
+atlas = ExtResource("2_f5uka")
+region = Rect2(1888, 531, 944, 531)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lbna6"]
+atlas = ExtResource("2_f5uka")
+region = Rect2(2832, 531, 944, 531)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1xm8o"]
+atlas = ExtResource("2_f5uka")
+region = Rect2(3776, 531, 944, 531)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_21fla"]
+atlas = ExtResource("2_f5uka")
+region = Rect2(0, 1062, 944, 531)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j763n"]
+atlas = ExtResource("2_f5uka")
+region = Rect2(944, 1062, 944, 531)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rww72"]
+atlas = ExtResource("2_f5uka")
+region = Rect2(1888, 1062, 944, 531)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_aex8v"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f8386")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g3uc6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1u7qg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oan3w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_syrrc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cqpwg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3wyb0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xwnbw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lbna6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1xm8o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_21fla")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j763n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rww72")
+}],
+"loop": 1,
+"name": &"walking(green)",
+"speed": 5.0
+}]
+
+[node name="newastronaut" type="CharacterBody2D" unique_id=1902715054 groups=["astronaut"]]
+script = ExtResource("1_eiy3h")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1836745439]
+scale = Vector2(0.37, 0.37)
+shape = SubResource("RectangleShape2D_aex8v")
+
+[node name="sprite_holder" type="Node2D" parent="." unique_id=886643738]
+scale = Vector2(2.124, 2.124)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="sprite_holder" unique_id=1784577936]
+visible = false
+scale = Vector2(0.205, 0.177)
+sprite_frames = SubResource("SpriteFrames_aex8v")
+animation = &"walking(green)"
+speed_scale = 3.0
+
+[node name="Sprite2D" type="Sprite2D" parent="sprite_holder" unique_id=1221852718]
+position = Vector2(75, 10)
+scale = Vector2(0.037, 0.037)
+texture = ExtResource("3_f5uka")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=1636686849]
+path_desired_distance = 30.0
+target_desired_distance = 30.0
+radius = 50.0
+debug_path_custom_color = Color(0, 1, 0, 1)
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="." unique_id=1018136855]
+custom_minimum_size = Vector2(900, 40)
+custom_maximum_size = Vector2(400, -1)
+offset_left = -197.0
+offset_top = -104.0
+offset_right = 203.0
+offset_bottom = -64.0
+size_flags_vertical = 2
+nine_patch_stretch = true
+texture_under = ExtResource("4_rhqcu")
+texture_progress = ExtResource("5_lu3gp")
+
+[connection signal="velocity_computed" from="NavigationAgent2D" to="." method="_on_navigation_agent_2d_velocity_computed"]

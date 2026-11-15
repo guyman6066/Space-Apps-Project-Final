@@ -1,0 +1,19 @@
+78098b89c88a74ebe8c20117b8754620
+::res://::1790794173
+Green.png::CompressedTexture2D::6501000187039721782::1790493128::1790794174::1::::<><><>0<>0<>656db3c64a2802aebbde40917f0b22ae<>res://.godot/imported/Green.png-a73a03d0a1febdb864b00265fc9002a0.ctex::
+icon.svg::CompressedTexture2D::3077169831611539150::1790493128::1790794174::1::::<><><>0<>0<>69d8ccc4c521b95051d9c4739a689c7f<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+Idle (32x32).png::CompressedTexture2D::334472794852267897::1790493128::1790794174::1::::<><><>0<>0<>be0e43a3da9cf05ab0cf90ba322e19a6<>res://.godot/imported/Idle (32x32).png-eab6f8bc6cc3e2ad30a389b322c823ee.ctex::
+Jump (32x32).png::CompressedTexture2D::8834400643588511618::1790493128::1790794174::1::::<><><>0<>0<>55be915a8176bbe14320d3951c9cc42f<>res://.godot/imported/Jump (32x32).png-91bf01789c567d31f5c28cd22911709b.ctex::
+mystery_man.gd::GDScript::6003096346172946190::1790493128::0::1::::<>Node2D<><>0<>0<><>::
+node.tscn::PackedScene::3264215693875306117::1790493128::0::1::::<><><>0<>0<><>::uid://cyver15x6jgag::::res://Green.png<>uid://dds0msjyxjcmt::::res://Terrain (16x16).png<>uid://cyhsmkrgvegae::::res://scenes/main_character.tscn<>uid://crr7eco8c1esk::::res://mystery_man.gd<>uid://cmnk6gj2trkm8::::res://untitled@4x (1).png
+Run (32x32).png::CompressedTexture2D::2372776194374021789::1790493128::1790794174::1::::<><><>0<>0<>3a7a1d4492e49acead9ac3bdc7a10979<>res://.godot/imported/Run (32x32).png-448439aeb8095dde0c51c1fbc2bea5a9.ctex::
+Terrain (16x16).png::CompressedTexture2D::7408527696357581355::1790493128::1790794174::1::::<><><>0<>0<>aef5106be8d9d2024cd1c4cec5d48d55<>res://.godot/imported/Terrain (16x16).png-f072e8a5f99e915c05031c83401c87a9.ctex::
+untitled@4x (1).png::CompressedTexture2D::5642607261680251833::1790493128::1790794174::1::::<><><>0<>0<>69d9ad2176fa2f88a4e83ae97db29d4a<>res://.godot/imported/untitled@4x (1).png-e1c81d9e0c84946e809e451d3c1ea9d3.ctex::
+VT323-Regular.ttf::FontFile::3333139269953764641::1790493128::1790794174::1::::<><><>0<>0<>0e8bb6aa8cebc2853c9fdee990cd9527<>res://.godot/imported/VT323-Regular.ttf-a909885e332eb2f927eda9bb4af05f00.fontdata::
+::res://scenes/::1790493128
+main_character.gd::GDScript::9206024679708783223::1790493128::0::1::::<>CharacterBody2D<><>0<>0<><>::
+main_character.tscn::PackedScene::6472939146170069132::1790493128::0::1::::<><><>0<>0<><>::uid://d4fp47720j8nb::::res://scenes/main_character.gd<>uid://dx4pj110qupd7::::res://Jump (32x32).png<>uid://e1ayoc17g6lx::::res://Idle (32x32).png<>uid://82njorhbg4jx::::res://Run (32x32).png
+::res://UI/::1790493128
+::res://UI/InteractionMenu/::1790493128
+int_menu_ui.gd::GDScript::5115264066333051268::1790493128::0::1::::<>CanvasLayer<><>0<>0<><>::
+int_menu_ui.tscn::PackedScene::5346967662197565549::1790493128::0::1::::<><><>0<>0<><>::uid://ce44wfrivwmem::::res://UI/InteractionMenu/int_menu_ui.gd<>uid://bnquk1hpdqdrd::::res://VT323-Regular.ttf

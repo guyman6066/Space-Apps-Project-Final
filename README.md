@@ -1,2 +1,5 @@
-# Space-Apps-Project-Final
-The final project of the Space Apps Team "The Pythons".
+# space-apps-game 
+
+possible game name: The Red Sands
+
+Beginning of repo for the space apps game.

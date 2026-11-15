@@ -1,0 +1,763 @@
+[gd_scene format=3 uid="uid://cm6ph8uuu72na"]
+
+[ext_resource type="Script" uid="uid://bqjd678yb8m6b" path="res://status_tracker.gd" id="1_3u8wb"]
+[ext_resource type="Texture2D" uid="uid://dhxkwo8r1jbrg" path="res://3.png" id="2_3youw"]
+[ext_resource type="Texture2D" uid="uid://crdk0l8n5qhgj" path="res://5.png" id="2_fpr81"]
+[ext_resource type="FontFile" uid="uid://cgxtntooggg1j" path="res://Font-(VT323)/VT323-Regular.ttf" id="3_n01ns"]
+[ext_resource type="Texture2D" uid="uid://b78e85ivfudn4" path="res://1.png" id="4_4yxdt"]
+[ext_resource type="Texture2D" uid="uid://dwajn4pcoscwh" path="res://Untitled107.png" id="6_nkm58"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nbwhn"]
+texture = ExtResource("6_nkm58")
+region_rect = Rect2(959, 1637, 381, 152)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jpuf7"]
+texture = ExtResource("6_nkm58")
+region_rect = Rect2(957, 1452, 394, 163)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mkcmk"]
+texture = ExtResource("6_nkm58")
+region_rect = Rect2(956, 1266, 393, 164)
+
+[sub_resource type="Theme" id="Theme_loy05"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hgaam"]
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ii0a5"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nbwhn"]
+bg_color = Color(0.43519226, 0.4351923, 0.43519217, 1)
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+
+[node name="Node" type="Node" unique_id=1754025032]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1108410742]
+
+[node name="Control" type="Control" parent="CanvasLayer" unique_id=1578186944]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_3u8wb")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Control" unique_id=2127969105]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 188.0
+offset_top = 83.0
+offset_right = 959.0
+offset_bottom = 201.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="O2" type="TextureProgressBar" parent="CanvasLayer/Control/VBoxContainer" unique_id=971566891]
+custom_minimum_size = Vector2(10, 70)
+custom_maximum_size = Vector2(800, 50)
+layout_mode = 2
+nine_patch_stretch = true
+texture_over = ExtResource("2_fpr81")
+
+[node name="Food" type="TextureProgressBar" parent="CanvasLayer/Control/VBoxContainer" unique_id=672391658]
+custom_minimum_size = Vector2(10, 70)
+custom_maximum_size = Vector2(800, 50)
+layout_mode = 2
+nine_patch_stretch = true
+texture_over = ExtResource("2_3youw")
+
+[node name="H2O" type="TextureProgressBar" parent="CanvasLayer/Control/VBoxContainer" unique_id=1789292705]
+custom_minimum_size = Vector2(10, 70)
+custom_maximum_size = Vector2(800, 50)
+layout_mode = 2
+nine_patch_stretch = true
+texture_over = ExtResource("4_4yxdt")
+
+[node name="Character4" type="VBoxContainer" parent="CanvasLayer/Control" unique_id=12406898]
+custom_minimum_size = Vector2(900, -10)
+custom_maximum_size = Vector2(300, -1)
+layout_mode = 0
+offset_left = 553.0
+offset_top = 525.0
+offset_right = 853.0
+offset_bottom = 609.0
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="CanvasLayer/Control/Character4" unique_id=161743903]
+custom_minimum_size = Vector2(900, 40)
+custom_maximum_size = Vector2(400, -1)
+layout_mode = 2
+size_flags_vertical = 2
+nine_patch_stretch = true
+texture_over = ExtResource("2_3youw")
+
+[node name="TextureProgressBar2" type="TextureProgressBar" parent="CanvasLayer/Control/Character4" unique_id=642424790]
+custom_minimum_size = Vector2(900, 40)
+custom_maximum_size = Vector2(400, -1)
+layout_mode = 2
+size_flags_vertical = 2
+nine_patch_stretch = true
+texture_over = ExtResource("4_4yxdt")
+
+[node name="Character3" type="VBoxContainer" parent="CanvasLayer/Control" unique_id=1227149540]
+custom_minimum_size = Vector2(900, -10)
+custom_maximum_size = Vector2(300, -1)
+layout_mode = 0
+offset_left = 553.0
+offset_top = 430.99997
+offset_right = 853.0
+offset_bottom = 515.0
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="CanvasLayer/Control/Character3" unique_id=256206378]
+custom_minimum_size = Vector2(900, 40)
+custom_maximum_size = Vector2(400, -1)
+layout_mode = 2
+size_flags_vertical = 2
+nine_patch_stretch = true
+texture_over = ExtResource("2_3youw")
+
+[node name="TextureProgressBar2" type="TextureProgressBar" parent="CanvasLayer/Control/Character3" unique_id=1896395809]
+custom_minimum_size = Vector2(900, 40)
+custom_maximum_size = Vector2(400, -1)
+layout_mode = 2
+size_flags_vertical = 2
+nine_patch_stretch = true
+texture_over = ExtResource("4_4yxdt")
+
+[node name="Character2" type="VBoxContainer" parent="CanvasLayer/Control" unique_id=1189630909]
+custom_minimum_size = Vector2(900, -10)
+custom_maximum_size = Vector2(300, -1)
+layout_mode = 0
+offset_left = 553.0
+offset_top = 339.00003
+offset_right = 853.0
+offset_bottom = 423.00003
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="CanvasLayer/Control/Character2" unique_id=922607690]
+custom_minimum_size = Vector2(900, 40)
+custom_maximum_size = Vector2(400, -1)
+layout_mode = 2
+size_flags_vertical = 2
+nine_patch_stretch = true
+texture_over = ExtResource("2_3youw")
+
+[node name="TextureProgressBar2" type="TextureProgressBar" parent="CanvasLayer/Control/Character2" unique_id=871115986]
+custom_minimum_size = Vector2(900, 40)
+custom_maximum_size = Vector2(400, -1)
+layout_mode = 2
+size_flags_vertical = 2
+nine_patch_stretch = true
+texture_over = ExtResource("4_4yxdt")
+
+[node name="Character1" type="VBoxContainer" parent="CanvasLayer/Control" unique_id=191491599]
+custom_minimum_size = Vector2(900, -10)
+custom_maximum_size = Vector2(300, -1)
+layout_mode = 0
+offset_left = 553.0
+offset_top = 243.0
+offset_right = 853.0
+offset_bottom = 327.0
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="CanvasLayer/Control/Character1" unique_id=1795219434]
+custom_minimum_size = Vector2(900, 40)
+custom_maximum_size = Vector2(400, -1)
+layout_mode = 2
+size_flags_vertical = 2
+nine_patch_stretch = true
+texture_over = ExtResource("2_3youw")
+
+[node name="TextureProgressBar2" type="TextureProgressBar" parent="CanvasLayer/Control/Character1" unique_id=1538119999]
+custom_minimum_size = Vector2(900, 40)
+custom_maximum_size = Vector2(400, -1)
+layout_mode = 2
+size_flags_vertical = 2
+nine_patch_stretch = true
+texture_over = ExtResource("4_4yxdt")
+
+[node name="Feed3" type="Button" parent="CanvasLayer/Control" unique_id=1277493948]
+layout_mode = 0
+offset_left = 890.0
+offset_top = 433.99997
+offset_right = 995.0
+offset_bottom = 469.49997
+theme_override_fonts/font = ExtResource("3_n01ns")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxTexture_nbwhn")
+theme_override_styles/hover = SubResource("StyleBoxTexture_jpuf7")
+text = "FEED"
+
+[node name="Feeding3" type="Button" parent="CanvasLayer/Control" unique_id=95476904]
+layout_mode = 0
+offset_left = 890.0
+offset_top = 433.99997
+offset_right = 995.0
+offset_bottom = 468.99997
+theme_override_fonts/font = ExtResource("3_n01ns")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxTexture_mkcmk")
+text = "EATING..."
+
+[node name="Drink3" type="Button" parent="CanvasLayer/Control" unique_id=787755144]
+layout_mode = 0
+offset_left = 889.0
+offset_top = 472.99997
+offset_right = 994.0
+offset_bottom = 508.49997
+theme_override_fonts/font = ExtResource("3_n01ns")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxTexture_nbwhn")
+theme_override_styles/hover = SubResource("StyleBoxTexture_jpuf7")
+text = "DRINK"
+
+[node name="Drinking3" type="Button" parent="CanvasLayer/Control" unique_id=997315510]
+layout_mode = 0
+offset_left = 889.0
+offset_top = 472.99997
+offset_right = 994.0
+offset_bottom = 507.99997
+theme_override_fonts/font = ExtResource("3_n01ns")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxTexture_mkcmk")
+text = "DRINKING"
+
+[node name="Feed1" type="Button" parent="CanvasLayer/Control" unique_id=788325299]
+layout_mode = 0
+offset_left = 890.0
+offset_top = 347.00003
+offset_right = 995.0
+offset_bottom = 382.50003
+theme_override_fonts/font = ExtResource("3_n01ns")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxTexture_nbwhn")
+theme_override_styles/hover = SubResource("StyleBoxTexture_jpuf7")
+text = "FEED"
+
+[node name="Feeding1" type="Button" parent="CanvasLayer/Control" unique_id=1358468284]
+layout_mode = 0
+offset_left = 890.0
+offset_top = 347.00003
+offset_right = 995.0
+offset_bottom = 382.00003
+theme_override_fonts/font = ExtResource("3_n01ns")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxTexture_mkcmk")
+text = "EATING..."
+
+[node name="Drink1" type="Button" parent="CanvasLayer/Control" unique_id=1356687389]
+layout_mode = 0
+offset_left = 889.0
+offset_top = 386.00003
+offset_right = 994.0
+offset_bottom = 421.50003
+theme_override_fonts/font = ExtResource("3_n01ns")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxTexture_nbwhn")
+theme_override_styles/hover = SubResource("StyleBoxTexture_jpuf7")
+text = "DRINK"
+
+[node name="Drinking1" type="Button" parent="CanvasLayer/Control" unique_id=5018884]
+layout_mode = 0
+offset_left = 889.0
+offset_top = 386.00003
+offset_right = 994.0
+offset_bottom = 421.00003
+theme_override_fonts/font = ExtResource("3_n01ns")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxTexture_mkcmk")
+text = "DRINKING"
+
+[node name="Feed4" type="Button" parent="CanvasLayer/Control" unique_id=1326173307]
+layout_mode = 0
+offset_left = 891.0
+offset_top = 532.0
+offset_right = 996.0
+offset_bottom = 567.5
+theme_override_fonts/font = ExtResource("3_n01ns")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxTexture_nbwhn")
+theme_override_styles/hover = SubResource("StyleBoxTexture_jpuf7")
+text = "FEED"
+
+[node name="Feeding4" type="Button" parent="CanvasLayer/Control" unique_id=1589116388]
+layout_mode = 0
+offset_left = 891.0
+offset_top = 532.0
+offset_right = 996.0
+offset_bottom = 567.0
+theme_override_fonts/font = ExtResource("3_n01ns")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxTexture_mkcmk")
+text = "EATING..."
+
+[node name="Drink4" type="Button" parent="CanvasLayer/Control" unique_id=1765140661]
+layout_mode = 0
+offset_left = 891.0
+offset_top = 570.0
+offset_right = 996.0
+offset_bottom = 605.5
+theme_override_fonts/font = ExtResource("3_n01ns")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxTexture_nbwhn")
+theme_override_styles/hover = SubResource("StyleBoxTexture_jpuf7")
+text = "DRINK"
+
+[node name="Drinking4" type="Button" parent="CanvasLayer/Control" unique_id=1988022280]
+layout_mode = 0
+offset_left = 891.0
+offset_top = 570.0
+offset_right = 996.0
+offset_bottom = 605.0
+theme_override_fonts/font = ExtResource("3_n01ns")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxTexture_mkcmk")
+text = "DRINKING"
+
+[node name="Feed2" type="Button" parent="CanvasLayer/Control" unique_id=1126328051]
+layout_mode = 0
+offset_left = 889.0
+offset_top = 252.0
+offset_right = 994.0
+offset_bottom = 287.5
+theme_override_fonts/font = ExtResource("3_n01ns")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxTexture_nbwhn")
+theme_override_styles/hover = SubResource("StyleBoxTexture_jpuf7")
+text = "FEED"
+
+[node name="Feeding2" type="Button" parent="CanvasLayer/Control" unique_id=449594564]
+layout_mode = 0
+offset_left = 889.0
+offset_top = 252.0
+offset_right = 994.0
+offset_bottom = 287.0
+theme_override_fonts/font = ExtResource("3_n01ns")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxTexture_mkcmk")
+text = "EATING..."
+
+[node name="Drink2" type="Button" parent="CanvasLayer/Control" unique_id=1456121915]
+layout_mode = 0
+offset_left = 889.0
+offset_top = 290.00003
+offset_right = 994.0
+offset_bottom = 325.50003
+theme_override_fonts/font = ExtResource("3_n01ns")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxTexture_nbwhn")
+theme_override_styles/hover = SubResource("StyleBoxTexture_jpuf7")
+text = "DRINK"
+
+[node name="Drinking2" type="Button" parent="CanvasLayer/Control" unique_id=1462914506]
+layout_mode = 0
+offset_left = 889.0
+offset_top = 290.00003
+offset_right = 994.0
+offset_bottom = 325.00003
+theme_override_fonts/font = ExtResource("3_n01ns")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxTexture_mkcmk")
+text = "DRINKING"
+
+[node name="Box2" type="Label" parent="." unique_id=536105125]
+anchors_preset = -1
+anchor_left = 0.50062627
+anchor_top = 0.4648669
+anchor_right = 0.50062627
+anchor_bottom = 0.4648669
+offset_left = -454.72144
+offset_top = -222.23376
+offset_right = 446.27856
+offset_bottom = -61.233765
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_loy05")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hgaam")
+metadata/_edit_use_anchors_ = true
+
+[node name="Box4" type="Label" parent="." unique_id=162477676]
+anchors_preset = -1
+anchor_left = 0.47300002
+anchor_top = 0.3576389
+anchor_right = 0.47944513
+anchor_bottom = 0.3576389
+offset_left = -269.896
+offset_top = 3.2500305
+offset_right = 470.6792
+offset_bottom = 107.25
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_loy05")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hgaam")
+metadata/_edit_use_anchors_ = true
+
+[node name="Box8" type="Label" parent="." unique_id=311609791]
+anchors_preset = -1
+anchor_left = 0.563
+anchor_top = 0.42000002
+anchor_right = 0.563
+anchor_bottom = 0.42000002
+offset_left = -373.57605
+offset_top = 56.840027
+offset_right = 374.42395
+offset_bottom = 158.84003
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_loy05")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hgaam")
+metadata/_edit_use_anchors_ = true
+
+[node name="Box7" type="Label" parent="." unique_id=79991279]
+anchors_preset = -1
+anchor_left = 0.70100003
+anchor_top = 0.64000005
+anchor_right = 0.70100003
+anchor_bottom = 0.64000005
+offset_left = -533.55206
+offset_top = 5.2799377
+offset_right = 215.44794
+offset_bottom = 108.27997
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_loy05")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hgaam")
+metadata/_edit_use_anchors_ = true
+
+[node name="Box10" type="Label" parent="." unique_id=1256907425]
+anchors_preset = -1
+anchor_left = 0.46600002
+anchor_top = 0.55700004
+anchor_right = 0.46600002
+anchor_bottom = 0.55700004
+offset_left = -263.83203
+offset_top = 157.06396
+offset_right = 486.16797
+offset_bottom = 254.06396
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_loy05")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hgaam")
+
+[node name="Box6" type="Label" parent="." unique_id=341051497]
+anchors_preset = -1
+anchor_left = 0.17600001
+anchor_top = 0.638
+anchor_right = 0.17600001
+anchor_bottom = 0.638
+offset_left = -79.752014
+offset_top = 4.5759583
+offset_right = 80.247986
+offset_bottom = 109.57599
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_loy05")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hgaam")
+metadata/_edit_use_anchors_ = true
+
+[node name="Box3" type="Label" parent="." unique_id=897322044]
+anchors_preset = -1
+anchor_left = 0.5034722
+anchor_top = 0.50400823
+anchor_right = 0.5034722
+anchor_bottom = 0.5086379
+offset_left = -457.0
+offset_top = -92.59735
+offset_right = -297.0
+offset_bottom = 9.402649
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_loy05")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hgaam")
+metadata/_edit_use_anchors_ = true
+
+[node name="DESCRIPTION 4" type="Label" parent="." unique_id=625019647]
+anchors_preset = -1
+anchor_left = -0.60783094
+anchor_top = -0.84627235
+anchor_right = -0.60783094
+anchor_bottom = -0.84627235
+offset_left = 1001.22125
+offset_top = 1016.66223
+offset_right = 1224.2212
+offset_bottom = 1054.6622
+theme_override_colors/font_color = Color(0.18359044, 0.18359044, 0.18359044, 1)
+theme_override_colors/font_shadow_color = Color(0.07450981, 0.38039216, 0.8627451, 0.6156863)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/line_spacing = 1
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 0
+theme_override_constants/outline_size = 0
+theme_override_constants/shadow_outline_size = 0
+theme_override_fonts/font = ExtResource("3_n01ns")
+theme_override_font_sizes/font_size = 31
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ii0a5")
+text = "Character details "
+metadata/_edit_use_anchors_ = true
+
+[node name="PLAYER 4" type="Label" parent="." unique_id=1678747534]
+anchors_preset = -1
+anchor_left = -0.60783094
+anchor_top = -0.84627235
+anchor_right = -0.60783094
+anchor_bottom = -0.84627235
+offset_left = 1000.22125
+offset_top = 981.66223
+offset_right = 1207.2212
+offset_bottom = 1019.66223
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.07450981, 0.38039216, 0.8627451, 0.6156863)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/line_spacing = 18
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 0
+theme_override_constants/outline_size = 0
+theme_override_constants/shadow_outline_size = 0
+theme_override_fonts/font = ExtResource("3_n01ns")
+theme_override_font_sizes/font_size = 37
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ii0a5")
+text = "CHARACTER NAME"
+metadata/_edit_use_anchors_ = true
+
+[node name="PLAYER 3" type="Label" parent="." unique_id=1886493504]
+anchors_preset = -1
+anchor_left = -1.2833828
+anchor_top = -2.093481
+anchor_right = -1.2833828
+anchor_bottom = -2.093481
+offset_left = 1779.4569
+offset_top = 1884.5758
+offset_right = 1986.4569
+offset_bottom = 1922.5758
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.07450981, 0.38039216, 0.8627451, 0.6156863)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/line_spacing = 18
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 0
+theme_override_constants/outline_size = 0
+theme_override_constants/shadow_outline_size = 0
+theme_override_fonts/font = ExtResource("3_n01ns")
+theme_override_font_sizes/font_size = 37
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ii0a5")
+text = "CHARACTER NAME"
+metadata/_edit_use_anchors_ = true
+
+[node name="Box5" type="Label" parent="." unique_id=1355983805]
+anchors_preset = -1
+anchor_left = 0.17600001
+anchor_top = 0.492
+anchor_right = 0.17600001
+anchor_bottom = 0.492
+offset_left = -79.752014
+offset_top = 9.184021
+offset_right = 80.247986
+offset_bottom = 105.18402
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_loy05")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hgaam")
+metadata/_edit_use_anchors_ = true
+
+[node name="DESCRIPTION 3" type="Label" parent="." unique_id=115252878]
+anchors_preset = -1
+anchor_left = -1.2856026
+anchor_top = -2.0956454
+anchor_right = -1.2856026
+anchor_bottom = -2.0956454
+offset_left = 1781.0142
+offset_top = 1919.9785
+offset_right = 2004.0142
+offset_bottom = 1957.9785
+theme_override_colors/font_color = Color(0.18359044, 0.18359044, 0.18359044, 1)
+theme_override_colors/font_shadow_color = Color(0.07450981, 0.38039216, 0.8627451, 0.6156863)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/line_spacing = 1
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 0
+theme_override_constants/outline_size = 0
+theme_override_constants/shadow_outline_size = 0
+theme_override_fonts/font = ExtResource("3_n01ns")
+theme_override_font_sizes/font_size = 31
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ii0a5")
+text = "Character details "
+metadata/_edit_use_anchors_ = true
+
+[node name="Box9" type="Label" parent="." unique_id=1057133246]
+anchors_preset = -1
+anchor_left = 0.24700001
+anchor_top = 0.86100006
+anchor_right = 0.24700001
+anchor_bottom = 0.86100006
+offset_left = -161.544
+offset_top = -39.92804
+offset_right = -0.54400635
+offset_bottom = 57.07196
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_loy05")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hgaam")
+metadata/_edit_use_anchors_ = true
+
+[node name="PLAYER 1" type="Label" parent="." unique_id=200989966]
+anchors_preset = -1
+anchor_right = 0.0047286353
+anchor_bottom = 0.0015432099
+offset_left = 302.0
+offset_top = 250.0
+offset_right = 509.0
+offset_bottom = 288.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.07450981, 0.38039216, 0.8627451, 0.6156863)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/line_spacing = 18
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 0
+theme_override_constants/outline_size = 0
+theme_override_constants/shadow_outline_size = 0
+theme_override_fonts/font = ExtResource("3_n01ns")
+theme_override_font_sizes/font_size = 37
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ii0a5")
+text = "CHARACTER NAME"
+metadata/_edit_use_anchors_ = true
+
+[node name="DESCRIPTION 1" type="Label" parent="." unique_id=621339820]
+offset_left = 303.0
+offset_top = 285.00003
+offset_right = 526.0
+offset_bottom = 323.00003
+theme_override_colors/font_color = Color(0.18359044, 0.18359044, 0.18359044, 1)
+theme_override_colors/font_shadow_color = Color(0.07450981, 0.38039216, 0.8627451, 0.6156863)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/line_spacing = 1
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 0
+theme_override_constants/outline_size = 0
+theme_override_constants/shadow_outline_size = 0
+theme_override_fonts/font = ExtResource("3_n01ns")
+theme_override_font_sizes/font_size = 31
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ii0a5")
+text = "Character details "
+metadata/_edit_use_anchors_ = true
+
+[node name="PLAYER 2" type="Label" parent="." unique_id=471530942]
+anchors_preset = -1
+anchor_left = -1.7174888
+anchor_top = -3.631579
+anchor_right = -1.7174888
+anchor_bottom = -3.631579
+offset_left = 2279.547
+offset_top = 2695.2632
+offset_right = 2486.547
+offset_bottom = 2733.2632
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.07450981, 0.38039216, 0.8627451, 0.6156863)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/line_spacing = 18
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 0
+theme_override_constants/outline_size = 0
+theme_override_constants/shadow_outline_size = 0
+theme_override_fonts/font = ExtResource("3_n01ns")
+theme_override_font_sizes/font_size = 37
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ii0a5")
+text = "CHARACTER NAME"
+metadata/_edit_use_anchors_ = true
+
+[node name="DESCRIPTION 2" type="Label" parent="." unique_id=1402223058]
+anchors_preset = -1
+anchor_left = -1.7174888
+anchor_top = -3.631579
+anchor_right = -1.7174888
+anchor_bottom = -3.631579
+offset_left = 2280.547
+offset_top = 2730.2632
+offset_right = 2503.547
+offset_bottom = 2768.2632
+theme_override_colors/font_color = Color(0.18359044, 0.18359044, 0.18359044, 1)
+theme_override_colors/font_shadow_color = Color(0.07450981, 0.38039216, 0.8627451, 0.6156863)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/line_spacing = 1
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 0
+theme_override_constants/outline_size = 0
+theme_override_constants/shadow_outline_size = 0
+theme_override_fonts/font = ExtResource("3_n01ns")
+theme_override_font_sizes/font_size = 31
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ii0a5")
+text = "Character details "
+metadata/_edit_use_anchors_ = true
+
+[node name="total supplies" type="Label" parent="." unique_id=900379478]
+anchors_preset = -1
+anchor_left = 0.34600002
+anchor_top = 0.093
+anchor_right = 0.34600002
+anchor_bottom = 0.093
+offset_left = -276.592
+offset_top = -25.264
+offset_right = 624.40796
+offset_bottom = 24.736
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_n01ns")
+theme_override_font_sizes/font_size = 37
+theme_override_styles/normal = SubResource("StyleBoxFlat_nbwhn")
+text = "TOTAL SUPPLIES"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="total supplies2" type="Label" parent="." unique_id=1965181311]
+offset_left = 149.0
+offset_top = 261.0
+offset_right = 262.0
+offset_bottom = 311.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_n01ns")
+theme_override_font_sizes/font_size = 37
+theme_override_styles/normal = SubResource("StyleBoxFlat_nbwhn")
+text = "avatar"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="total supplies3" type="Label" parent="." unique_id=1786381051]
+offset_left = 147.0
+offset_top = 353.00003
+offset_right = 260.0
+offset_bottom = 403.00003
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_n01ns")
+theme_override_font_sizes/font_size = 37
+theme_override_styles/normal = SubResource("StyleBoxFlat_nbwhn")
+text = "avatar"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="total supplies4" type="Label" parent="." unique_id=417535620]
+offset_left = 145.0
+offset_top = 444.99997
+offset_right = 258.0
+offset_bottom = 494.99997
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_n01ns")
+theme_override_font_sizes/font_size = 37
+theme_override_styles/normal = SubResource("StyleBoxFlat_nbwhn")
+text = "avatar"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="total supplies5" type="Label" parent="." unique_id=1742725407]
+offset_left = 147.0
+offset_top = 541.0
+offset_right = 260.0
+offset_bottom = 591.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_n01ns")
+theme_override_font_sizes/font_size = 37
+theme_override_styles/normal = SubResource("StyleBoxFlat_nbwhn")
+text = "avatar"
+horizontal_alignment = 1
+vertical_alignment = 1

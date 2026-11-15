@@ -1,0 +1,45 @@
+78098b89c88a74ebe8c20117b8754620
+::res://::1791831715
+Green.png::CompressedTexture2D::6501000187039721782::1791400825::1791831715::1::::<><><>0<>0<>656db3c64a2802aebbde40917f0b22ae<>res://.godot/imported/Green.png-a73a03d0a1febdb864b00265fc9002a0.ctex::
+icon.svg::CompressedTexture2D::3077169831611539150::1791400825::1791831715::1::::<><><>0<>0<>69d8ccc4c521b95051d9c4739a689c7f<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+Idle (32x32).png::CompressedTexture2D::334472794852267897::1791400825::1791831715::1::::<><><>0<>0<>be0e43a3da9cf05ab0cf90ba322e19a6<>res://.godot/imported/Idle (32x32).png-eab6f8bc6cc3e2ad30a389b322c823ee.ctex::
+Jump (32x32).png::CompressedTexture2D::8834400643588511618::1791400825::1791831715::1::::<><><>0<>0<>55be915a8176bbe14320d3951c9cc42f<>res://.godot/imported/Jump (32x32).png-91bf01789c567d31f5c28cd22911709b.ctex::
+Run (32x32).png::CompressedTexture2D::2372776194374021789::1791400825::1791831715::1::::<><><>0<>0<>3a7a1d4492e49acead9ac3bdc7a10979<>res://.godot/imported/Run (32x32).png-448439aeb8095dde0c51c1fbc2bea5a9.ctex::
+Walking_Frames_(BLUE).png::CompressedTexture2D::781885809963511222::1791831092::1791831717::1::::<><><>0<>0<>6d649ddbe33439c90a075f6bbb5e2e78<>res://.godot/imported/Walking_Frames_(BLUE).png-aa048e853bad288dbd0ab45e1a7fbc7d.ctex::
+::res://assets/::1791831092
+cannonBall.png::CompressedTexture2D::6825172502142277613::1791400825::1791831715::1::::<><><>0<>0<>bc0fb97031905d526ccb942337c2fe24<>res://.godot/imported/cannonBall.png-06aa2048fc340fb006fd35ac7f797163.ctex::
+dinghyLarge2.png::CompressedTexture2D::3188688231076801822::1791400825::1791831715::1::::<><><>0<>0<>40c27d843d227a490d574c4cc38067f9<>res://.godot/imported/dinghyLarge2.png-2b75d6321d3e25838a95c78e4ab63119.ctex::
+health_bar.png::CompressedTexture2D::3070411031781393129::1791831092::1791831715::1::::<><><>0<>0<>1f7d586b050fc5ae3c379b8b18394149<>res://.godot/imported/health_bar.png-e3dae7a579a24058476760a74d952dfc.ctex::
+Iceberg.png::CompressedTexture2D::3000446366189039933::1791400825::1791831715::1::::<><><>0<>0<>a00a879e8cd7d4a4cd5ebc386b882a09<>res://.godot/imported/Iceberg.png-8321f92b64c8f839194e7e21b46cdf0b.ctex::
+ship_blue.png::CompressedTexture2D::3541746577826047654::1791400825::1791831715::1::::<><><>0<>0<>6866f3eaaaeb2939c19bb8214be9e379<>res://.godot/imported/ship_blue.png-46ffedfd5ac83dbee5edddb189cb4338.ctex::
+ship_green.png::CompressedTexture2D::8329680130100396246::1791400825::1791831715::1::::<><><>0<>0<>ec60a341e6cd4881d1e32d9cfbf5498e<>res://.godot/imported/ship_green.png-12042e2e9b002c72b76b97ac00c35438.ctex::
+ship_pirate.png::CompressedTexture2D::4385995038964285563::1791400825::1791831715::1::::<><><>0<>0<>d034896498068b2098197bca4a6bc904<>res://.godot/imported/ship_pirate.png-8713ec160abfb6df236611fd50736806.ctex::
+ship_red.png::CompressedTexture2D::3196484963370261086::1791400825::1791831715::1::::<><><>0<>0<>de3c5541a5e18e69113912ce44d3f93e<>res://.godot/imported/ship_red.png-2d2a1479476a1b44155c0d1be8ffe9ff.ctex::
+tiles.png::CompressedTexture2D::7274629229438750186::1791400825::1791831715::1::::<><><>0<>0<>110a54ea1dba9debe084fb6aaca9daf4<>res://.godot/imported/tiles.png-0d11a4bcdfb48056f67a66da241684a1.ctex::
+Walking_Frames_(BLUE).png::CompressedTexture2D::1768024378607948506::1791831092::1791831717::1::::<><><>0<>0<>d2a3ec4c83080661fb05a56fffd876b0<>res://.godot/imported/Walking_Frames_(BLUE).png-2bc5044b47c2b05b080beb305cf74ee0.ctex::
+Walking_frames_(GREEN).png::CompressedTexture2D::4177441975291849857::1791831092::1791831717::1::::<><><>0<>0<>c6b5447cd4269a9fe9f59660f8356ecd<>res://.godot/imported/Walking_frames_(GREEN).png-9c696b4eecdcf88f2d41158d8f293b84.ctex::
+Walking_Frames_(RED).png::CompressedTexture2D::9030887675335192027::1791831092::1791831717::1::::<><><>0<>0<>9c327df25532f86858293ed14c3c4bae<>res://.godot/imported/Walking_Frames_(RED).png-d200c6dc5dec3a19cc451db40f9c79ed.ctex::
+Walking_Frames_(YELLOW).png::CompressedTexture2D::7734837735923214688::1791831092::1791831717::1::::<><><>0<>0<>229054785e8256062dbcf39913cf6dcf<>res://.godot/imported/Walking_Frames_(YELLOW).png-3f1abe5366156189391e6ee39f68aad0.ctex::
+::res://scenes/::1791400825
+::res://scenes/Iceberg/::1791400825
+3529835-middle-removebg-preview.png::CompressedTexture2D::1686018546960336880::1791400825::1791831715::1::::<><><>0<>0<>444c60a05eaeafaef9f83856d378e826<>res://.godot/imported/3529835-middle-removebg-preview.png-4daa6c075452dd35274929849ed717d1.ctex::
+iceberg.gd::GDScript::291671611757528469::1791400825::0::1::::<>Node2D<><>0<>0<><>::
+iceberg.tscn::PackedScene::2579276177359264879::1791400825::0::1::::<><><>0<>0<><>::uid://efj125ipoiif::::res://scenes/Iceberg/iceberg.gd<>uid://bi0o6b0tryhm0::::res://assets/Iceberg.png
+::res://scenes/Iceberg/Ship/::1791400825
+ship.tscn::PackedScene::8443898908614017090::1791400825::0::1::::<><><>0<>0<><>::uid://bqpwbwjmmojas::::res://assets/ship_blue.png
+::res://scenes/Map/::1791831092
+Map.tscn::PackedScene::1599924726574916057::1791831092::0::1::::<><><>0<>0<><>::uid://dbv5c0e2tgbqg::::res://assets/tiles.png<>uid://bftl71s7rp4ev::::res://scenes/NewshipCb/newship_cb.tscn<>uid://bevgfw83rsmke::::res://scenes/NewshipCb/newship2.tscn<>uid://4ctncwj7ksw8::::res://scenes/NewshipCb/newship3.tscn<>uid://dl03rculk1675::::res://scenes/NewshipCb/newship_4.tscn
+::res://scenes/Newship/::1791400825
+newship.gd::GDScript::3342664135424153496::1791400825::0::1::::<>Area2D<><>0<>0<><>::
+newship.tscn::PackedScene::8658662097860437990::1791400825::0::1::::<><><>0<>0<><>::uid://bnvhgptpeej8s::::res://scenes/Newship/newship.gd<>uid://dqw7u5wtulbkg::::res://assets/ship_green.png
+::res://scenes/NewshipCb/::1791831092
+newship2.tscn::PackedScene::2710902429794489320::1791831092::0::1::::<><><>0<>0<><>::uid://c78bf1ouakefy::::res://scenes/NewshipCb/newship_2.gd<>uid://0gpdrkllcdqo::::res://assets/Walking_Frames_(BLUE).png<>uid://bj0lhrue6nsf6::::res://assets/health_bar.png
+newship3.tscn::PackedScene::2040782198678878789::1791831092::0::1::::<><><>0<>0<><>::uid://ccfqs57vhj4xd::::res://scenes/NewshipCb/newship_3.gd<>uid://d1wvnvcsijywh::::res://assets/Walking_Frames_(RED).png<>uid://bj0lhrue6nsf6::::res://assets/health_bar.png
+newship_2.gd::GDScript::7087079863792973858::1791831092::0::1::::<>CharacterBody2D<><>0<>0<><>::
+newship_3.gd::GDScript::4924546185705249245::1791831092::0::1::::<>CharacterBody2D<><>0<>0<><>::
+newship_4.gd::GDScript::1925269194138835978::1791831092::0::1::::<>CharacterBody2D<><>0<>0<><>::
+newship_4.tscn::PackedScene::7984679345699998506::1791831092::0::1::::<><><>0<>0<><>::uid://2ou5xdwixg63::::res://scenes/NewshipCb/newship_4.gd<>uid://dig2wao3838dg::::res://assets/Walking_Frames_(YELLOW).png<>uid://bj0lhrue6nsf6::::res://assets/health_bar.png
+newship_cb.gd::GDScript::4739767366608824256::1791831092::0::1::::<>CharacterBody2D<><>0<>0<><>::
+newship_cb.tscn::PackedScene::2777314506426644249::1791831092::0::1::::<><><>0<>0<><>::uid://b8r8jndpl0tgq::::res://scenes/NewshipCb/newship_cb.gd<>uid://b0rt4hagfjqv6::::res://assets/Walking_frames_(GREEN).png<>uid://bj0lhrue6nsf6::::res://assets/health_bar.png
+::res://scenes/Waypoint/::1791400825
+waypoint.tscn::PackedScene::2820468848422103423::1791400825::0::1::::<><><>0<>0<><>::uid://c4ifuguhsld1v::::res://assets/cannonBall.png

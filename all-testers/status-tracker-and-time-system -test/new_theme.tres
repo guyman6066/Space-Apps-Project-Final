@@ -1,0 +1,18 @@
+[gd_resource type="Theme" format=3 uid="uid://bu4t40tjyqmlw"]
+
+[ext_resource type="FontFile" uid="uid://cgxtntooggg1j" path="res://Font-(VT323)/VT323-Regular.ttf" id="1_i7eh4"]
+[ext_resource type="Texture2D" uid="uid://dwajn4pcoscwh" path="res://Untitled107.png" id="2_78ylj"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_w7h24"]
+texture = ExtResource("2_78ylj")
+region_rect = Rect2(1604, 1113, 833, 150)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jpuf7"]
+
+[resource]
+default_font = ExtResource("1_i7eh4")
+default_font_size = 20
+ProgressBar/colors/font_color = Color(1, 1, 1, 1)
+ProgressBar/fonts/font = ExtResource("1_i7eh4")
+ProgressBar/styles/background = SubResource("StyleBoxTexture_w7h24")
+ProgressBar/styles/fill = SubResource("StyleBoxTexture_jpuf7")
